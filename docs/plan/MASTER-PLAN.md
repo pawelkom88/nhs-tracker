@@ -510,17 +510,17 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 
 ### [Phase 2 — Domain model](./phase-02-domain-model.md)
 
-- [ ] T-2.1 — Define Publishing Nations and nation-namespaced identifiers
-- [ ] T-2.2 — Define Reporting Period and Publication Date
-- [ ] T-2.3 — Define figure values, status, unit and provenance
-- [ ] T-2.4 — Define the Release type and the per-nation schema factory
-- [ ] T-2.5 — Define England's Wait Stage, Statistics and Waiting Standard
-- [ ] T-2.6 — Define Wales's Wait Stage, Statistics and Waiting Standard
-- [ ] T-2.7 — Define Scotland's two Wait Stages, Statistics and Waiting Standards
-- [ ] T-2.8 — Define reference data types: Reporting Units, Hospital Sites, NHS Regions, Specialties, succession
-- [ ] T-2.9 — Define the published view the site reads (carried-forward and year-earlier state)
-- [ ] T-2.10 — Add the cross-nation guardrail type-test suite
-- [ ] T-2.11 — Add the project guardrail ESLint plugin (no ranking, no cross-nation imports)
+- [x] T-2.1 — Define Publishing Nations and nation-namespaced identifiers
+- [x] T-2.2 — Define Reporting Period and Publication Date
+- [x] T-2.3 — Define figure values, status, unit and provenance
+- [x] T-2.4 — Define the Release type and the per-nation schema factory
+- [x] T-2.5 — Define England's Wait Stage, Statistics and Waiting Standard
+- [x] T-2.6 — Define Wales's Wait Stage, Statistics and Waiting Standard
+- [x] T-2.7 — Define Scotland's two Wait Stages, Statistics and Waiting Standards
+- [x] T-2.8 — Define reference data types: Reporting Units, Hospital Sites, NHS Regions, Specialties, succession
+- [x] T-2.9 — Define the published view the site reads (carried-forward and year-earlier state)
+- [x] T-2.10 — Add the cross-nation guardrail type-test suite
+- [x] T-2.11 — Add the project guardrail ESLint plugin (no ranking, no cross-nation imports)
 
 ### [Phase 3 — Pipeline foundations and reference data](./phase-03-reference-data.md)
 

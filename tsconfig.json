@@ -1,4 +1,8 @@
 {
   "files": [],
-  "references": [{ "path": "packages/model" }, { "path": "packages/pipeline" }]
+  "references": [
+    { "path": "packages/model" },
+    { "path": "packages/pipeline" },
+    { "path": "tools/eslint-plugin-kyw" }
+  ]
 }

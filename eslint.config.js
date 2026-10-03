@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import { createNodeResolver, flatConfigs } from 'eslint-plugin-import-x';
 import prettier from 'eslint-config-prettier';
+import kywPlugin from './tools/eslint-plugin-kyw/src/index.js';
 
 export default tseslint.config(
   {
@@ -53,6 +54,11 @@ export default tseslint.config(
       'import-x/resolver-next': [
         createNodeResolver({
           extensions: ['.ts', '.tsx', '.js', '.mjs', '.cjs', '.json'],
+          extensionAlias: {
+            '.js': ['.js', '.ts', '.tsx'],
+            '.mjs': ['.mjs', '.mts'],
+            '.cjs': ['.cjs', '.cts'],
+          },
         }),
       ],
     },
@@ -66,15 +72,92 @@ export default tseslint.config(
           devDependencies: [
             '**/*.test.ts',
             '**/*.spec.ts',
+            '**/*.test-d.ts',
             '**/*.config.ts',
             '**/*.config.js',
             'eslint.config.js',
           ],
-          packageDir: [import.meta.dirname, './packages/model', './packages/pipeline'],
+          packageDir: [
+            import.meta.dirname,
+            './packages/model',
+            './packages/pipeline',
+            './tools/eslint-plugin-kyw',
+          ],
         },
       ],
     },
   },
-  // project guardrail rules: see T-2.11
+  // project guardrail rules (T-2.11)
+  {
+    files: ['apps/**/*.{ts,tsx,js,jsx,mjs,cjs}', 'packages/**/*.{ts,tsx,js,jsx,mjs,cjs}'],
+    plugins: {
+      kyw: kywPlugin,
+    },
+    rules: {
+      'kyw/no-ranking-by-statistic': 'error',
+    },
+  },
+  {
+    files: ['packages/pipeline/src/**/*.{ts,tsx,js,jsx,mjs,cjs}'],
+    rules: {
+      'import-x/no-restricted-paths': [
+        'error',
+        {
+          basePath: import.meta.dirname,
+          zones: [
+            {
+              target: './packages/pipeline/src/england',
+              from: ['./packages/pipeline/src/wales', './packages/pipeline/src/scotland'],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './packages/pipeline/src/wales',
+              from: ['./packages/pipeline/src/england', './packages/pipeline/src/scotland'],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './packages/pipeline/src/scotland',
+              from: ['./packages/pipeline/src/england', './packages/pipeline/src/wales'],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ['apps/site/src/nations/**/*.{ts,tsx,js,jsx,mjs,cjs}'],
+    rules: {
+      'import-x/no-restricted-paths': [
+        'error',
+        {
+          basePath: import.meta.dirname,
+          zones: [
+            {
+              target: './apps/site/src/nations/england',
+              from: ['./apps/site/src/nations/wales', './apps/site/src/nations/scotland'],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './apps/site/src/nations/wales',
+              from: ['./apps/site/src/nations/england', './apps/site/src/nations/scotland'],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './apps/site/src/nations/scotland',
+              from: ['./apps/site/src/nations/england', './apps/site/src/nations/wales'],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+          ],
+        },
+      ],
+    },
+  },
   prettier,
 );
