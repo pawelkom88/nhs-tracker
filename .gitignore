@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Production and build outputs
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env*
+!.env.example
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Test & report outputs
+playwright-report/
+test-results/
+
+# Pipeline raw cache (ADR-0007: raw downloads are cached locally, not committed)
+packages/pipeline/.cache/
+
+# Local editor / agent harness
+.claude/
