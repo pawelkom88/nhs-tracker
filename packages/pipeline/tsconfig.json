@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "."
+  },
+  "references": [{ "path": "../model" }],
+  "include": ["src", "test", "*.config.ts"]
+}

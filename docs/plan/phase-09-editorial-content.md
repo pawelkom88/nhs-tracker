@@ -24,16 +24,16 @@ Front matter (validated by Zod, T-9.1):
 ```yaml
 ---
 kind: specialty | about-the-figures | your-rights
-nation: england            # must match folder
+nation: england # must match folder
 specialtyId: england:C_110 # specialty files only
-summary: "One plain-English line."           # specialty: shown in lists
-keywords: [hip, knee, joint replacement]     # specialty: filter keywords
+summary: 'One plain-English line.' # specialty: shown in lists
+keywords: [hip, knee, joint replacement] # specialty: filter keywords
 status: placeholder | draft | reviewed
-lastReviewed: 2026-10-03   # required when status = reviewed
-reviewedBy: product-owner  # required when status = reviewed
-sources:                   # every factual claim in the body cites one of these by id
+lastReviewed: 2026-10-03 # required when status = reviewed
+reviewedBy: product-owner # required when status = reviewed
+sources: # every factual claim in the body cites one of these by id
   - id: nhs-choice
-    title: "Your choices in the NHS"
+    title: 'Your choices in the NHS'
     url: https://www.nhs.uk/…
 ---
 ```
@@ -43,6 +43,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
 ---
 
 ### T-9.1 — Content schema, loader and Markdown rendering
+
 - **Depends on:** T-8.1, T-2.8
 - **Parallel-safe with:** Phase 8 tasks except T-8.11, T-8.13, T-8.14, T-8.16
 - **Owns files:** `apps/site/src/content/schema.ts`, `apps/site/src/content/load.ts`, `apps/site/src/content/render.ts`, `apps/site/test/content/load.test.ts`, `content/README.md`
@@ -60,6 +61,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
 - **Size:** M
 
 ### T-9.2 — Generate Specialty description stubs for every nation
+
 - **Depends on:** T-9.1, T-3.6, T-3.7, T-3.8
 - **Parallel-safe with:** T-9.3, T-9.4, T-9.6
 - **Owns files:** `packages/pipeline/src/content/stubs.ts`, `packages/pipeline/test/content/stubs.test.ts`, `content/england/specialties/*.md`, `content/wales/specialties/*.md`, `content/scotland/specialties/*.md` (stubs only; real copy is PO-owned afterwards)
@@ -75,6 +77,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
 - **Size:** S
 
 ### T-9.3 — Trauma & Orthopaedics full-content structure in all three nations
+
 - **Depends on:** T-9.2
 - **Parallel-safe with:** T-9.4, T-9.6
 - **Owns files:** `content/england/specialties/trauma-and-orthopaedics.md`, `content/wales/specialties/<wales-t-and-o-slug>.md`, `content/scotland/specialties/<scotland-t-and-o-slug>.md`, `apps/site/src/components/SpecialtyIntro.tsx`, `apps/site/test/components/SpecialtyIntro.test.tsx`
@@ -89,6 +92,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
 - **Size:** S
 
 ### T-9.4 — Explainer pages: "About the figures" and "Your rights" per nation
+
 - **Depends on:** T-9.1, T-8.4, T-8.5
 - **Parallel-safe with:** T-9.2, T-9.3, T-9.6, Phase 8 nation routes
 - **Owns files:** `apps/site/src/app/england/about-the-figures/page.tsx`, `apps/site/src/app/england/your-rights/page.tsx`, `apps/site/src/app/wales/about-the-figures/page.tsx`, `apps/site/src/app/wales/your-rights/page.tsx`, `apps/site/src/app/scotland/about-the-figures/page.tsx`, `apps/site/src/app/scotland/your-rights/page.tsx`, `apps/site/src/components/ExplainerPage.tsx`, `apps/site/messages/en/explainers.json`, `content/{england,wales,scotland}/{about-the-figures,your-rights}.md`, `apps/site/test/app/explainers.test.tsx`
@@ -103,6 +107,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
 - **Size:** M
 
 ### T-9.5 — Content guard tests: freshness, sources, figures and launch gate
+
 - **Depends on:** T-9.1
 - **Parallel-safe with:** T-9.2–T-9.4, T-9.6
 - **Owns files:** `apps/site/test/content/guards.test.ts`, `scripts/check-launch-content.ts`
@@ -119,6 +124,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
 - **Size:** S
 
 ### T-9.6 — Product-owner content brief with official source starting points
+
 - **Depends on:** none (documentation only)
 - **Parallel-safe with:** everything
 - **Owns files:** `docs/content-brief.md`

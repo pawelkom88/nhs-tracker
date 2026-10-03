@@ -11,6 +11,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 ---
 
 ### T-2.1 — Define Publishing Nations and nation-namespaced identifiers
+
 - **Depends on:** T-1.3, T-1.5
 - **Parallel-safe with:** T-2.2, T-2.11
 - **Owns files:** `packages/model/src/nation.ts`, `packages/model/src/ids.ts`, `packages/model/test/nation.test.ts`, `packages/model/test/ids.test-d.ts`
@@ -20,7 +21,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Steps:**
   1. `nation.ts`: `export const PUBLISHING_NATIONS = ['england', 'wales', 'scotland'] as const;` `export type PublishingNation = (typeof PUBLISHING_NATIONS)[number];` `export type HomeNation = PublishingNation;` (same values, different meaning: document both with the glossary definitions in TSDoc).
   2. `nation.ts`: `export type SingleNation<N extends PublishingNation>` that resolves to `N` when `N` is exactly one member and to `never` for a union (e.g. via `[N] extends [infer U] ? (U extends PublishingNation ? ([PublishingNation] extends [N] ? never : …) …)`; any correct implementation is fine as long as the type tests pass).
-  3. `ids.ts`: generic branded id `type NationScopedId<N extends PublishingNation, K extends IdKind> = \`${N}:${string}\` & { readonly __kind: K; readonly __nation: N }` with `IdKind = 'reporting-unit' | 'hospital-site' | 'specialty' | 'wait-stage' | 'statistic'`. Export aliases `ReportingUnitId<N>`, `HospitalSiteId<N>`, `SpecialtyId<N>`, `WaitStageId<N>`, `StatisticId<N>`.
+  3. `ids.ts`: generic branded id `type NationScopedId<N extends PublishingNation, K extends IdKind> = \`${N}:${string}\` & { readonly __kind: K; readonly __nation: N }`with`IdKind = 'reporting-unit' | 'hospital-site' | 'specialty' | 'wait-stage' | 'statistic'`. Export aliases `ReportingUnitId<N>`, `HospitalSiteId<N>`, `SpecialtyId<N>`, `WaitStageId<N>`, `StatisticId<N>`.
   4. Constructors `reportingUnitId(nation, officialCode)` etc. that validate the raw code (non-empty, no `:`) and return `"<nation>:<code>"`; parser `parseNationScopedId(id) → { nation, code }`.
   5. Zod: `nationScopedIdSchema(nation, kind)` that checks the prefix and brands the output.
 - **Acceptance criteria:**
@@ -31,6 +32,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** S
 
 ### T-2.2 — Define Reporting Period and Publication Date
+
 - **Depends on:** T-1.3, T-1.5
 - **Parallel-safe with:** T-2.1, T-2.11
 - **Owns files:** `packages/model/src/period.ts`, `packages/model/test/period.test.ts`
@@ -52,6 +54,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** S
 
 ### T-2.3 — Define figure values, status, unit and provenance
+
 - **Depends on:** T-2.1, T-2.2
 - **Parallel-safe with:** T-2.8, T-2.11
 - **Owns files:** `packages/model/src/figure.ts`, `packages/model/src/source.ts`, `packages/model/test/figure.test.ts`, `packages/model/test/figure.test-d.ts`
@@ -76,12 +79,13 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** M
 
 ### T-2.4 — Define the Release type and the per-nation schema factory
+
 - **Depends on:** T-2.3
 - **Parallel-safe with:** T-2.8, T-2.11
 - **Owns files:** `packages/model/src/release.ts`, `packages/model/src/nation-definitions.ts`, `packages/model/test/release.test.ts`
 - **Glossary terms:** Publishing Nation, Reporting Period, Publication Date, Official Figure, Derived Figure, Statistic, Wait Stage, Waiting Standard
 - **ADRs:** ADR-0006, ADR-0002, ADR-0007
-- **Context:** A Release is one Publishing Nation's normalised publication for one Reporting Period, committed as JSON (ADR-0007). Each nation defines its own Wait Stages, Statistics and Waiting Standards; display logic is written per nation and duplication is accepted (ADR-0006). This task creates the shared *shape* only; values come in T-2.5–T-2.7.
+- **Context:** A Release is one Publishing Nation's normalised publication for one Reporting Period, committed as JSON (ADR-0007). Each nation defines its own Wait Stages, Statistics and Waiting Standards; display logic is written per nation and duplication is accepted (ADR-0006). This task creates the shared _shape_ only; values come in T-2.5–T-2.7.
 - **Steps:**
   1. `nation-definitions.ts`: `NationDefinitions<N>` = `{ nation: N; waitStages: Record<string, WaitStageDefinition<N>>; statistics: Record<string, StatisticDefinition<N>>; }` where `StatisticDefinition<N>` = `{ id: StatisticId<N>; unit: PublishedUnit; officialName: string; allowedProvenance: 'official' | 'derived' | 'official-or-derived'; range: { min: number; max: number } }` and `WaitStageDefinition<N>` = `{ id: WaitStageId<N>; officialName: string; waitingStandard: { weeks: number; officialName: string; sourceUrl: string } }`.
   2. `release.ts`: `Release<N>` = `{ schemaVersion: 1; nation: N; reportingPeriod; publicationDate; source: SourceRef<N>; retrievedAt: string (ISO datetime); sourceFiles: { url: string; sha256: string; revised: boolean }[]; reportingUnits: ReportingUnitId<N>[] /* present in this release */; figures: Figure<N>[]; comparisonFigures: Figure<N>[] }`. `comparisonFigures` holds Median Ongoing Wait figures for `yearEarlierThan(reportingPeriod)` **taken from the same release** when the source file carries history (Scotland's monthly files carry 25 months and PHS revises history silently, so same-vintage comparison is preferred; see data-sources.md). Empty for England/Wales unless their source carries history.
@@ -95,6 +99,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** M
 
 ### T-2.5 — Define England's Wait Stage, Statistics and Waiting Standard
+
 - **Depends on:** T-2.4
 - **Parallel-safe with:** T-2.6, T-2.7, T-2.8
 - **Owns files:** `packages/model/src/england/definitions.ts`, `packages/model/src/england/schema.ts`, `packages/model/test/england.test.ts`
@@ -112,6 +117,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** S
 
 ### T-2.6 — Define Wales's Wait Stage, Statistics and Waiting Standard
+
 - **Depends on:** T-2.4
 - **Parallel-safe with:** T-2.5, T-2.7, T-2.8
 - **Owns files:** `packages/model/src/wales/definitions.ts`, `packages/model/src/wales/schema.ts`, `packages/model/test/wales.test.ts`
@@ -127,6 +133,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** S
 
 ### T-2.7 — Define Scotland's two Wait Stages, Statistics and Waiting Standards
+
 - **Depends on:** T-2.4
 - **Parallel-safe with:** T-2.5, T-2.6, T-2.8
 - **Owns files:** `packages/model/src/scotland/definitions.ts`, `packages/model/src/scotland/schema.ts`, `packages/model/test/scotland.test.ts`, `packages/model/test/scotland.test-d.ts`
@@ -144,6 +151,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** S
 
 ### T-2.8 — Define reference data types: Reporting Units, Hospital Sites, NHS Regions, Specialties, succession
+
 - **Depends on:** T-2.1
 - **Parallel-safe with:** T-2.3, T-2.4, T-2.5, T-2.6, T-2.7, T-2.11
 - **Owns files:** `packages/model/src/reference.ts`, `packages/model/test/reference.test.ts`
@@ -164,6 +172,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** M
 
 ### T-2.9 — Define the published view the site reads (carried-forward and year-earlier state)
+
 - **Depends on:** T-2.4, T-2.8
 - **Parallel-safe with:** T-2.5, T-2.6, T-2.7, T-2.11
 - **Owns files:** `packages/model/src/published.ts`, `packages/model/test/published.test.ts`, `packages/model/test/published.test-d.ts`
@@ -183,6 +192,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** M
 
 ### T-2.10 — Add the cross-nation guardrail type-test suite
+
 - **Depends on:** T-2.5, T-2.6, T-2.7, T-2.9
 - **Parallel-safe with:** T-2.11, Phase 3 tasks
 - **Owns files:** `packages/model/test/guardrails.test-d.ts`, `packages/model/test/guardrails.test.ts`
@@ -201,6 +211,7 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first. Consum
 - **Size:** S
 
 ### T-2.11 — Add the project guardrail ESLint plugin (no ranking, no cross-nation imports)
+
 - **Depends on:** T-1.4
 - **Parallel-safe with:** T-2.1–T-2.10
 - **Owns files:** `tools/eslint-plugin-kyw/package.json`, `tools/eslint-plugin-kyw/src/index.js`, `tools/eslint-plugin-kyw/src/rules/no-ranking-by-statistic.js`, `tools/eslint-plugin-kyw/test/no-ranking-by-statistic.test.ts`, `eslint.config.js` (append the guardrail block only)

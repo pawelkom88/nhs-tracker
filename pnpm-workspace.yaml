@@ -1,0 +1,9 @@
+packages:
+  - 'packages/*'
+  - 'apps/*'
+  - 'tools/*'
+
+# Under pnpm 10, onlyBuiltDependencies specifies packages permitted to run install scripts
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver

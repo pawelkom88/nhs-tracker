@@ -7,6 +7,7 @@
 ---
 
 ### T-10.1 — Set up Playwright and axe against the static export
+
 - **Depends on:** T-8.1
 - **Parallel-safe with:** Phase 8 and 9 tasks
 - **Owns files:** `apps/site/playwright.config.ts`, `apps/site/e2e/fixtures.ts`, `apps/site/e2e/smoke.spec.ts`, `apps/site/package.json` (scripts `e2e`, devDeps `@playwright/test`, `@axe-core/playwright`, `serve`), `.github/workflows/ci.yml` (append `e2e` job)
@@ -23,6 +24,7 @@
 - **Size:** M
 
 ### T-10.2 — End-to-end journeys for the "Done means" flow in each nation
+
 - **Depends on:** T-10.1, T-8.12, T-8.13, T-8.14, T-9.4
 - **Parallel-safe with:** T-10.3, T-10.4, T-10.5, T-10.6
 - **Owns files:** `apps/site/e2e/journey-england.spec.ts`, `apps/site/e2e/journey-wales.spec.ts`, `apps/site/e2e/journey-scotland.spec.ts`
@@ -35,6 +37,7 @@
 - **Size:** M
 
 ### T-10.3 — Built-output guard scan (every figure sourced and dated; no banned terms)
+
 - **Depends on:** T-8.12, T-8.13, T-8.14, T-8.16
 - **Parallel-safe with:** T-10.2, T-10.4, T-10.5, T-10.6
 - **Owns files:** `apps/site/scripts/scan-output.ts`, `apps/site/test/guards/scan-output.test.ts`
@@ -53,6 +56,7 @@
 - **Size:** M
 
 ### T-10.4 — Accessibility and keyboard checks on every route type
+
 - **Depends on:** T-10.1, T-8.12, T-8.13, T-8.14, T-8.15, T-9.4
 - **Parallel-safe with:** T-10.2, T-10.3, T-10.5, T-10.6
 - **Owns files:** `apps/site/e2e/a11y.spec.ts`
@@ -65,6 +69,7 @@
 - **Size:** M
 
 ### T-10.5 — Cloudflare Pages deploy, security headers and Web Analytics
+
 - **Depends on:** T-8.4, T-10.1
 - **Parallel-safe with:** T-10.2, T-10.3, T-10.4, T-10.6
 - **Owns files:** `.github/workflows/deploy.yml`, `apps/site/public/_headers`, `apps/site/public/_redirects`, `apps/site/src/components/Analytics.tsx`, `docs/deploy.md`
@@ -81,6 +86,7 @@
 - **Size:** M
 
 ### T-10.6 — "Spotted a mistake?" issue form, pipeline-failure template and labels
+
 - **Depends on:** T-1.6
 - **Parallel-safe with:** all Phase 10 tasks
 - **Owns files:** `.github/ISSUE_TEMPLATE/spotted-a-mistake.yml`, `.github/ISSUE_TEMPLATE/config.yml`, `.github/ISSUE_TEMPLATE/pipeline-validation-failed.md`, `.github/labels.yml`, `.github/workflows/labels.yml`
@@ -97,6 +103,7 @@
 - **Size:** S
 
 ### T-10.7 — External link checker for sources and Editorial Content
+
 - **Depends on:** T-8.15, T-9.1
 - **Parallel-safe with:** T-10.2–T-10.6
 - **Owns files:** `.github/workflows/links.yml`, `lychee.toml`
@@ -109,6 +116,7 @@
 - **Size:** S
 
 ### T-10.8 — Launch readiness checklist and sign-off
+
 - **Depends on:** T-10.2, T-10.3, T-10.4, T-10.5, T-9.5, T-7.7
 - **Parallel-safe with:** none (last)
 - **Owns files:** `docs/launch-checklist.md`

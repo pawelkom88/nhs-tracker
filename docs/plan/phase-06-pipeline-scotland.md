@@ -11,6 +11,7 @@ All code lives in `packages/pipeline/src/scotland/`.
 ---
 
 ### T-6.1 — Commit trimmed real Scotland fixtures
+
 - **Depends on:** T-3.1
 - **Parallel-safe with:** Phase 4/5, T-6.2
 - **Owns files:** `packages/pipeline/scripts/trim-scotland-fixture.ts`, `packages/pipeline/fixtures/scotland/stage-of-treatment/**`, `packages/pipeline/fixtures/scotland/README.md`
@@ -27,6 +28,7 @@ All code lives in `packages/pipeline/src/scotland/`.
 - **Size:** S
 
 ### T-6.2 — Scotland release discovery via CKAN
+
 - **Depends on:** T-3.1
 - **Parallel-safe with:** T-6.1, Phase 4/5
 - **Owns files:** `packages/pipeline/src/scotland/discover.ts`, `packages/pipeline/test/scotland/discover.test.ts`
@@ -42,6 +44,7 @@ All code lives in `packages/pipeline/src/scotland/`.
 - **Size:** S
 
 ### T-6.3 — Parse monthly CSVs and decode quality flags
+
 - **Depends on:** T-6.1
 - **Parallel-safe with:** T-6.2, Phase 4/5
 - **Owns files:** `packages/pipeline/src/scotland/parse.ts`, `packages/pipeline/src/scotland/columns.ts`, `packages/pipeline/src/scotland/quality-flags.ts`, `packages/pipeline/test/scotland/parse.test.ts`
@@ -58,6 +61,7 @@ All code lives in `packages/pipeline/src/scotland/`.
 - **Size:** M
 
 ### T-6.4 — Normalise into `Release<'scotland'>` (two Wait Stages, days, Derived within-12 count)
+
 - **Depends on:** T-6.3, T-2.7, T-3.8
 - **Parallel-safe with:** Phase 4/5
 - **Owns files:** `packages/pipeline/src/scotland/normalise.ts`, `packages/pipeline/src/scotland/bands.ts`, `packages/pipeline/test/scotland/normalise.test.ts`
@@ -83,6 +87,7 @@ All code lives in `packages/pipeline/src/scotland/`.
 - **Size:** M
 
 ### T-6.5 — Scotland source adapter
+
 - **Depends on:** T-6.2, T-6.4
 - **Parallel-safe with:** Phase 4/5 adapters
 - **Owns files:** `packages/pipeline/src/scotland/source.ts`, `packages/pipeline/test/scotland/source.test.ts`

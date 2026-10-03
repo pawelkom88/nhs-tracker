@@ -66,6 +66,7 @@ If a source contradicts the PRD (e.g. a figure isn't published at the needed gra
 Write everything under `docs/plan/`:
 
 ### `docs/plan/MASTER-PLAN.md`
+
 - Goal and definition of done (from PRD "Done means").
 - Architecture overview: packages, data flow (source → raw → validated → normalised JSON → static pages), directory layout, a mermaid diagram.
 - Phase list with one-paragraph summaries and links to phase files.
@@ -74,7 +75,9 @@ Write everything under `docs/plan/`:
 - Global **TODO checklist**: every task ID + title as `- [ ]`, grouped by phase.
 
 ### `docs/plan/phase-NN-<slug>.md` (one per phase)
+
 Suggested phases (refine as needed):
+
 1. Repo foundation: git, pnpm workspace, TS strict, lint/format, Vitest, CI skeleton, licence, `AGENTS.md`.
 2. Domain model: nation-namespaced types and schemas for every glossary concept; figure status; units; Derived Figure provenance.
 3. Reference data: Reporting Units, Hospital Sites, NHS Regions, Specialty lists + plain-English descriptions slots, org-code succession.
@@ -90,10 +93,12 @@ Suggested phases (refine as needed):
 Phases 4/5/6 should be parallelisable once 2 and 3 land.
 
 ### Every task must be self-contained
+
 An agent should be able to execute a task after reading only `AGENTS.md`, `GLOSSARY.md`, the cited ADRs and that task. Use this template:
 
 ```md
 ### T-<phase>.<n> — <imperative title>
+
 - **Depends on:** T-x.y, … (or none)
 - **Parallel-safe with:** T-…
 - **Owns files:** exact paths this task creates/edits (no two parallel tasks may own the same file)
@@ -109,14 +114,17 @@ An agent should be able to execute a task after reading only `AGENTS.md`, `GLOSS
 Keep tasks small (prefer S/M). Every pipeline task includes fixture-based tests using real sample files (committed to `fixtures/`). Every figure-rendering task includes tests asserting exact wording, the "not a prediction" caption, Reporting Period vs Publication Date, and status labels.
 
 ### `docs/plan/data-sources.md`
+
 Verified findings from section 5.
 
 ### `AGENTS.md` content (as a task in phase 1, drafted in full inside that task)
+
 Rules for building agents: read GLOSSARY and ADRs first; use glossary terms in code names; never compare nations; never estimate; never add NHS branding; one task per branch/PR; Conventional Commits; tests required; don't edit files owned by another in-flight task.
 
 ## 7. Guardrails to bake into tasks
 
 Add explicit tests or lint rules where possible, not just prose:
+
 - No code path that sorts or ranks Reporting Units by any wait Statistic.
 - No type or function accepting figures from two Publishing Nations together (e.g. a branded nation type parameter).
 - Suppressed values never render as `0` or empty.

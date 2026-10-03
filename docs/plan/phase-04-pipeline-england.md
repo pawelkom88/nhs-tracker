@@ -9,6 +9,7 @@ All code lives in `packages/pipeline/src/england/` (lint zones forbid imports fr
 ---
 
 ### T-4.1 — Commit trimmed real England fixtures
+
 - **Depends on:** T-3.1
 - **Parallel-safe with:** T-4.2, Phase 5 and 6 tasks
 - **Owns files:** `packages/pipeline/scripts/trim-england-fixture.ts`, `packages/pipeline/fixtures/england/**`, `packages/pipeline/fixtures/england/README.md`
@@ -25,6 +26,7 @@ All code lives in `packages/pipeline/src/england/` (lint zones forbid imports fr
 - **Size:** M
 
 ### T-4.2 — Discover England release files from the yearly pages
+
 - **Depends on:** T-3.1, T-4.1
 - **Parallel-safe with:** T-4.3, Phase 5/6
 - **Owns files:** `packages/pipeline/src/england/discover.ts`, `packages/pipeline/test/england/discover.test.ts`
@@ -41,6 +43,7 @@ All code lives in `packages/pipeline/src/england/` (lint zones forbid imports fr
 - **Size:** S
 
 ### T-4.3 — Parse the Incomplete Provider XLSX
+
 - **Depends on:** T-4.1, T-3.1
 - **Parallel-safe with:** T-4.2, Phase 5/6
 - **Owns files:** `packages/pipeline/src/england/parse.ts`, `packages/pipeline/src/england/columns.ts`, `packages/pipeline/test/england/parse.test.ts`
@@ -58,6 +61,7 @@ All code lives in `packages/pipeline/src/england/` (lint zones forbid imports fr
 - **Size:** M
 
 ### T-4.4 — Normalise parsed rows into `Release<'england'>`
+
 - **Depends on:** T-4.3, T-2.5, T-3.6
 - **Parallel-safe with:** T-3.9, Phase 5/6
 - **Owns files:** `packages/pipeline/src/england/normalise.ts`, `packages/pipeline/test/england/normalise.test.ts`
@@ -77,6 +81,7 @@ All code lives in `packages/pipeline/src/england/` (lint zones forbid imports fr
 - **Size:** M
 
 ### T-4.5 — England source adapter
+
 - **Depends on:** T-4.2, T-4.4, T-3.9
 - **Parallel-safe with:** Phase 5/6 adapters
 - **Owns files:** `packages/pipeline/src/england/source.ts`, `packages/pipeline/test/england/source.test.ts`

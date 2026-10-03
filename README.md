@@ -18,7 +18,24 @@ Know Your Wait is an independent information site. It is not part of, or endorse
 
 ## Development
 
-<!-- Placeholder to be populated in T-1.2 -->
 ```bash
-# Setup instructions will be added in T-1.2
+# Enable corepack (if not already enabled)
+corepack enable
+
+# Install dependencies across the workspace
+pnpm install
+
+# Check code formatting
+pnpm format:check
+
+# Run linter
+pnpm lint
+
+# Run typecheck across all packages
+pnpm typecheck
+
+# Run test suite
+pnpm test
 ```
+
+Direct TypeScript consumption: Internal packages (`@kyw/model`, `@kyw/pipeline`) export source TypeScript directly via `exports` without a separate build step.

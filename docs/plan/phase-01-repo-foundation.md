@@ -9,6 +9,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 ---
 
 ### T-1.1 — Initialise the git repository and base repo files
+
 - **Depends on:** none
 - **Parallel-safe with:** none (first task)
 - **Owns files:** `.git/`, `.gitignore`, `.gitattributes`, `.editorconfig`, `.nvmrc`, `README.md`
@@ -31,6 +32,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.2 — Create the pnpm workspace and install all shared dev tooling
+
 - **Depends on:** T-1.1
 - **Parallel-safe with:** none
 - **Owns files:** `package.json` (root), `pnpm-workspace.yaml`, `pnpm-lock.yaml`, `.npmrc`, `packages/model/package.json`, `packages/model/src/index.ts`, `packages/pipeline/package.json`, `packages/pipeline/src/index.ts`, `README.md` (Development section only)
@@ -53,6 +55,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.3 — Configure strict TypeScript for all packages
+
 - **Depends on:** T-1.2
 - **Parallel-safe with:** T-1.4, T-1.5, T-1.7, T-1.8
 - **Owns files:** `tsconfig.base.json`, `tsconfig.json` (root, references only), `packages/model/tsconfig.json`, `packages/pipeline/tsconfig.json`
@@ -70,6 +73,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.4 — Configure ESLint (flat config) and Prettier
+
 - **Depends on:** T-1.2
 - **Parallel-safe with:** T-1.3, T-1.5, T-1.7, T-1.8
 - **Owns files:** `eslint.config.js`, `.prettierrc.json`, `.prettierignore`
@@ -89,6 +93,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.5 — Configure Vitest for the workspace
+
 - **Depends on:** T-1.2
 - **Parallel-safe with:** T-1.3, T-1.4, T-1.7, T-1.8
 - **Owns files:** `vitest.config.ts` (root), `packages/model/vitest.config.ts`, `packages/pipeline/vitest.config.ts`, `packages/model/test/smoke.test.ts`
@@ -106,6 +111,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.6 — Add the CI workflow for pull requests
+
 - **Depends on:** T-1.3, T-1.4, T-1.5
 - **Parallel-safe with:** T-1.7, T-1.8
 - **Owns files:** `.github/workflows/ci.yml`
@@ -123,6 +129,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.7 — Add the code licence, data licence notice and contribution basics
+
 - **Depends on:** T-1.1
 - **Parallel-safe with:** T-1.3, T-1.4, T-1.5, T-1.6, T-1.8
 - **Owns files:** `LICENSE`, `DATA-LICENCE.md`, `CONTRIBUTING.md`
@@ -140,6 +147,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 - **Size:** S
 
 ### T-1.8 — Write AGENTS.md, the rulebook for building agents
+
 - **Depends on:** T-1.1
 - **Parallel-safe with:** T-1.3, T-1.4, T-1.5, T-1.6, T-1.7
 - **Owns files:** `AGENTS.md`, `CLAUDE.md` (one line: `@AGENTS.md`)
@@ -157,7 +165,7 @@ Conventions used by every phase are in [MASTER-PLAN.md § Conventions](./MASTER-
 
 **`AGENTS.md` draft (write verbatim):**
 
-````md
+```md
 # AGENTS.md — rules for building Know Your Wait
 
 Know Your Wait is a free, independent, open-source site that explains official NHS
@@ -238,4 +246,4 @@ task list in `docs/plan/`. Follow these rules exactly.
 - `apps/site` — Next.js static site (`output: 'export'`).
 - `content/` — Editorial Content (Markdown with front matter).
 - `tools/eslint-plugin-kyw` — project guardrail lint rules.
-````
+```

@@ -70,12 +70,12 @@ A user can choose their Home Nation and Specialty, see each Reporting Unit's cur
 
 Per Reporting Unit × Specialty × Wait Stage:
 
-| Figure | Wording pattern | Notes |
-|---|---|---|
+| Figure                             | Wording pattern                                                         | Notes                                                                                  |
+| ---------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | **Median Ongoing Wait** (headline) | "Half of people waiting at 31 August 2026 had waited 14 weeks or less." | Never called "average". Scotland publishes days; shown as "about 18 weeks (126 days)". |
-| **% within Waiting Standard** | "6 in 10 had waited less than 18 weeks." | Each nation's own standard: England 18 wks, Wales 26 wks, Scotland 12 wks per stage. |
-| **Long Wait count** | "420 people had waited over a year." | Scotland: Derived Figure summing published bands ≥52 weeks. |
-| **Year-Earlier Comparison** | "(a year earlier: 18 weeks)" | Median only. Omitted if the Reporting Unit or Specialty changed (e.g. trust merger). |
+| **% within Waiting Standard**      | "6 in 10 had waited less than 18 weeks."                                | Each nation's own standard: England 18 wks, Wales 26 wks, Scotland 12 wks per stage.   |
+| **Long Wait count**                | "420 people had waited over a year."                                    | Scotland: Derived Figure summing published bands ≥52 weeks.                            |
+| **Year-Earlier Comparison**        | "(a year earlier: 18 weeks)"                                            | Median only. Omitted if the Reporting Unit or Specialty changed (e.g. trust merger).   |
 
 Wait Stages:
 
@@ -98,11 +98,11 @@ The headline always uses the Reporting Period. The Publication Date appears in s
 
 ## Data sources
 
-| Nation | Source | Granularity | Cadence |
-|---|---|---|---|
-| England | NHS England RTT waiting times | Trust / ISP × treatment function | Monthly, ~6 weeks after period |
-| Wales | StatsWales RTT key measures | Health board × treatment function | Monthly, ~7 weeks after period |
-| Scotland | Public Health Scotland stage of treatment (opendata.nhs.scot) | Health board of treatment × specialty × stage | Quarterly |
+| Nation   | Source                                                        | Granularity                                   | Cadence                        |
+| -------- | ------------------------------------------------------------- | --------------------------------------------- | ------------------------------ |
+| England  | NHS England RTT waiting times                                 | Trust / ISP × treatment function              | Monthly, ~6 weeks after period |
+| Wales    | StatsWales RTT key measures                                   | Health board × treatment function             | Monthly, ~7 weeks after period |
+| Scotland | Public Health Scotland stage of treatment (opendata.nhs.scot) | Health board of treatment × specialty × stage | Quarterly                      |
 
 Reporting Units are identified by official organisation codes (NHS ODS codes; Scottish board codes). Hospital Site names and towns come from NHS ODS.
 
@@ -138,13 +138,13 @@ Free for users; no commercial healthcare or insurance incentive; public data onl
 
 ## Resolved questions
 
-| Question | Resolution |
-|---|---|
-| Product name | Know Your Wait ([ADR-0004](./docs/adr/0004-name-without-nhs.md)) |
-| First end-to-end Specialty | Trauma & Orthopaedics, all three nations |
-| Common data model | One shape, nation-namespaced values ([ADR-0006](./docs/adr/0006-nation-namespaced-data-model.md)) |
-| Postcode/distance in v1 | No. England gets name/site/town filter + NHS Region grouping instead |
-| Cloudflare architecture | Fully static on Pages, daily pipeline ([ADR-0007](./docs/adr/0007-fully-static-site-data-in-git.md)) |
+| Question                      | Resolution                                                                                             |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Product name                  | Know Your Wait ([ADR-0004](./docs/adr/0004-name-without-nhs.md))                                       |
+| First end-to-end Specialty    | Trauma & Orthopaedics, all three nations                                                               |
+| Common data model             | One shape, nation-namespaced values ([ADR-0006](./docs/adr/0006-nation-namespaced-data-model.md))      |
+| Postcode/distance in v1       | No. England gets name/site/town filter + NHS Region grouping instead                                   |
+| Cloudflare architecture       | Fully static on Pages, daily pipeline ([ADR-0007](./docs/adr/0007-fully-static-site-data-in-git.md))   |
 | Minimum consistent metric set | Median Ongoing Wait, % within Waiting Standard, Long Wait count, Year-Earlier Comparison of the median |
 
 ## Open questions

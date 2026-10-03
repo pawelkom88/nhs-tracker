@@ -7,14 +7,14 @@
 
 Research against live sources (see [data-sources.md § Blocking](./data-sources.md#blocking--prd-contradicting-findings)) found these contradictions with the PRD. The plan already follows the **proposed change** in each case; the product owner should confirm or overrule. No PRD or ADR file has been edited.
 
-| Id | Finding | What the plan does | Needs |
-|---|---|---|---|
-| **B-1** | Scotland publishes no "% within 12 weeks" for ongoing waits. A percentage needs division, and ADR-0005 allows only exact sums. | Scotland shows a **count**: "{within} of {total} people had waited less than 12 weeks." (Derived exact-sum count + Official total.) | PO: accept, or amend ADR-0005 to allow exact ratios of figures from the same row |
-| **B-2** | Scotland data is **monthly** Accredited statistics, not quarterly; Long Wait (`WaitsOver52Weeks`) is published directly, so it is an **Official**, not Derived, Figure. | Ingests monthly files; Long Wait official. | PRD § Data sources / § Figures shown text update |
-| **B-3** | Wales withholds the median for ~15 % of board × specialty cells (row absent, no flag). | Shown as Suppressed Figure ("Not published (small numbers)"). | none |
-| **B-4** | ADR-0006 assumes a merger yields a new code. ODS shows absorbing trusts keep their code (e.g. RAP→RAL 2025, RVJ→RA7 2026). | Year-Earlier also skipped when a unit received a predecessor in the window (T-3.5, T-7.2). | ADR-0006 consequence note |
-| **B-5** | No official postcode "find your board" tool exists in Wales or Scotland. | Link to official board lists (gov.wales, scot.nhs.uk) labelled "official list of health boards". | PRD wording |
-| **B-6** | Scotland's 12-week standards are measured on completed waits; we show ongoing waits. | Explainer must say so (T-9.4 skeleton, PO copy). | PO content |
+| Id      | Finding                                                                                                                                                                 | What the plan does                                                                                                                  | Needs                                                                            |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| **B-1** | Scotland publishes no "% within 12 weeks" for ongoing waits. A percentage needs division, and ADR-0005 allows only exact sums.                                          | Scotland shows a **count**: "{within} of {total} people had waited less than 12 weeks." (Derived exact-sum count + Official total.) | PO: accept, or amend ADR-0005 to allow exact ratios of figures from the same row |
+| **B-2** | Scotland data is **monthly** Accredited statistics, not quarterly; Long Wait (`WaitsOver52Weeks`) is published directly, so it is an **Official**, not Derived, Figure. | Ingests monthly files; Long Wait official.                                                                                          | PRD § Data sources / § Figures shown text update                                 |
+| **B-3** | Wales withholds the median for ~15 % of board × specialty cells (row absent, no flag).                                                                                  | Shown as Suppressed Figure ("Not published (small numbers)").                                                                       | none                                                                             |
+| **B-4** | ADR-0006 assumes a merger yields a new code. ODS shows absorbing trusts keep their code (e.g. RAP→RAL 2025, RVJ→RA7 2026).                                              | Year-Earlier also skipped when a unit received a predecessor in the window (T-3.5, T-7.2).                                          | ADR-0006 consequence note                                                        |
+| **B-5** | No official postcode "find your board" tool exists in Wales or Scotland.                                                                                                | Link to official board lists (gov.wales, scot.nhs.uk) labelled "official list of health boards".                                    | PRD wording                                                                      |
+| **B-6** | Scotland's 12-week standards are measured on completed waits; we show ongoing waits.                                                                                    | Explainer must say so (T-9.4 skeleton, PO copy).                                                                                    | PO content                                                                       |
 
 ## Goal and definition of done
 
@@ -28,14 +28,14 @@ Research against live sources (see [data-sources.md § Blocking](./data-sources.
 
 ### Packages
 
-| Path | Package | Purpose |
-|---|---|---|
-| `packages/model` | `@kyw/model` | Nation-namespaced types + Zod schemas for every glossary concept. No I/O. |
-| `packages/pipeline` | `@kyw/pipeline` | Per-nation discover → fetch → parse → normalise; reference data; validation gate; assemble published view; CLI. |
-| `apps/site` | `site` | Next.js App Router, `output: 'export'`; reads committed JSON at build time. |
-| `tools/eslint-plugin-kyw` | `eslint-plugin-kyw` | Guardrail lint rules (no ranking by Statistic). |
-| `content/` | (files) | Editorial Content, Markdown + front matter. |
-| `data/` | (files) | Committed pipeline output — the site's only data source and the public audit trail (ADR-0007). |
+| Path                      | Package             | Purpose                                                                                                         |
+| ------------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `packages/model`          | `@kyw/model`        | Nation-namespaced types + Zod schemas for every glossary concept. No I/O.                                       |
+| `packages/pipeline`       | `@kyw/pipeline`     | Per-nation discover → fetch → parse → normalise; reference data; validation gate; assemble published view; CLI. |
+| `apps/site`               | `site`              | Next.js App Router, `output: 'export'`; reads committed JSON at build time.                                     |
+| `tools/eslint-plugin-kyw` | `eslint-plugin-kyw` | Guardrail lint rules (no ranking by Statistic).                                                                 |
+| `content/`                | (files)             | Editorial Content, Markdown + front matter.                                                                     |
+| `data/`                   | (files)             | Committed pipeline output — the site's only data source and the public audit trail (ADR-0007).                  |
 
 Why this layout: matches the suggested split; the lint plugin is its own package so rules are testable; `content/` and `data/` sit at the root because both pipeline and site read them.
 
@@ -103,19 +103,19 @@ Each nation runs independently: one nation's failure never blocks or alters anot
 
 ## Phases
 
-| # | Phase | Summary | Tasks |
-|---|---|---|---|
-| 1 | [Repo foundation](./phase-01-repo-foundation.md) | git, pnpm workspace with all shared dev tooling, strict TS, ESLint/Prettier, Vitest (incl. type tests), CI, MIT + OGL data notice, `AGENTS.md` drafted in full. | 8 |
-| 2 | [Domain model](./phase-02-domain-model.md) | Nation-namespaced ids, periods, figure values/status/provenance, Release + compact file form, per-nation definitions, reference and published-view types, type-level guardrail suite, guardrail ESLint plugin. | 11 |
-| 3 | [Pipeline foundations and reference data](./phase-03-reference-data.md) | Fetch/cache/canonical JSON/data layout/source-adapter interface; ODS client; England regions, units, Hospital Sites, succession, Specialties; Wales crosswalk; Scotland boards and hospitals. | 9 |
-| 4 | [Pipeline: England](./phase-04-pipeline-england.md) | Trimmed real fixtures, link discovery from yearly pages (incl. `-revised`), XLSX parse with exact header checks, normalise, adapter. | 5 |
-| 5 | [Pipeline: Wales](./phase-05-pipeline-wales.md) | stats.gov.wales coded downloads, version-based discovery, parse, normalise with same-release year-earlier medians, adapter. | 5 |
-| 6 | [Pipeline: Scotland](./phase-06-pipeline-scotland.md) | CKAN discovery, QF flag decoding, two Wait Stages, days, Derived within-12 count, band integrity checks, adapter. | 5 |
-| 7 | [Validation and scheduling](./phase-07-validation-and-scheduling.md) | Validation gate with tunable thresholds, Year-Earlier and Carried-Forward logic, published-view assembly, CLI, daily workflow (commit / issue), backfill and first real data. | 7 |
-| 8 | [Site skeleton](./phase-08-site-skeleton.md) | Static Next.js scaffold, validated data loader, i18n layer, layout/footer, home + border notice, figure primitives with exact wording, per-nation statements and routes, progressive filter, static pages, wording and no-ranking guards. | 17 |
-| 9 | [Editorial Content](./phase-09-editorial-content.md) | Content schema/loader, Specialty stubs, T&O structure, explainer pages, freshness/launch gates, PO content brief. Agents write structure only. | 6 |
-| 10 | [Quality and launch](./phase-10-quality-and-launch.md) | Playwright + axe on the static export (JS and no-JS), journeys, output scan, a11y, Cloudflare Pages deploy + headers + analytics, issue forms, link checker, launch checklist. | 8 |
-| 11 | [Visual design (placeholder)](./phase-11-visual-design-placeholder.md) | Stub only; slots in later without restructuring. | 0 |
+| #   | Phase                                                                   | Summary                                                                                                                                                                                                                                   | Tasks |
+| --- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 1   | [Repo foundation](./phase-01-repo-foundation.md)                        | git, pnpm workspace with all shared dev tooling, strict TS, ESLint/Prettier, Vitest (incl. type tests), CI, MIT + OGL data notice, `AGENTS.md` drafted in full.                                                                           | 8     |
+| 2   | [Domain model](./phase-02-domain-model.md)                              | Nation-namespaced ids, periods, figure values/status/provenance, Release + compact file form, per-nation definitions, reference and published-view types, type-level guardrail suite, guardrail ESLint plugin.                            | 11    |
+| 3   | [Pipeline foundations and reference data](./phase-03-reference-data.md) | Fetch/cache/canonical JSON/data layout/source-adapter interface; ODS client; England regions, units, Hospital Sites, succession, Specialties; Wales crosswalk; Scotland boards and hospitals.                                             | 9     |
+| 4   | [Pipeline: England](./phase-04-pipeline-england.md)                     | Trimmed real fixtures, link discovery from yearly pages (incl. `-revised`), XLSX parse with exact header checks, normalise, adapter.                                                                                                      | 5     |
+| 5   | [Pipeline: Wales](./phase-05-pipeline-wales.md)                         | stats.gov.wales coded downloads, version-based discovery, parse, normalise with same-release year-earlier medians, adapter.                                                                                                               | 5     |
+| 6   | [Pipeline: Scotland](./phase-06-pipeline-scotland.md)                   | CKAN discovery, QF flag decoding, two Wait Stages, days, Derived within-12 count, band integrity checks, adapter.                                                                                                                         | 5     |
+| 7   | [Validation and scheduling](./phase-07-validation-and-scheduling.md)    | Validation gate with tunable thresholds, Year-Earlier and Carried-Forward logic, published-view assembly, CLI, daily workflow (commit / issue), backfill and first real data.                                                             | 7     |
+| 8   | [Site skeleton](./phase-08-site-skeleton.md)                            | Static Next.js scaffold, validated data loader, i18n layer, layout/footer, home + border notice, figure primitives with exact wording, per-nation statements and routes, progressive filter, static pages, wording and no-ranking guards. | 17    |
+| 9   | [Editorial Content](./phase-09-editorial-content.md)                    | Content schema/loader, Specialty stubs, T&O structure, explainer pages, freshness/launch gates, PO content brief. Agents write structure only.                                                                                            | 6     |
+| 10  | [Quality and launch](./phase-10-quality-and-launch.md)                  | Playwright + axe on the static export (JS and no-JS), journeys, output scan, a11y, Cloudflare Pages deploy + headers + analytics, issue forms, link checker, launch checklist.                                                            | 8     |
+| 11  | [Visual design (placeholder)](./phase-11-visual-design-placeholder.md)  | Stub only; slots in later without restructuring.                                                                                                                                                                                          | 0     |
 
 **Total: 81 tasks in 10 planned phases (+1 placeholder).** Phases 4, 5 and 6 run in parallel once Phase 2 definitions and T-3.1 land (Wales/Scotland normalise also need T-3.7/T-3.8).
 
@@ -419,22 +419,22 @@ flowchart LR
 
 Tasks in the same wave have all dependencies in earlier waves and can run at the same time (check **Owns files**; none overlap within a wave).
 
-| Wave | Tasks |
-|---|---|
-| 0 | T-1.1, T-9.6 |
-| 1 | T-1.2, T-1.7, T-1.8 |
-| 2 | T-1.3, T-1.4, T-1.5 |
-| 3 | T-1.6, T-2.1, T-2.2, T-2.11 |
-| 4 | T-2.3, T-2.8, T-8.1, T-10.6 |
-| 5 | T-2.4, T-8.3, T-9.1, T-10.1 |
-| 6 | T-2.5, T-2.6, T-2.7, T-2.9, T-3.1, T-8.4, T-8.10, T-9.5 |
-| 7 | T-2.10, T-3.2, T-3.3, T-3.6, T-3.8, T-4.1, T-5.1, T-5.2, T-6.1, T-6.2, T-7.1, T-7.3, T-8.2, T-8.5, T-8.6, T-8.15, T-10.5 |
-| 8 | T-3.4, T-3.5, T-3.7, T-4.2, T-4.3, T-5.3, T-6.3, T-8.7, T-8.8, T-8.9, T-9.4, T-10.7 |
-| 9 | T-3.9, T-4.4, T-5.4, T-6.4, T-7.2, T-8.12, T-8.16, T-9.2 |
-| 10 | T-4.5, T-5.5, T-6.5, T-7.4, T-8.11, T-8.13, T-8.14, T-9.3 |
-| 11 | T-7.5, T-8.17, T-10.2, T-10.3, T-10.4 |
-| 12 | T-7.6, T-7.7 |
-| 13 | T-10.8 |
+| Wave | Tasks                                                                                                                    |
+| ---- | ------------------------------------------------------------------------------------------------------------------------ |
+| 0    | T-1.1, T-9.6                                                                                                             |
+| 1    | T-1.2, T-1.7, T-1.8                                                                                                      |
+| 2    | T-1.3, T-1.4, T-1.5                                                                                                      |
+| 3    | T-1.6, T-2.1, T-2.2, T-2.11                                                                                              |
+| 4    | T-2.3, T-2.8, T-8.1, T-10.6                                                                                              |
+| 5    | T-2.4, T-8.3, T-9.1, T-10.1                                                                                              |
+| 6    | T-2.5, T-2.6, T-2.7, T-2.9, T-3.1, T-8.4, T-8.10, T-9.5                                                                  |
+| 7    | T-2.10, T-3.2, T-3.3, T-3.6, T-3.8, T-4.1, T-5.1, T-5.2, T-6.1, T-6.2, T-7.1, T-7.3, T-8.2, T-8.5, T-8.6, T-8.15, T-10.5 |
+| 8    | T-3.4, T-3.5, T-3.7, T-4.2, T-4.3, T-5.3, T-6.3, T-8.7, T-8.8, T-8.9, T-9.4, T-10.7                                      |
+| 9    | T-3.9, T-4.4, T-5.4, T-6.4, T-7.2, T-8.12, T-8.16, T-9.2                                                                 |
+| 10   | T-4.5, T-5.5, T-6.5, T-7.4, T-8.11, T-8.13, T-8.14, T-9.3                                                                |
+| 11   | T-7.5, T-8.17, T-10.2, T-10.3, T-10.4                                                                                    |
+| 12   | T-7.6, T-7.7                                                                                                             |
+| 13   | T-10.8                                                                                                                   |
 
 **Critical path:** T-1.1 → T-1.2 → T-1.3 → T-2.1 → T-2.3 → T-2.4 → T-3.1 → T-4.1 → T-4.3 → T-4.4 → T-4.5 → T-7.5 → T-7.7 → T-10.8. Product-owner copy (T-9.6 brief → content) runs alongside and gates T-10.8.
 
@@ -442,58 +442,58 @@ Tasks in the same wave have all dependencies in earlier waves and can run at the
 
 Defaults chosen where the docs were silent. Each can be changed by the product owner; the owning task is listed.
 
-| Id | Assumption | Task |
-|---|---|---|
-| A-01 | GitHub repo, Cloudflare account/Pages project, domain and contact email are created by the product owner; placeholders in `apps/site/src/config/site.ts` until then. | T-1.1, T-8.4, T-10.5 |
-| A-02 | Node 24 LTS in CI (`.nvmrc`), pnpm 10 via corepack. | T-1.1, T-1.2 |
-| A-03 | Package layout as in § Architecture, plus `tools/eslint-plugin-kyw`; internal packages consumed as TS source (no build step). | T-1.2 |
-| A-04 | **Zod v4** for runtime validation; hand-written types where branding/nation generics need it, with type tests tying schema output to types. | T-2.x |
-| A-05 | Validation thresholds: England units ≥ 95 % of previous; Wales/Scotland any missing board blocks; figures ≥ 90 % of previous; nation total-waiting swing ≤ 25 %; plus schema, date and consistency checks. | T-7.1 |
-| A-06 | Small custom i18n layer on `intl-messageformat` (no `next-intl`, no locale routing) because the site is a static export in one language; messages per namespace. | T-8.3 |
-| A-07 | `no-recent-figures` entries are dropped from pages 24 months after the last Reporting Period. | T-7.3 |
-| A-08 | Median display: England/Wales published weeks rounded to 1 dp (England publishes ~13 dp); Scotland days rounded to whole days and weeks to whole weeks with "about". Stored values unchanged. | T-8.3, T-8.7–T-8.9 |
-| A-09 | "% within" wording: "About 7 in 10 (65.0%) had waited less than 18 weeks." — natural frequency rounded to nearest 10, "About" unless exact, exact percent in brackets. | T-8.7, T-8.8 |
-| A-10 | Scotland Publication Date = date of the CKAN resource `last_modified`. | T-6.2 |
-| A-11 | Scotland `S27000001` "Non-NHS Provider/Location" is an aggregate, not an organisation a patient can choose, so it is **not** a Reporting Unit (ADR-0003 concerns named Independent Sector Providers). PO to confirm. | T-3.8, T-6.4 |
-| A-12 | England Hospital Sites = open ODS sites of the unit, excluding RO31 ePACT, filtered by hospital-like names or RO29/RO320 sub-types; a site-level ISP code is its own single site. PO may replace with a curated list. | T-3.4 |
-| A-13 | Wales: a missing count row where the cell's total exists = 0 (verified against band sums); a missing median = Suppressed. Confirm with stats.healthinfo@gov.wales. | T-5.4 |
-| A-14 | Wales and Scotland backfill prior months from the current vintage, marked `backfilled` in `state.json`. | T-7.7 |
-| A-15 | Reporting Unit URL segment = lower-case official code (`/england/trauma-and-orthopaedics/rrk`). | T-8.12–T-8.14 |
-| A-16 | Specialty slugs are hand-written per nation and permanent; each nation's "all specialties" entry gets its own page, listed last. England's official name for it is "Total" — displayed as "All specialties". | T-3.6–T-3.8 |
-| A-17 | `exceljs` for XLSX (cached formula results), `csv-parse` for CSV, `yauzl-promise` reserved for ZIP if ever needed. | T-1.2, T-3.1 |
-| A-18 | Code MIT; data and reference data OGL v3 with attributions in `DATA-LICENCE.md` and `/sources`. | T-1.7, T-8.15 |
-| A-19 | Data commits go straight to `main` from the bot (no PR), as ADR-0007 describes; deploy runs after CI passes. | T-7.6, T-10.5 |
-| A-20 | Reporting Unit lists show only units with an entry (current, carried-forward or no-recent) for that Specialty, and show no figures, so lists can't read as rankings. | T-8.11, T-8.13, T-8.14 |
-| A-21 | Explainer routes are `/<nation>/about-the-figures` and `/<nation>/your-rights`; these slugs are reserved against Specialty slugs. | T-3.6, T-9.4 |
-| A-22 | Cloudflare Web Analytics beacon is loaded without SRI because Cloudflare serves a versionless script; CSP restricts it to `static.cloudflareinsights.com`. | T-10.5 |
+| Id   | Assumption                                                                                                                                                                                                            | Task                   |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| A-01 | GitHub repo, Cloudflare account/Pages project, domain and contact email are created by the product owner; placeholders in `apps/site/src/config/site.ts` until then.                                                  | T-1.1, T-8.4, T-10.5   |
+| A-02 | Node 24 LTS in CI (`.nvmrc`), pnpm 10 via corepack.                                                                                                                                                                   | T-1.1, T-1.2           |
+| A-03 | Package layout as in § Architecture, plus `tools/eslint-plugin-kyw`; internal packages consumed as TS source (no build step).                                                                                         | T-1.2                  |
+| A-04 | **Zod v4** for runtime validation; hand-written types where branding/nation generics need it, with type tests tying schema output to types.                                                                           | T-2.x                  |
+| A-05 | Validation thresholds: England units ≥ 95 % of previous; Wales/Scotland any missing board blocks; figures ≥ 90 % of previous; nation total-waiting swing ≤ 25 %; plus schema, date and consistency checks.            | T-7.1                  |
+| A-06 | Small custom i18n layer on `intl-messageformat` (no `next-intl`, no locale routing) because the site is a static export in one language; messages per namespace.                                                      | T-8.3                  |
+| A-07 | `no-recent-figures` entries are dropped from pages 24 months after the last Reporting Period.                                                                                                                         | T-7.3                  |
+| A-08 | Median display: England/Wales published weeks rounded to 1 dp (England publishes ~13 dp); Scotland days rounded to whole days and weeks to whole weeks with "about". Stored values unchanged.                         | T-8.3, T-8.7–T-8.9     |
+| A-09 | "% within" wording: "About 7 in 10 (65.0%) had waited less than 18 weeks." — natural frequency rounded to nearest 10, "About" unless exact, exact percent in brackets.                                                | T-8.7, T-8.8           |
+| A-10 | Scotland Publication Date = date of the CKAN resource `last_modified`.                                                                                                                                                | T-6.2                  |
+| A-11 | Scotland `S27000001` "Non-NHS Provider/Location" is an aggregate, not an organisation a patient can choose, so it is **not** a Reporting Unit (ADR-0003 concerns named Independent Sector Providers). PO to confirm.  | T-3.8, T-6.4           |
+| A-12 | England Hospital Sites = open ODS sites of the unit, excluding RO31 ePACT, filtered by hospital-like names or RO29/RO320 sub-types; a site-level ISP code is its own single site. PO may replace with a curated list. | T-3.4                  |
+| A-13 | Wales: a missing count row where the cell's total exists = 0 (verified against band sums); a missing median = Suppressed. Confirm with stats.healthinfo@gov.wales.                                                    | T-5.4                  |
+| A-14 | Wales and Scotland backfill prior months from the current vintage, marked `backfilled` in `state.json`.                                                                                                               | T-7.7                  |
+| A-15 | Reporting Unit URL segment = lower-case official code (`/england/trauma-and-orthopaedics/rrk`).                                                                                                                       | T-8.12–T-8.14          |
+| A-16 | Specialty slugs are hand-written per nation and permanent; each nation's "all specialties" entry gets its own page, listed last. England's official name for it is "Total" — displayed as "All specialties".          | T-3.6–T-3.8            |
+| A-17 | `exceljs` for XLSX (cached formula results), `csv-parse` for CSV, `yauzl-promise` reserved for ZIP if ever needed.                                                                                                    | T-1.2, T-3.1           |
+| A-18 | Code MIT; data and reference data OGL v3 with attributions in `DATA-LICENCE.md` and `/sources`.                                                                                                                       | T-1.7, T-8.15          |
+| A-19 | Data commits go straight to `main` from the bot (no PR), as ADR-0007 describes; deploy runs after CI passes.                                                                                                          | T-7.6, T-10.5          |
+| A-20 | Reporting Unit lists show only units with an entry (current, carried-forward or no-recent) for that Specialty, and show no figures, so lists can't read as rankings.                                                  | T-8.11, T-8.13, T-8.14 |
+| A-21 | Explainer routes are `/<nation>/about-the-figures` and `/<nation>/your-rights`; these slugs are reserved against Specialty slugs.                                                                                     | T-3.6, T-9.4           |
+| A-22 | Cloudflare Web Analytics beacon is loaded without SRI because Cloudflare serves a versionless script; CSP restricts it to `static.cloudflareinsights.com`.                                                            | T-10.5                 |
 
 ## Risks and mitigations
 
-| Risk | Mitigation |
-|---|---|
-| Source format changes (headers, URLs, codes) | Exact header/code checks raise `SchemaChangeError`; gate blocks; issue opened; site keeps last good data (T-3.1, T-7.1, T-7.6). |
-| Silent revisions (Wales, Scotland) make month-to-month comparisons inconsistent | Year-earlier medians from the **same** download (`comparisonFigures`); each release stores source sha256 and version ids. |
-| England links unpredictable; revised files replace links | Scrape yearly pages each run; URL change for an existing period = revision (T-4.2, T-4.5). |
-| ORD API deprecation; FHIR API needs a key | Use key-free DSE bulk CSVs; ORD only for Welsh site listing, fixture-backed (T-3.2, T-3.7). |
-| NHS England organisational change moves statistics pages | Discovery fails loudly → issue; URL constants isolated in `england/discover.ts`. |
-| PHS review changes frequency/content | Discovery keyed on resource ids; missing id → `SourceUnavailableError` issue. |
-| Users read figures as predictions or rankings | Fixed caption on every figure; no figures in lists; alphabetical order enforced by lint + tests; output scan. |
-| Accidental cross-nation comparison by future code | `SingleNation` types, guardrail type tests, lint zones, output leak scan (T-2.10, T-2.11, T-10.3). |
-| Rounding wording (A-08/A-09) could overstate precision or mislead | Exact percent shown alongside; PO review before launch. |
-| Repo growth from committed JSON | Compact file form; England release ≤ 5 MB target (T-2.4); raw downloads never committed. |
-| Product owner copy not ready | Placeholders render nothing invented; launch gate script blocks launch (T-9.5, T-10.8). |
-| NHS identity guidance (PRD open question) | Checked in launch checklist; no NHS marks anywhere; output scan (T-10.3, T-10.8). |
-| Scotland "Non-NHS Provider" exclusion conflicts with ADR-0003 spirit | Flagged as A-11 for PO decision. |
+| Risk                                                                            | Mitigation                                                                                                                      |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Source format changes (headers, URLs, codes)                                    | Exact header/code checks raise `SchemaChangeError`; gate blocks; issue opened; site keeps last good data (T-3.1, T-7.1, T-7.6). |
+| Silent revisions (Wales, Scotland) make month-to-month comparisons inconsistent | Year-earlier medians from the **same** download (`comparisonFigures`); each release stores source sha256 and version ids.       |
+| England links unpredictable; revised files replace links                        | Scrape yearly pages each run; URL change for an existing period = revision (T-4.2, T-4.5).                                      |
+| ORD API deprecation; FHIR API needs a key                                       | Use key-free DSE bulk CSVs; ORD only for Welsh site listing, fixture-backed (T-3.2, T-3.7).                                     |
+| NHS England organisational change moves statistics pages                        | Discovery fails loudly → issue; URL constants isolated in `england/discover.ts`.                                                |
+| PHS review changes frequency/content                                            | Discovery keyed on resource ids; missing id → `SourceUnavailableError` issue.                                                   |
+| Users read figures as predictions or rankings                                   | Fixed caption on every figure; no figures in lists; alphabetical order enforced by lint + tests; output scan.                   |
+| Accidental cross-nation comparison by future code                               | `SingleNation` types, guardrail type tests, lint zones, output leak scan (T-2.10, T-2.11, T-10.3).                              |
+| Rounding wording (A-08/A-09) could overstate precision or mislead               | Exact percent shown alongside; PO review before launch.                                                                         |
+| Repo growth from committed JSON                                                 | Compact file form; England release ≤ 5 MB target (T-2.4); raw downloads never committed.                                        |
+| Product owner copy not ready                                                    | Placeholders render nothing invented; launch gate script blocks launch (T-9.5, T-10.8).                                         |
+| NHS identity guidance (PRD open question)                                       | Checked in launch checklist; no NHS marks anywhere; output scan (T-10.3, T-10.8).                                               |
+| Scotland "Non-NHS Provider" exclusion conflicts with ADR-0003 spirit            | Flagged as A-11 for PO decision.                                                                                                |
 
 ## Open questions carried from the PRD
 
-| PRD open question | Status |
-|---|---|
+| PRD open question                  | Status                                                                                |
+| ---------------------------------- | ------------------------------------------------------------------------------------- |
 | PHS monthly management information | **Resolved:** monthly open data are Accredited official statistics (data-sources.md). |
-| Validation thresholds | Defaults in A-05, tunable in `thresholds.ts`. |
-| Structure of explainers | Skeleton in T-9.4; copy by PO. |
-| NHS identity guidance | Launch checklist T-10.8. |
-| Welsh-language reviewer | Out of v1; Welsh labels available via `?lang=cy` (data-sources.md). |
+| Validation thresholds              | Defaults in A-05, tunable in `thresholds.ts`.                                         |
+| Structure of explainers            | Skeleton in T-9.4; copy by PO.                                                        |
+| NHS identity guidance              | Launch checklist T-10.8.                                                              |
+| Welsh-language reviewer            | Out of v1; Welsh labels available via `?lang=cy` (data-sources.md).                   |
 
 ## TODO checklist
 

@@ -23,6 +23,7 @@ data/
 ---
 
 ### T-3.1 — Pipeline foundations: fetch, cache, canonical JSON, data layout, source-adapter interface
+
 - **Depends on:** T-1.2, T-1.3, T-1.5, T-2.4
 - **Parallel-safe with:** T-3.2, T-3.3, T-2.5–T-2.11
 - **Owns files:** `packages/pipeline/src/http/fetch.ts`, `packages/pipeline/src/io/paths.ts`, `packages/pipeline/src/io/json.ts`, `packages/pipeline/src/io/csv.ts`, `packages/pipeline/src/io/xlsx.ts`, `packages/pipeline/src/source.ts`, `packages/pipeline/src/errors.ts`, `packages/pipeline/test/io/*.test.ts`, `data/README.md`
@@ -42,6 +43,7 @@ data/
 - **Size:** M
 
 ### T-3.2 — ODS bulk CSV client with trimmed real fixtures
+
 - **Depends on:** T-3.1
 - **Parallel-safe with:** T-3.3, T-3.7, T-3.8
 - **Owns files:** `packages/pipeline/src/reference/ods/client.ts`, `packages/pipeline/src/reference/ods/columns.ts`, `packages/pipeline/fixtures/ods/{etr,ets,ephp,ephpsite,succ,wlhb}.csv`, `packages/pipeline/scripts/trim-ods-fixtures.ts`, `packages/pipeline/test/reference/ods.test.ts`
@@ -58,6 +60,7 @@ data/
 - **Size:** M
 
 ### T-3.3 — England NHS Regions with display names
+
 - **Depends on:** T-2.8, T-3.1
 - **Parallel-safe with:** T-3.2, T-3.4, T-3.5, T-3.6, T-3.7, T-3.8
 - **Owns files:** `packages/pipeline/src/reference/england/regions.ts`, `packages/pipeline/test/reference/england-regions.test.ts`
@@ -70,6 +73,7 @@ data/
 - **Size:** S
 
 ### T-3.4 — England Reporting Units and Hospital Sites builder
+
 - **Depends on:** T-3.2, T-3.3
 - **Parallel-safe with:** T-3.5, T-3.6, T-3.7, T-3.8
 - **Owns files:** `packages/pipeline/src/reference/england/units.ts`, `packages/pipeline/src/reference/england/sites.ts`, `packages/pipeline/src/reference/names.ts`, `packages/pipeline/test/reference/england-units.test.ts`
@@ -86,6 +90,7 @@ data/
 - **Size:** M
 
 ### T-3.5 — England succession map and Year-Earlier eligibility
+
 - **Depends on:** T-3.2
 - **Parallel-safe with:** T-3.3, T-3.4, T-3.6, T-3.7, T-3.8
 - **Owns files:** `packages/pipeline/src/reference/england/succession.ts`, `packages/pipeline/test/reference/england-succession.test.ts`
@@ -101,6 +106,7 @@ data/
 - **Size:** S
 
 ### T-3.6 — England Specialty list and slugs
+
 - **Depends on:** T-2.8, T-3.1
 - **Parallel-safe with:** T-3.2–T-3.5, T-3.7, T-3.8
 - **Owns files:** `packages/pipeline/src/reference/england/specialties.ts`, `packages/pipeline/test/reference/england-specialties.test.ts`
@@ -116,6 +122,7 @@ data/
 - **Size:** S
 
 ### T-3.7 — Wales reference data: health boards, crosswalk, sites, Specialties
+
 - **Depends on:** T-3.1, T-3.2, T-2.8
 - **Parallel-safe with:** T-3.3–T-3.6, T-3.8
 - **Owns files:** `packages/pipeline/src/reference/wales/boards.ts`, `packages/pipeline/src/reference/wales/sites.ts`, `packages/pipeline/src/reference/wales/specialties.ts`, `packages/pipeline/src/reference/wales/build.ts`, `packages/pipeline/test/reference/wales.test.ts`, `data/wales/reference.json`
@@ -132,6 +139,7 @@ data/
 - **Size:** M
 
 ### T-3.8 — Scotland reference data: boards, Golden Jubilee, hospital sites, Specialties
+
 - **Depends on:** T-3.1, T-2.8
 - **Parallel-safe with:** T-3.2–T-3.7
 - **Owns files:** `packages/pipeline/src/reference/scotland/boards.ts`, `packages/pipeline/src/reference/scotland/sites.ts`, `packages/pipeline/src/reference/scotland/specialties.ts`, `packages/pipeline/src/reference/scotland/build.ts`, `packages/pipeline/fixtures/scotland/lookups/*.csv`, `packages/pipeline/test/reference/scotland.test.ts`, `data/scotland/reference.json`
@@ -148,6 +156,7 @@ data/
 - **Size:** M
 
 ### T-3.9 — Assemble and write England reference data
+
 - **Depends on:** T-3.4, T-3.5, T-3.6, T-4.3
 - **Parallel-safe with:** T-4.4, Phase 5/6 tasks
 - **Owns files:** `packages/pipeline/src/reference/england/build.ts`, `packages/pipeline/test/reference/england-build.test.ts`, `data/england/reference.json`

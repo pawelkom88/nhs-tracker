@@ -9,6 +9,7 @@ All code lives in `packages/pipeline/src/wales/`. Legacy StatsWales OData is ret
 ---
 
 ### T-5.1 — Commit trimmed real Wales fixtures
+
 - **Depends on:** T-3.1
 - **Parallel-safe with:** Phase 4 and 6 tasks, T-5.2
 - **Owns files:** `packages/pipeline/scripts/fetch-wales-fixture.ts`, `packages/pipeline/fixtures/wales/**`, `packages/pipeline/fixtures/wales/README.md`
@@ -25,6 +26,7 @@ All code lives in `packages/pipeline/src/wales/`. Legacy StatsWales OData is ret
 - **Size:** S
 
 ### T-5.2 — Wales API client and release discovery
+
 - **Depends on:** T-3.1
 - **Parallel-safe with:** T-5.1, Phase 4/6
 - **Owns files:** `packages/pipeline/src/wales/api.ts`, `packages/pipeline/src/wales/discover.ts`, `packages/pipeline/test/wales/discover.test.ts`
@@ -40,6 +42,7 @@ All code lives in `packages/pipeline/src/wales/`. Legacy StatsWales OData is ret
 - **Size:** S
 
 ### T-5.3 — Parse Wales coded CSVs
+
 - **Depends on:** T-5.1, T-5.2
 - **Parallel-safe with:** Phase 4/6
 - **Owns files:** `packages/pipeline/src/wales/parse.ts`, `packages/pipeline/src/wales/columns.ts`, `packages/pipeline/test/wales/parse.test.ts`
@@ -55,6 +58,7 @@ All code lives in `packages/pipeline/src/wales/`. Legacy StatsWales OData is ret
 - **Size:** S
 
 ### T-5.4 — Normalise into `Release<'wales'>` (with same-release year-earlier medians)
+
 - **Depends on:** T-5.3, T-2.6, T-3.7
 - **Parallel-safe with:** Phase 4/6
 - **Owns files:** `packages/pipeline/src/wales/normalise.ts`, `packages/pipeline/test/wales/normalise.test.ts`
@@ -72,6 +76,7 @@ All code lives in `packages/pipeline/src/wales/`. Legacy StatsWales OData is ret
 - **Size:** M
 
 ### T-5.5 — Wales source adapter
+
 - **Depends on:** T-5.2, T-5.4
 - **Parallel-safe with:** Phase 4/6 adapters
 - **Owns files:** `packages/pipeline/src/wales/source.ts`, `packages/pipeline/test/wales/source.test.ts`

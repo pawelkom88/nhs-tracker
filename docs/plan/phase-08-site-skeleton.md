@@ -8,48 +8,49 @@ Read [MASTER-PLAN.md § Conventions](./MASTER-PLAN.md#conventions) first.
 
 ## Routes
 
-| Path | Page | Task |
-|---|---|---|
-| `/` | Home: "Where do you live?" (England / Wales / Scotland links) | T-8.5 |
-| `/england`, `/wales`, `/scotland` | Specialty list with filter | T-8.11, T-8.13, T-8.14 |
-| `/<nation>/<specialty-slug>` | Reporting Unit list for that Specialty (+ T&O editorial intro if present) | T-8.11, T-8.13, T-8.14 |
-| `/<nation>/<specialty-slug>/<unit-code>` | Reporting Unit detail: figures per Wait Stage, Hospital Sites, labels | T-8.12, T-8.13, T-8.14 |
-| `/<nation>/about-the-figures` | What the figures mean (per nation) | T-9.4 |
-| `/<nation>/your-rights` | Process and Patient Rights explainer | T-9.4 |
-| `/about`, `/sources`, `/privacy`, `/accessibility` | Static information pages | T-8.15 |
-| `/404` | Not found | T-8.17 |
+| Path                                               | Page                                                                      | Task                   |
+| -------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------- |
+| `/`                                                | Home: "Where do you live?" (England / Wales / Scotland links)             | T-8.5                  |
+| `/england`, `/wales`, `/scotland`                  | Specialty list with filter                                                | T-8.11, T-8.13, T-8.14 |
+| `/<nation>/<specialty-slug>`                       | Reporting Unit list for that Specialty (+ T&O editorial intro if present) | T-8.11, T-8.13, T-8.14 |
+| `/<nation>/<specialty-slug>/<unit-code>`           | Reporting Unit detail: figures per Wait Stage, Hospital Sites, labels     | T-8.12, T-8.13, T-8.14 |
+| `/<nation>/about-the-figures`                      | What the figures mean (per nation)                                        | T-9.4                  |
+| `/<nation>/your-rights`                            | Process and Patient Rights explainer                                      | T-9.4                  |
+| `/about`, `/sources`, `/privacy`, `/accessibility` | Static information pages                                                  | T-8.15                 |
+| `/404`                                             | Not found                                                                 | T-8.17                 |
 
 `<unit-code>` is the lower-cased official organisation code (e.g. `/england/trauma-and-orthopaedics/rrk`). Nation routes are **static folders per nation** (`app/england/…`, `app/wales/…`, `app/scotland/…`), not a shared `[nation]` segment: display logic is written per nation (ADR-0006) and lint zones (T-2.11) stop cross-imports.
 
 ## Exact wording (source: PRD § Figures shown; all strings live in i18n messages)
 
-| Key | English text (ICU MessageFormat) |
-|---|---|
-| `figures.median.weeks` (England, Wales) | `Half of people waiting at {reportingPeriod} had waited {weeks} weeks or less.` — `{weeks}` = published value rounded to 1 decimal place, trailing `.0` dropped (Assumption A-08) |
-| `figures.median.days` (Scotland) | `Half of people waiting at {reportingPeriod} had waited about {weeks} weeks ({days} days) or less.` — `{days}` = published days rounded to a whole day, `{weeks}` = days ÷ 7 rounded to a whole week (A-08) |
+| Key                                       | English text (ICU MessageFormat)                                                                                                                                                                                                                                  |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `figures.median.weeks` (England, Wales)   | `Half of people waiting at {reportingPeriod} had waited {weeks} weeks or less.` — `{weeks}` = published value rounded to 1 decimal place, trailing `.0` dropped (Assumption A-08)                                                                                 |
+| `figures.median.days` (Scotland)          | `Half of people waiting at {reportingPeriod} had waited about {weeks} weeks ({days} days) or less.` — `{days}` = published days rounded to a whole day, `{weeks}` = days ÷ 7 rounded to a whole week (A-08)                                                       |
 | `figures.withinStandard` (England, Wales) | `{approx, select, true {About } other {}}{inTen} in 10 ({percent}%) had waited less than {standardWeeks} weeks.` — `{inTen}` = percent rounded to nearest 10 ÷ 10; `approx` true unless percent is an exact multiple of 10; `{percent}` to 1 dp (Assumption A-09) |
-| `figures.withinStandardCount` (Scotland) | `{within} of {total} people had waited less than 12 weeks.` — counts, no division (Blocking finding B-1) |
-| `figures.longWait` | `{count, plural, one {# person had} other {# people had}} waited over a year.` |
-| `figures.yearEarlier.weeks` | `(a year earlier: {weeks} weeks)` |
-| `figures.yearEarlier.days` | `(a year earlier: about {weeks} weeks ({days} days))` |
-| `figures.caption` | `This shows people already on the list as of {reportingPeriod}, from {source}. It is not a prediction of how long you will wait. Waits change month to month and depend on your clinical need.` |
-| `figures.published` | `Published {publicationDate} by {publisher}` |
-| `status.suppressed` | `Not published (small numbers)` |
-| `status.provisional` | `Provisional` |
-| `status.derived` | `Calculated by Know Your Wait by adding published figures from the same release.` |
-| `status.carriedForward` | `These are the most recent figures for {unitName}, as at {reportingPeriod}. {unitName} was not in the latest release ({latestReportingPeriod}).` |
-| `status.noRecentFigures` | `No figures published since {reportingPeriod}.` |
-| `units.isp` | `Independent Sector Provider: NHS-funded and free to the patient.` |
-| `units.goldenJubilee` | `Treats patients referred from all health boards in Scotland.` |
-| `border.title` / `border.body` | `Live near the border?` / `Your NHS care usually follows where your GP practice is. If you live near a border, check each nation's pages separately and talk to your GP.` (+ links to the other two nations' home pages) |
-| `footer.independence` | PRD footer text verbatim |
-| `footer.mistake` | `Spotted a mistake?` |
+| `figures.withinStandardCount` (Scotland)  | `{within} of {total} people had waited less than 12 weeks.` — counts, no division (Blocking finding B-1)                                                                                                                                                          |
+| `figures.longWait`                        | `{count, plural, one {# person had} other {# people had}} waited over a year.`                                                                                                                                                                                    |
+| `figures.yearEarlier.weeks`               | `(a year earlier: {weeks} weeks)`                                                                                                                                                                                                                                 |
+| `figures.yearEarlier.days`                | `(a year earlier: about {weeks} weeks ({days} days))`                                                                                                                                                                                                             |
+| `figures.caption`                         | `This shows people already on the list as of {reportingPeriod}, from {source}. It is not a prediction of how long you will wait. Waits change month to month and depend on your clinical need.`                                                                   |
+| `figures.published`                       | `Published {publicationDate} by {publisher}`                                                                                                                                                                                                                      |
+| `status.suppressed`                       | `Not published (small numbers)`                                                                                                                                                                                                                                   |
+| `status.provisional`                      | `Provisional`                                                                                                                                                                                                                                                     |
+| `status.derived`                          | `Calculated by Know Your Wait by adding published figures from the same release.`                                                                                                                                                                                 |
+| `status.carriedForward`                   | `These are the most recent figures for {unitName}, as at {reportingPeriod}. {unitName} was not in the latest release ({latestReportingPeriod}).`                                                                                                                  |
+| `status.noRecentFigures`                  | `No figures published since {reportingPeriod}.`                                                                                                                                                                                                                   |
+| `units.isp`                               | `Independent Sector Provider: NHS-funded and free to the patient.`                                                                                                                                                                                                |
+| `units.goldenJubilee`                     | `Treats patients referred from all health boards in Scotland.`                                                                                                                                                                                                    |
+| `border.title` / `border.body`            | `Live near the border?` / `Your NHS care usually follows where your GP practice is. If you live near a border, check each nation's pages separately and talk to your GP.` (+ links to the other two nations' home pages)                                          |
+| `footer.independence`                     | PRD footer text verbatim                                                                                                                                                                                                                                          |
+| `footer.mistake`                          | `Spotted a mistake?`                                                                                                                                                                                                                                              |
 
 Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses the **Reporting Period**; the Publication Date appears only in `figures.published`.
 
 ---
 
 ### T-8.1 — Scaffold the Next.js static site
+
 - **Depends on:** T-1.6
 - **Parallel-safe with:** Phase 2–7 tasks
 - **Owns files:** `apps/site/package.json`, `apps/site/next.config.ts`, `apps/site/tsconfig.json`, `apps/site/postcss.config.mjs`, `apps/site/src/app/globals.css`, `apps/site/src/app/layout.tsx` (minimal, replaced by T-8.4), `apps/site/src/app/page.tsx` (placeholder, replaced by T-8.5), `apps/site/vitest.config.ts`, `apps/site/next-env.d.ts`, `.github/workflows/ci.yml` (append `site-build` job), `eslint.config.js` (append Next.js block)
@@ -69,6 +70,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.2 — Build-time data loader with validation
+
 - **Depends on:** T-8.1, T-2.9, T-2.8, T-3.1
 - **Parallel-safe with:** T-8.3, T-8.4, T-8.6, T-8.10
 - **Owns files:** `apps/site/src/data/load.ts`, `apps/site/src/data/england.ts`, `apps/site/src/data/wales.ts`, `apps/site/src/data/scotland.ts`, `apps/site/test/data/load.test.ts`, `apps/site/test/fixtures/data/**`
@@ -86,6 +88,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.3 — Build the i18n layer and date/number formatting
+
 - **Depends on:** T-8.1
 - **Parallel-safe with:** T-8.2, T-8.4, T-8.10
 - **Owns files:** `apps/site/src/i18n/index.ts`, `apps/site/src/i18n/format.ts`, `apps/site/messages/en/common.json`, `apps/site/test/i18n/i18n.test.ts`
@@ -102,6 +105,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.4 — Root layout, footer, skip link and "Spotted a mistake?" link
+
 - **Depends on:** T-8.3
 - **Parallel-safe with:** T-8.2, T-8.6, T-8.10
 - **Owns files:** `apps/site/src/app/layout.tsx`, `apps/site/src/components/Footer.tsx`, `apps/site/src/components/SiteHeader.tsx`, `apps/site/src/components/MistakeLink.tsx`, `apps/site/src/config/site.ts`, `apps/site/messages/en/layout.json`, `apps/site/test/components/Footer.test.tsx`
@@ -118,6 +122,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** S
 
 ### T-8.5 — Home page and the border notice
+
 - **Depends on:** T-8.4
 - **Parallel-safe with:** T-8.6–T-8.10
 - **Owns files:** `apps/site/src/app/page.tsx`, `apps/site/src/components/BorderNotice.tsx`, `apps/site/messages/en/home.json`, `apps/site/messages/en/border.json`, `apps/site/test/components/BorderNotice.test.tsx`, `apps/site/test/app/home.test.tsx`
@@ -126,13 +131,14 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Context:** Users pick their Home Nation by residence ("Where do you live?"). The border notice only points users to each nation's own pages; it never shows another nation's figures.
 - **Steps:**
   1. Home: `<h1>` "Where do you live?", a list of three links (England, Wales, Scotland) in that fixed order, a one-sentence product description, `BorderNotice`.
-  2. `BorderNotice({ current?: HomeNation })`: `<aside aria-labelledby>` with title/body and links to the *other* nations' home pages (or all three on `/`). No figures.
+  2. `BorderNotice({ current?: HomeNation })`: `<aside aria-labelledby>` with title/body and links to the _other_ nations' home pages (or all three on `/`). No figures.
   3. Mention Northern Ireland is not covered (one sentence, PRD "Not in v1").
 - **Acceptance criteria:** tests: three nation links in fixed order; BorderNotice on `/wales` links to `/england` and `/scotland` only and contains no digits; wording matches `border.json`.
 - **Out of scope:** styling.
 - **Size:** S
 
 ### T-8.6 — Shared figure primitives: caption, source line, status labels
+
 - **Depends on:** T-8.3, T-2.9
 - **Parallel-safe with:** T-8.2, T-8.4, T-8.5, T-8.10
 - **Owns files:** `apps/site/src/components/figures/FigureCaption.tsx`, `apps/site/src/components/figures/PublishedLine.tsx`, `apps/site/src/components/figures/StatusLabels.tsx`, `apps/site/src/components/figures/FigureBlock.tsx`, `apps/site/messages/en/figures.json`, `apps/site/messages/en/status.json`, `apps/site/test/components/figures.test.tsx`
@@ -153,6 +159,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.7 — England figure statements
+
 - **Depends on:** T-8.6, T-2.5
 - **Parallel-safe with:** T-8.8, T-8.9, T-8.10
 - **Owns files:** `apps/site/src/nations/england/FigureStatements.tsx`, `apps/site/messages/en/england.json`, `apps/site/test/nations/england/FigureStatements.test.tsx`
@@ -167,6 +174,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.8 — Wales figure statements
+
 - **Depends on:** T-8.6, T-2.6
 - **Parallel-safe with:** T-8.7, T-8.9, T-8.10
 - **Owns files:** `apps/site/src/nations/wales/FigureStatements.tsx`, `apps/site/messages/en/wales.json`, `apps/site/test/nations/wales/FigureStatements.test.tsx`
@@ -178,6 +186,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.9 — Scotland figure statements (two Wait Stages, days)
+
 - **Depends on:** T-8.6, T-2.7
 - **Parallel-safe with:** T-8.7, T-8.8, T-8.10
 - **Owns files:** `apps/site/src/nations/scotland/FigureStatements.tsx`, `apps/site/messages/en/scotland.json`, `apps/site/test/nations/scotland/FigureStatements.test.tsx`
@@ -192,6 +201,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.10 — Progressive-enhancement list filter
+
 - **Depends on:** T-8.3
 - **Parallel-safe with:** T-8.2, T-8.4–T-8.9
 - **Owns files:** `apps/site/src/components/ListFilter.tsx`, `apps/site/messages/en/filter.json`, `apps/site/test/components/ListFilter.test.tsx`
@@ -206,6 +216,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.11 — England Specialty list and Reporting Unit list pages
+
 - **Depends on:** T-8.2, T-8.5, T-8.10, T-9.2
 - **Parallel-safe with:** T-8.12, T-8.13, T-8.14
 - **Owns files:** `apps/site/src/app/england/page.tsx`, `apps/site/src/app/england/[specialty]/page.tsx`, `apps/site/src/nations/england/SpecialtyList.tsx`, `apps/site/src/nations/england/UnitList.tsx`, `apps/site/messages/en/england-lists.json`, `apps/site/test/nations/england/lists.test.tsx`
@@ -221,6 +232,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.12 — England Reporting Unit detail page
+
 - **Depends on:** T-8.2, T-8.7
 - **Parallel-safe with:** T-8.11, T-8.13, T-8.14
 - **Owns files:** `apps/site/src/app/england/[specialty]/[unit]/page.tsx`, `apps/site/src/nations/england/UnitDetail.tsx`, `apps/site/messages/en/england-detail.json`, `apps/site/test/nations/england/detail.test.tsx`
@@ -235,6 +247,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.13 — Wales routes: Specialty list, health board list, detail
+
 - **Depends on:** T-8.2, T-8.5, T-8.8, T-8.10, T-9.2
 - **Parallel-safe with:** T-8.11, T-8.12, T-8.14
 - **Owns files:** `apps/site/src/app/wales/page.tsx`, `apps/site/src/app/wales/[specialty]/page.tsx`, `apps/site/src/app/wales/[specialty]/[unit]/page.tsx`, `apps/site/src/nations/wales/SpecialtyList.tsx`, `apps/site/src/nations/wales/UnitList.tsx`, `apps/site/src/nations/wales/UnitDetail.tsx`, `apps/site/messages/en/wales-pages.json`, `apps/site/test/nations/wales/pages.test.tsx`
@@ -247,6 +260,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** L (acceptable: mostly mirrors England; split into list/detail if it exceeds 3h)
 
 ### T-8.14 — Scotland routes: Specialty list, health board list, detail
+
 - **Depends on:** T-8.2, T-8.5, T-8.9, T-8.10, T-9.2
 - **Parallel-safe with:** T-8.11, T-8.12, T-8.13
 - **Owns files:** `apps/site/src/app/scotland/page.tsx`, `apps/site/src/app/scotland/[specialty]/page.tsx`, `apps/site/src/app/scotland/[specialty]/[unit]/page.tsx`, `apps/site/src/nations/scotland/SpecialtyList.tsx`, `apps/site/src/nations/scotland/UnitList.tsx`, `apps/site/src/nations/scotland/UnitDetail.tsx`, `apps/site/messages/en/scotland-pages.json`, `apps/site/test/nations/scotland/pages.test.tsx`
@@ -259,6 +273,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** L (split list/detail if needed)
 
 ### T-8.15 — Static information pages: about, sources and licences, privacy, accessibility
+
 - **Depends on:** T-8.4
 - **Parallel-safe with:** T-8.5–T-8.14
 - **Owns files:** `apps/site/src/app/about/page.tsx`, `apps/site/src/app/sources/page.tsx`, `apps/site/src/app/privacy/page.tsx`, `apps/site/src/app/accessibility/page.tsx`, `apps/site/messages/en/pages.json`, `apps/site/test/app/static-pages.test.tsx`
@@ -271,6 +286,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** M
 
 ### T-8.16 — Wording guard tests: _Avoid_ terms and required captions
+
 - **Depends on:** T-8.7, T-8.8, T-8.9, T-8.15, T-9.1
 - **Parallel-safe with:** T-8.11–T-8.14, T-8.17
 - **Owns files:** `apps/site/test/guards/avoid-terms.test.ts`, `apps/site/test/guards/avoid-terms.ts`
@@ -286,6 +302,7 @@ Dates render as `31 August 2026` (`en-GB`, day month year). The headline uses th
 - **Size:** S
 
 ### T-8.17 — 404 page, robots, sitemap and no-ranking order tests
+
 - **Depends on:** T-8.11, T-8.13, T-8.14
 - **Parallel-safe with:** T-8.15, T-8.16
 - **Owns files:** `apps/site/src/app/not-found.tsx`, `apps/site/src/app/robots.ts`, `apps/site/src/app/sitemap.ts`, `apps/site/test/guards/no-ranking.test.ts`, `apps/site/messages/en/not-found.json`

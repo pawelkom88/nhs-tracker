@@ -9,6 +9,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 ---
 
 ### T-7.1 — Validation gate
+
 - **Depends on:** T-2.4, T-2.5, T-2.6, T-2.7, T-3.1
 - **Parallel-safe with:** T-7.2, T-7.3, Phases 4–6
 - **Owns files:** `packages/pipeline/src/validate/gate.ts`, `packages/pipeline/src/validate/thresholds.ts`, `packages/pipeline/src/validate/report.ts`, `packages/pipeline/test/validate/gate.test.ts`
@@ -34,6 +35,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 - **Size:** M
 
 ### T-7.2 — Year-Earlier Comparison logic
+
 - **Depends on:** T-2.9, T-3.5
 - **Parallel-safe with:** T-7.1, T-7.3, Phases 4–6
 - **Owns files:** `packages/pipeline/src/assemble/year-earlier.ts`, `packages/pipeline/test/assemble/year-earlier.test.ts`
@@ -51,6 +53,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 - **Size:** M
 
 ### T-7.3 — Carried-Forward logic
+
 - **Depends on:** T-2.9
 - **Parallel-safe with:** T-7.1, T-7.2, Phases 4–6
 - **Owns files:** `packages/pipeline/src/assemble/carry-forward.ts`, `packages/pipeline/test/assemble/carry-forward.test.ts`
@@ -67,6 +70,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 - **Size:** S
 
 ### T-7.4 — Assemble `published.json` per nation
+
 - **Depends on:** T-7.2, T-7.3
 - **Parallel-safe with:** T-7.1, Phases 4–6
 - **Owns files:** `packages/pipeline/src/assemble/published.ts`, `packages/pipeline/test/assemble/published.test.ts`
@@ -81,6 +85,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 - **Size:** S
 
 ### T-7.5 — Pipeline CLI orchestrator
+
 - **Depends on:** T-7.1, T-7.4, T-4.5, T-5.5, T-6.5
 - **Parallel-safe with:** T-7.6 (workflow can be written against the CLI contract)
 - **Owns files:** `packages/pipeline/src/cli.ts`, `packages/pipeline/src/run.ts`, `packages/pipeline/test/run.test.ts`
@@ -96,6 +101,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 - **Size:** M
 
 ### T-7.6 — Scheduled GitHub Actions pipeline workflow
+
 - **Depends on:** T-7.5, T-10.6 (issue template), T-1.6
 - **Parallel-safe with:** T-7.7
 - **Owns files:** `.github/workflows/pipeline.yml`, `.github/scripts/open-pipeline-issue.mjs`
@@ -113,6 +119,7 @@ Code lives in `packages/pipeline/src/{validate,assemble}/` and `packages/pipelin
 - **Size:** M
 
 ### T-7.7 — Backfill history and commit the first real data
+
 - **Depends on:** T-7.5
 - **Parallel-safe with:** T-7.6
 - **Owns files:** `packages/pipeline/src/backfill.ts`, `data/england/**`, `data/wales/**`, `data/scotland/**` (first generation), `.github/workflows/ci.yml` (switch `site-build` to real `data/`)
