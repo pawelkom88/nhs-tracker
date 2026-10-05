@@ -141,7 +141,9 @@ export async function fetchToCache(
 
       await fs.mkdir(targetCacheDir, { recursive: true });
       const cacheFilePath = path.join(targetCacheDir, `${sha256}.bin`);
-      await fs.writeFile(cacheFilePath, buffer);
+      const tmpPath = path.join(targetCacheDir, `${sha256}.${crypto.randomUUID()}.tmp`);
+      await fs.writeFile(tmpPath, buffer);
+      await fs.rename(tmpPath, cacheFilePath);
 
       return {
         path: cacheFilePath,

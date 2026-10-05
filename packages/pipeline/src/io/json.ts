@@ -1,3 +1,4 @@
+import * as crypto from 'node:crypto';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import type { z } from 'zod';
@@ -48,7 +49,9 @@ export async function writeCanonicalJson(filePath: string, value: unknown): Prom
   const content = canonicalJsonStringify(value);
   const dir = path.dirname(filePath);
   await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(filePath, content, 'utf-8');
+  const tmpPath = path.join(dir, `.${path.basename(filePath)}.${crypto.randomUUID()}.tmp`);
+  await fs.writeFile(tmpPath, content, 'utf-8');
+  await fs.rename(tmpPath, filePath);
 }
 
 /**
