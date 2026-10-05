@@ -1,7 +1,9 @@
+import path from 'node:path';
 import js from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import { createNodeResolver, flatConfigs } from 'eslint-plugin-import-x';
 import prettier from 'eslint-config-prettier';
+import nextPlugin from '@next/eslint-plugin-next';
 import kywPlugin from './tools/eslint-plugin-kyw/src/index.js';
 
 export default tseslint.config(
@@ -79,12 +81,29 @@ export default tseslint.config(
           ],
           packageDir: [
             import.meta.dirname,
-            './packages/model',
-            './packages/pipeline',
-            './tools/eslint-plugin-kyw',
+            path.resolve(import.meta.dirname, 'packages/model'),
+            path.resolve(import.meta.dirname, 'packages/pipeline'),
+            path.resolve(import.meta.dirname, 'apps/site'),
+            path.resolve(import.meta.dirname, 'tools/eslint-plugin-kyw'),
           ],
         },
       ],
+    },
+  },
+  // Next.js recommended rules
+  {
+    files: ['apps/site/**/*.{ts,tsx,js,jsx}'],
+    plugins: {
+      '@next/next': nextPlugin,
+    },
+    settings: {
+      next: {
+        rootDir: 'apps/site',
+      },
+    },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs['core-web-vitals'].rules,
     },
   },
   // project guardrail rules (T-2.11)

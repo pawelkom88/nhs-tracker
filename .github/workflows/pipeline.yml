@@ -1,0 +1,133 @@
+name: Data Pipeline
+
+on:
+  schedule:
+    - cron: '15 10 * * *'
+  workflow_dispatch:
+    inputs:
+      nation:
+        description: 'Publishing nation to run (blank runs all)'
+        required: false
+        type: choice
+        options:
+          - ''
+          - england
+          - wales
+          - scotland
+      dry_run:
+        description: 'Validate and simulate without writing data files'
+        required: false
+        type: boolean
+        default: false
+      from_fixtures:
+        description: 'Run pipeline using committed fixture files instead of live network'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    name: Pipeline Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run pipeline orchestrator
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.nation }}" ]; then
+            ARGS="$ARGS --nation ${{ inputs.nation }}"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ "${{ inputs.from_fixtures }}" = "true" ]; then
+            ARGS="$ARGS --from-fixtures"
+          fi
+          pnpm pipeline run $ARGS
+
+      - name: Verify pipeline tests and schemas against data
+        run: pnpm test --project pipeline
+
+      - name: Commit and push updated data
+        if: inputs.dry_run != true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          REPORT_FILE="packages/pipeline/.cache/run-report.json"
+
+          for NATION in england wales scotland; do
+            if [ -n "$(git status --porcelain "data/$NATION")" ]; then
+              PERIOD=$(node -e "
+                const fs = require('node:fs');
+                try {
+                  const r = JSON.parse(fs.readFileSync('$REPORT_FILE', 'utf8'));
+                  console.log(r['$NATION']?.reportingPeriod || '');
+                } catch { console.log(''); }
+              ")
+              if [ -z "$PERIOD" ]; then
+                PERIOD=$(node -e "
+                  const fs = require('node:fs');
+                  try {
+                    const s = JSON.parse(fs.readFileSync('data/$NATION/published.json', 'utf8'));
+                    console.log(s.latestRelease?.reportingPeriod || '');
+                  } catch { console.log(''); }
+                ")
+              fi
+              git add "data/$NATION"
+              git commit -m "chore(data): $NATION ${PERIOD:-latest} release"
+            fi
+          done
+
+          git push origin main
+
+      - name: Process pipeline validation issues
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node .github/scripts/open-pipeline-issue.mjs
+
+      - name: Check weekly content review freshness
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ "$(date +%u)" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -f scripts/check-launch-content.ts ]; then
+              pnpm tsx scripts/check-launch-content.ts --freshness-only || node .github/scripts/open-pipeline-issue.mjs --content-freshness
+            fi
+          fi

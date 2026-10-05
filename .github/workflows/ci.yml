@@ -46,3 +46,30 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+      - name: Test workflow scripts
+        run: node --test .github/scripts/open-pipeline-issue.test.mjs
+
+  site-build:
+    name: Site Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm --filter site build
+        env:
+          KYW_DATA_DIR: apps/site/test/fixtures/data

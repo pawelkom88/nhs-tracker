@@ -524,54 +524,54 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 
 ### [Phase 3 — Pipeline foundations and reference data](./phase-03-reference-data.md)
 
-- [ ] T-3.1 — Pipeline foundations: fetch, cache, canonical JSON, data layout, source-adapter interface
-- [ ] T-3.2 — ODS bulk CSV client with trimmed real fixtures
-- [ ] T-3.3 — England NHS Regions with display names
-- [ ] T-3.4 — England Reporting Units and Hospital Sites builder
-- [ ] T-3.5 — England succession map and Year-Earlier eligibility
-- [ ] T-3.6 — England Specialty list and slugs
-- [ ] T-3.7 — Wales reference data: health boards, crosswalk, sites, Specialties
-- [ ] T-3.8 — Scotland reference data: boards, Golden Jubilee, hospital sites, Specialties
-- [ ] T-3.9 — Assemble and write England reference data
+- [x] T-3.1 — Pipeline foundations: fetch, cache, canonical JSON, data layout, source-adapter interface
+- [x] T-3.2 — ODS bulk CSV client with trimmed real fixtures
+- [x] T-3.3 — England NHS Regions with display names
+- [x] T-3.4 — England Reporting Units and Hospital Sites builder
+- [x] T-3.5 — England succession map and Year-Earlier eligibility
+- [x] T-3.6 — England Specialty list and slugs
+- [x] T-3.7 — Wales reference data: health boards, crosswalk, sites, Specialties
+- [x] T-3.8 — Scotland reference data: boards, Golden Jubilee, hospital sites, Specialties
+- [x] T-3.9 — Assemble and write England reference data
 
 ### [Phase 4 — Pipeline: England ingest and normalise](./phase-04-pipeline-england.md)
 
-- [ ] T-4.1 — Commit trimmed real England fixtures
-- [ ] T-4.2 — Discover England release files from the yearly pages
-- [ ] T-4.3 — Parse the Incomplete Provider XLSX
-- [ ] T-4.4 — Normalise parsed rows into `Release<'england'>`
-- [ ] T-4.5 — England source adapter
+- [x] T-4.1 — Commit trimmed real England fixtures
+- [x] T-4.2 — Discover England release files from the yearly pages
+- [x] T-4.3 — Parse the Incomplete Provider XLSX
+- [x] T-4.4 — Normalise parsed rows into `Release<'england'>`
+- [x] T-4.5 — England source adapter
 
 ### [Phase 5 — Pipeline: Wales ingest and normalise](./phase-05-pipeline-wales.md)
 
-- [ ] T-5.1 — Commit trimmed real Wales fixtures
-- [ ] T-5.2 — Wales API client and release discovery
-- [ ] T-5.3 — Parse Wales coded CSVs
-- [ ] T-5.4 — Normalise into `Release<'wales'>` (with same-release year-earlier medians)
-- [ ] T-5.5 — Wales source adapter
+- [x] T-5.1 — Commit trimmed real Wales fixtures
+- [x] T-5.2 — Wales API client and release discovery
+- [x] T-5.3 — Parse Wales coded CSVs
+- [x] T-5.4 — Normalise into `Release<'wales'>` (with same-release year-earlier medians)
+- [x] T-5.5 — Wales source adapter
 
 ### [Phase 6 — Pipeline: Scotland ingest and normalise](./phase-06-pipeline-scotland.md)
 
-- [ ] T-6.1 — Commit trimmed real Scotland fixtures
-- [ ] T-6.2 — Scotland release discovery via CKAN
-- [ ] T-6.3 — Parse monthly CSVs and decode quality flags
-- [ ] T-6.4 — Normalise into `Release<'scotland'>` (two Wait Stages, days, Derived within-12 count)
-- [ ] T-6.5 — Scotland source adapter
+- [x] T-6.1 — Commit trimmed real Scotland fixtures
+- [x] T-6.2 — Scotland release discovery via CKAN
+- [x] T-6.3 — Parse monthly CSVs and decode quality flags
+- [x] T-6.4 — Normalise into `Release<'scotland'>` (two Wait Stages, days, Derived within-12 count)
+- [x] T-6.5 — Scotland source adapter
 
 ### [Phase 7 — Validation gate, publish logic and scheduled pipeline](./phase-07-validation-and-scheduling.md)
 
-- [ ] T-7.1 — Validation gate
-- [ ] T-7.2 — Year-Earlier Comparison logic
-- [ ] T-7.3 — Carried-Forward logic
-- [ ] T-7.4 — Assemble `published.json` per nation
-- [ ] T-7.5 — Pipeline CLI orchestrator
-- [ ] T-7.6 — Scheduled GitHub Actions pipeline workflow
+- [x] T-7.1 — Validation gate
+- [x] T-7.2 — Year-Earlier Comparison logic
+- [x] T-7.3 — Carried-Forward logic
+- [x] T-7.4 — Assemble `published.json` per nation
+- [x] T-7.5 — Pipeline CLI orchestrator
+- [x] T-7.6 — Scheduled GitHub Actions pipeline workflow
 - [ ] T-7.7 — Backfill history and commit the first real data
 
 ### [Phase 8 — Site skeleton (unstyled, semantic)](./phase-08-site-skeleton.md)
 
-- [ ] T-8.1 — Scaffold the Next.js static site
-- [ ] T-8.2 — Build-time data loader with validation
+- [x] T-8.1 — Scaffold the Next.js static site
+- [x] T-8.2 — Build-time data loader with validation
 - [ ] T-8.3 — Build the i18n layer and date/number formatting
 - [ ] T-8.4 — Root layout, footer, skip link and "Spotted a mistake?" link
 - [ ] T-8.5 — Home page and the border notice
