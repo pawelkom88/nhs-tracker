@@ -1,0 +1,1326 @@
+[
+  {
+    "columnName": "Date",
+    "factTableColumn": "DateCode",
+    "values": [
+      {
+        "count": "10220",
+        "description": "July 2026",
+        "reference": "202607"
+      },
+      {
+        "count": "10204",
+        "description": "June 2026",
+        "reference": "202606"
+      },
+      {
+        "count": "10199",
+        "description": "May 2026",
+        "reference": "202605"
+      },
+      {
+        "count": "10098",
+        "description": "April 2026",
+        "reference": "202604"
+      },
+      {
+        "count": "9864",
+        "description": "March 2026",
+        "reference": "202603"
+      },
+      {
+        "count": "10286",
+        "description": "February 2026",
+        "reference": "202602"
+      },
+      {
+        "count": "10344",
+        "description": "January 2026",
+        "reference": "202601"
+      },
+      {
+        "count": "10522",
+        "description": "December 2025",
+        "reference": "202512"
+      },
+      {
+        "count": "10563",
+        "description": "November 2025",
+        "reference": "202511"
+      },
+      {
+        "count": "10538",
+        "description": "October 2025",
+        "reference": "202510"
+      },
+      {
+        "count": "10270",
+        "description": "September 2025",
+        "reference": "202509"
+      },
+      {
+        "count": "10308",
+        "description": "August 2025",
+        "reference": "202508"
+      },
+      {
+        "count": "10236",
+        "description": "July 2025",
+        "reference": "202507"
+      },
+      {
+        "count": "10116",
+        "description": "June 2025",
+        "reference": "202506"
+      },
+      {
+        "count": "10291",
+        "description": "May 2025",
+        "reference": "202505"
+      },
+      {
+        "count": "10226",
+        "description": "April 2025",
+        "reference": "202504"
+      },
+      {
+        "count": "10280",
+        "description": "March 2025",
+        "reference": "202503"
+      },
+      {
+        "count": "10669",
+        "description": "February 2025",
+        "reference": "202502"
+      },
+      {
+        "count": "10730",
+        "description": "January 2025",
+        "reference": "202501"
+      },
+      {
+        "count": "10347",
+        "description": "December 2024",
+        "reference": "202412"
+      },
+      {
+        "count": "10319",
+        "description": "November 2024",
+        "reference": "202411"
+      },
+      {
+        "count": "10311",
+        "description": "October 2024",
+        "reference": "202410"
+      },
+      {
+        "count": "10261",
+        "description": "September 2024",
+        "reference": "202409"
+      },
+      {
+        "count": "10196",
+        "description": "August 2024",
+        "reference": "202408"
+      },
+      {
+        "count": "10211",
+        "description": "July 2024",
+        "reference": "202407"
+      },
+      {
+        "count": "10075",
+        "description": "June 2024",
+        "reference": "202406"
+      },
+      {
+        "count": "10252",
+        "description": "May 2024",
+        "reference": "202405"
+      },
+      {
+        "count": "10236",
+        "description": "April 2024",
+        "reference": "202404"
+      },
+      {
+        "count": "10084",
+        "description": "March 2024",
+        "reference": "202403"
+      },
+      {
+        "count": "10372",
+        "description": "February 2024",
+        "reference": "202402"
+      },
+      {
+        "count": "10295",
+        "description": "January 2024",
+        "reference": "202401"
+      },
+      {
+        "count": "10261",
+        "description": "December 2023",
+        "reference": "202312"
+      },
+      {
+        "count": "10288",
+        "description": "November 2023",
+        "reference": "202311"
+      },
+      {
+        "count": "10293",
+        "description": "October 2023",
+        "reference": "202310"
+      },
+      {
+        "count": "10189",
+        "description": "September 2023",
+        "reference": "202309"
+      },
+      {
+        "count": "10181",
+        "description": "August 2023",
+        "reference": "202308"
+      },
+      {
+        "count": "10242",
+        "description": "July 2023",
+        "reference": "202307"
+      },
+      {
+        "count": "10366",
+        "description": "June 2023",
+        "reference": "202306"
+      },
+      {
+        "count": "10449",
+        "description": "May 2023",
+        "reference": "202305"
+      },
+      {
+        "count": "10545",
+        "description": "April 2023",
+        "reference": "202304"
+      },
+      {
+        "count": "10262",
+        "description": "March 2023",
+        "reference": "202303"
+      },
+      {
+        "count": "10543",
+        "description": "February 2023",
+        "reference": "202302"
+      },
+      {
+        "count": "10630",
+        "description": "January 2023",
+        "reference": "202301"
+      },
+      {
+        "count": "10594",
+        "description": "December 2022",
+        "reference": "202212"
+      },
+      {
+        "count": "10645",
+        "description": "November 2022",
+        "reference": "202211"
+      },
+      {
+        "count": "10761",
+        "description": "October 2022",
+        "reference": "202210"
+      },
+      {
+        "count": "10746",
+        "description": "September 2022",
+        "reference": "202209"
+      },
+      {
+        "count": "10824",
+        "description": "August 2022",
+        "reference": "202208"
+      },
+      {
+        "count": "10798",
+        "description": "July 2022",
+        "reference": "202207"
+      },
+      {
+        "count": "11525",
+        "description": "June 2022",
+        "reference": "202206"
+      },
+      {
+        "count": "10868",
+        "description": "May 2022",
+        "reference": "202205"
+      },
+      {
+        "count": "10915",
+        "description": "April 2022",
+        "reference": "202204"
+      },
+      {
+        "count": "11039",
+        "description": "March 2022",
+        "reference": "202203"
+      },
+      {
+        "count": "11163",
+        "description": "February 2022",
+        "reference": "202202"
+      },
+      {
+        "count": "11081",
+        "description": "January 2022",
+        "reference": "202201"
+      },
+      {
+        "count": "10984",
+        "description": "December 2021",
+        "reference": "202112"
+      },
+      {
+        "count": "10989",
+        "description": "November 2021",
+        "reference": "202111"
+      },
+      {
+        "count": "11059",
+        "description": "October 2021",
+        "reference": "202110"
+      },
+      {
+        "count": "9273",
+        "description": "September 2021",
+        "reference": "202109"
+      },
+      {
+        "count": "8056",
+        "description": "August 2021",
+        "reference": "202108"
+      },
+      {
+        "count": "7954",
+        "description": "July 2021",
+        "reference": "202107"
+      },
+      {
+        "count": "7922",
+        "description": "June 2021",
+        "reference": "202106"
+      },
+      {
+        "count": "7906",
+        "description": "May 2021",
+        "reference": "202105"
+      },
+      {
+        "count": "7836",
+        "description": "April 2021",
+        "reference": "202104"
+      },
+      {
+        "count": "7806",
+        "description": "March 2021",
+        "reference": "202103"
+      },
+      {
+        "count": "7834",
+        "description": "February 2021",
+        "reference": "202102"
+      },
+      {
+        "count": "7684",
+        "description": "January 2021",
+        "reference": "202101"
+      },
+      {
+        "count": "7620",
+        "description": "December 2020",
+        "reference": "202012"
+      },
+      {
+        "count": "7480",
+        "description": "November 2020",
+        "reference": "202011"
+      },
+      {
+        "count": "7394",
+        "description": "October 2020",
+        "reference": "202010"
+      },
+      {
+        "count": "7186",
+        "description": "September 2020",
+        "reference": "202009"
+      },
+      {
+        "count": "6998",
+        "description": "August 2020",
+        "reference": "202008"
+      },
+      {
+        "count": "6742",
+        "description": "July 2020",
+        "reference": "202007"
+      },
+      {
+        "count": "6574",
+        "description": "June 2020",
+        "reference": "202006"
+      },
+      {
+        "count": "6234",
+        "description": "May 2020",
+        "reference": "202005"
+      },
+      {
+        "count": "6134",
+        "description": "April 2020",
+        "reference": "202004"
+      },
+      {
+        "count": "5736",
+        "description": "March 2020",
+        "reference": "202003"
+      },
+      {
+        "count": "5560",
+        "description": "February 2020",
+        "reference": "202002"
+      },
+      {
+        "count": "5516",
+        "description": "January 2020",
+        "reference": "202001"
+      },
+      {
+        "count": "5460",
+        "description": "December 2019",
+        "reference": "201912"
+      },
+      {
+        "count": "5432",
+        "description": "November 2019",
+        "reference": "201911"
+      },
+      {
+        "count": "5432",
+        "description": "October 2019",
+        "reference": "201910"
+      },
+      {
+        "count": "5434",
+        "description": "September 2019",
+        "reference": "201909"
+      },
+      {
+        "count": "5456",
+        "description": "August 2019",
+        "reference": "201908"
+      },
+      {
+        "count": "5464",
+        "description": "July 2019",
+        "reference": "201907"
+      },
+      {
+        "count": "5136",
+        "description": "June 2019",
+        "reference": "201906"
+      },
+      {
+        "count": "5120",
+        "description": "May 2019",
+        "reference": "201905"
+      },
+      {
+        "count": "5086",
+        "description": "April 2019",
+        "reference": "201904"
+      },
+      {
+        "count": "4632",
+        "description": "March 2019",
+        "reference": "201903"
+      },
+      {
+        "count": "5120",
+        "description": "February 2019",
+        "reference": "201902"
+      },
+      {
+        "count": "5086",
+        "description": "January 2019",
+        "reference": "201901"
+      },
+      {
+        "count": "5034",
+        "description": "December 2018",
+        "reference": "201812"
+      },
+      {
+        "count": "5092",
+        "description": "November 2018",
+        "reference": "201811"
+      },
+      {
+        "count": "5122",
+        "description": "October 2018",
+        "reference": "201810"
+      },
+      {
+        "count": "5062",
+        "description": "September 2018",
+        "reference": "201809"
+      },
+      {
+        "count": "5136",
+        "description": "August 2018",
+        "reference": "201808"
+      },
+      {
+        "count": "5118",
+        "description": "July 2018",
+        "reference": "201807"
+      },
+      {
+        "count": "5018",
+        "description": "June 2018",
+        "reference": "201806"
+      },
+      {
+        "count": "5306",
+        "description": "May 2018",
+        "reference": "201805"
+      },
+      {
+        "count": "5244",
+        "description": "April 2018",
+        "reference": "201804"
+      },
+      {
+        "count": "4920",
+        "description": "March 2018",
+        "reference": "201803"
+      },
+      {
+        "count": "5442",
+        "description": "February 2018",
+        "reference": "201802"
+      },
+      {
+        "count": "5424",
+        "description": "January 2018",
+        "reference": "201801"
+      },
+      {
+        "count": "5368",
+        "description": "December 2017",
+        "reference": "201712"
+      },
+      {
+        "count": "5490",
+        "description": "November 2017",
+        "reference": "201711"
+      },
+      {
+        "count": "5434",
+        "description": "October 2017",
+        "reference": "201710"
+      },
+      {
+        "count": "5266",
+        "description": "September 2017",
+        "reference": "201709"
+      },
+      {
+        "count": "5504",
+        "description": "August 2017",
+        "reference": "201708"
+      },
+      {
+        "count": "5396",
+        "description": "July 2017",
+        "reference": "201707"
+      },
+      {
+        "count": "5204",
+        "description": "June 2017",
+        "reference": "201706"
+      },
+      {
+        "count": "5446",
+        "description": "May 2017",
+        "reference": "201705"
+      },
+      {
+        "count": "5324",
+        "description": "April 2017",
+        "reference": "201704"
+      },
+      {
+        "count": "4852",
+        "description": "March 2017",
+        "reference": "201703"
+      },
+      {
+        "count": "5316",
+        "description": "February 2017",
+        "reference": "201702"
+      },
+      {
+        "count": "5230",
+        "description": "January 2017",
+        "reference": "201701"
+      },
+      {
+        "count": "5180",
+        "description": "December 2016",
+        "reference": "201612"
+      },
+      {
+        "count": "5270",
+        "description": "November 2016",
+        "reference": "201611"
+      },
+      {
+        "count": "5272",
+        "description": "October 2016",
+        "reference": "201610"
+      },
+      {
+        "count": "5146",
+        "description": "September 2016",
+        "reference": "201609"
+      },
+      {
+        "count": "5398",
+        "description": "August 2016",
+        "reference": "201608"
+      },
+      {
+        "count": "5450",
+        "description": "July 2016",
+        "reference": "201607"
+      },
+      {
+        "count": "5240",
+        "description": "June 2016",
+        "reference": "201606"
+      },
+      {
+        "count": "5418",
+        "description": "May 2016",
+        "reference": "201605"
+      },
+      {
+        "count": "5444",
+        "description": "April 2016",
+        "reference": "201604"
+      },
+      {
+        "count": "5170",
+        "description": "March 2016",
+        "reference": "201603"
+      },
+      {
+        "count": "5586",
+        "description": "February 2016",
+        "reference": "201602"
+      },
+      {
+        "count": "5674",
+        "description": "January 2016",
+        "reference": "201601"
+      },
+      {
+        "count": "5564",
+        "description": "December 2015",
+        "reference": "201512"
+      },
+      {
+        "count": "5596",
+        "description": "November 2015",
+        "reference": "201511"
+      },
+      {
+        "count": "5502",
+        "description": "October 2015",
+        "reference": "201510"
+      },
+      {
+        "count": "5426",
+        "description": "September 2015",
+        "reference": "201509"
+      },
+      {
+        "count": "5500",
+        "description": "August 2015",
+        "reference": "201508"
+      },
+      {
+        "count": "5474",
+        "description": "July 2015",
+        "reference": "201507"
+      },
+      {
+        "count": "5412",
+        "description": "June 2015",
+        "reference": "201506"
+      },
+      {
+        "count": "5374",
+        "description": "May 2015",
+        "reference": "201505"
+      },
+      {
+        "count": "5324",
+        "description": "April 2015",
+        "reference": "201504"
+      },
+      {
+        "count": "5078",
+        "description": "March 2015",
+        "reference": "201503"
+      },
+      {
+        "count": "5508",
+        "description": "February 2015",
+        "reference": "201502"
+      },
+      {
+        "count": "5628",
+        "description": "January 2015",
+        "reference": "201501"
+      },
+      {
+        "count": "5456",
+        "description": "December 2014",
+        "reference": "201412"
+      },
+      {
+        "count": "5458",
+        "description": "November 2014",
+        "reference": "201411"
+      },
+      {
+        "count": "5392",
+        "description": "October 2014",
+        "reference": "201410"
+      },
+      {
+        "count": "5420",
+        "description": "September 2014",
+        "reference": "201409"
+      },
+      {
+        "count": "5374",
+        "description": "August 2014",
+        "reference": "201408"
+      },
+      {
+        "count": "5292",
+        "description": "July 2014",
+        "reference": "201407"
+      },
+      {
+        "count": "5244",
+        "description": "June 2014",
+        "reference": "201406"
+      },
+      {
+        "count": "5152",
+        "description": "May 2014",
+        "reference": "201405"
+      },
+      {
+        "count": "5150",
+        "description": "April 2014",
+        "reference": "201404"
+      },
+      {
+        "count": "4738",
+        "description": "March 2014",
+        "reference": "201403"
+      },
+      {
+        "count": "5296",
+        "description": "February 2014",
+        "reference": "201402"
+      },
+      {
+        "count": "5354",
+        "description": "January 2014",
+        "reference": "201401"
+      },
+      {
+        "count": "5304",
+        "description": "December 2013",
+        "reference": "201312"
+      },
+      {
+        "count": "5374",
+        "description": "November 2013",
+        "reference": "201311"
+      },
+      {
+        "count": "5208",
+        "description": "October 2013",
+        "reference": "201310"
+      },
+      {
+        "count": "5236",
+        "description": "September 2013",
+        "reference": "201309"
+      },
+      {
+        "count": "5262",
+        "description": "August 2013",
+        "reference": "201308"
+      },
+      {
+        "count": "5188",
+        "description": "July 2013",
+        "reference": "201307"
+      },
+      {
+        "count": "5184",
+        "description": "June 2013",
+        "reference": "201306"
+      },
+      {
+        "count": "5140",
+        "description": "May 2013",
+        "reference": "201305"
+      },
+      {
+        "count": "5040",
+        "description": "April 2013",
+        "reference": "201304"
+      },
+      {
+        "count": "4742",
+        "description": "March 2013",
+        "reference": "201303"
+      },
+      {
+        "count": "5142",
+        "description": "February 2013",
+        "reference": "201302"
+      },
+      {
+        "count": "5044",
+        "description": "January 2013",
+        "reference": "201301"
+      },
+      {
+        "count": "5086",
+        "description": "December 2012",
+        "reference": "201212"
+      },
+      {
+        "count": "4940",
+        "description": "November 2012",
+        "reference": "201211"
+      },
+      {
+        "count": "4812",
+        "description": "October 2012",
+        "reference": "201210"
+      },
+      {
+        "count": "4680",
+        "description": "September 2012",
+        "reference": "201209"
+      },
+      {
+        "count": "4716",
+        "description": "August 2012",
+        "reference": "201208"
+      },
+      {
+        "count": "4734",
+        "description": "July 2012",
+        "reference": "201207"
+      },
+      {
+        "count": "4644",
+        "description": "June 2012",
+        "reference": "201206"
+      },
+      {
+        "count": "4530",
+        "description": "May 2012",
+        "reference": "201205"
+      },
+      {
+        "count": "4476",
+        "description": "April 2012",
+        "reference": "201204"
+      },
+      {
+        "count": "4248",
+        "description": "March 2012",
+        "reference": "201203"
+      },
+      {
+        "count": "4698",
+        "description": "February 2012",
+        "reference": "201202"
+      },
+      {
+        "count": "4644",
+        "description": "January 2012",
+        "reference": "201201"
+      },
+      {
+        "count": "4584",
+        "description": "December 2011",
+        "reference": "201112"
+      },
+      {
+        "count": "4584",
+        "description": "November 2011",
+        "reference": "201111"
+      },
+      {
+        "count": "4492",
+        "description": "October 2011",
+        "reference": "201110"
+      },
+      {
+        "count": "4436",
+        "description": "September 2011",
+        "reference": "201109"
+      }
+    ]
+  },
+  {
+    "columnName": "local health board provider",
+    "factTableColumn": "LHBProvCode",
+    "values": [
+      {
+        "children": [
+          {
+            "count": "161635",
+            "description": "Betsi Cadwaladr University LHB",
+            "reference": "W11000023"
+          },
+          {
+            "count": "66104",
+            "description": "Powys Teaching LHB",
+            "reference": "W11000024"
+          },
+          {
+            "count": "138189",
+            "description": "Hywel Dda LHB",
+            "reference": "W11000025"
+          },
+          {
+            "count": "91404",
+            "description": "Swansea Bay University Health Board",
+            "reference": "W11000031"
+          },
+          {
+            "count": "57562",
+            "description": "Abertawe Bro Morgannwg University LHB",
+            "reference": "W11000026"
+          },
+          {
+            "count": "95515",
+            "description": "Cwm Taf Morgannwg University Health Board",
+            "reference": "W11000030"
+          },
+          {
+            "count": "40914",
+            "description": "Cwm Taf LHB",
+            "reference": "W11000027"
+          },
+          {
+            "count": "139698",
+            "description": "Aneurin Bevan LHB",
+            "reference": "W11000028"
+          },
+          {
+            "count": "205889",
+            "description": "Cardiff and Vale University LHB",
+            "reference": "W11000029"
+          },
+          {
+            "count": "848",
+            "description": "South East Wales Region",
+            "reference": "A1X"
+          }
+        ],
+        "count": "278584",
+        "description": "All Wales LHB (Provider)",
+        "reference": "W92000004"
+      }
+    ]
+  },
+  {
+    "columnName": "specialty",
+    "factTableColumn": "SpecialtyCode",
+    "values": [
+      {
+        "children": [
+          {
+            "count": "3530",
+            "description": "Accident and Emergency",
+            "reference": "180"
+          },
+          {
+            "count": "25095",
+            "description": "Allied Health Profession Services",
+            "reference": "999"
+          },
+          {
+            "count": "15112",
+            "description": "Anaesthetics",
+            "reference": "190"
+          },
+          {
+            "count": "7284",
+            "description": "Audiological Medicine",
+            "reference": "310"
+          },
+          {
+            "count": "52452",
+            "description": "Cardiology",
+            "reference": "320"
+          },
+          {
+            "count": "18814",
+            "description": "Cardiothoracic Surgery",
+            "reference": "170"
+          },
+          {
+            "count": "11241",
+            "description": "Chemical Pathology",
+            "reference": "822"
+          },
+          {
+            "count": "2092",
+            "description": "Clinical Genetics",
+            "reference": "311"
+          },
+          {
+            "count": "8432",
+            "description": "Clinical Immunology and Allergy",
+            "reference": "313"
+          },
+          {
+            "count": "9571",
+            "description": "Clinical Neurophysiology",
+            "reference": "401"
+          },
+          {
+            "count": "4796",
+            "description": "Clinical Oncology (previously radiotherapy)",
+            "reference": "800"
+          },
+          {
+            "count": "9977",
+            "description": "Clinical Pharmacology",
+            "reference": "305"
+          },
+          {
+            "count": "8894",
+            "description": "Dental Medicine",
+            "reference": "450"
+          },
+          {
+            "count": "49196",
+            "description": "Dermatology",
+            "reference": "330"
+          },
+          {
+            "count": "26461",
+            "description": "Diagnostic Services",
+            "reference": "998"
+          },
+          {
+            "count": "60375",
+            "description": "Ear, Nose and Throat",
+            "reference": "120"
+          },
+          {
+            "count": "26813",
+            "description": "Endocrinology",
+            "reference": "302"
+          },
+          {
+            "count": "51077",
+            "description": "Gastroenterology",
+            "reference": "301"
+          },
+          {
+            "count": "44179",
+            "description": "General Medicine",
+            "reference": "300"
+          },
+          {
+            "count": "1792",
+            "description": "General Pathology",
+            "reference": "820"
+          },
+          {
+            "count": "62230",
+            "description": "General Surgery",
+            "reference": "100"
+          },
+          {
+            "count": "31171",
+            "description": "Geriatric Medicine",
+            "reference": "430"
+          },
+          {
+            "count": "772",
+            "description": "GP Maternity",
+            "reference": "610"
+          },
+          {
+            "count": "16",
+            "description": "GP Other",
+            "reference": "620"
+          },
+          {
+            "count": "56513",
+            "description": "Gynaecology",
+            "reference": "502"
+          },
+          {
+            "count": "720",
+            "description": "Haematology (non clinical)",
+            "reference": "823"
+          },
+          {
+            "count": "32138",
+            "description": "Haemotology (clinical)",
+            "reference": "303"
+          },
+          {
+            "count": "4878",
+            "description": "Infectious Diseases",
+            "reference": "350"
+          },
+          {
+            "count": "460",
+            "description": "Medical Oncology",
+            "reference": "370"
+          },
+          {
+            "count": "23532",
+            "description": "Nephrology",
+            "reference": "361"
+          },
+          {
+            "count": "28400",
+            "description": "Neurology",
+            "reference": "400"
+          },
+          {
+            "count": "12130",
+            "description": "Neurosurgery",
+            "reference": "150"
+          },
+          {
+            "count": "59823",
+            "description": "Ophthalmology",
+            "reference": "130"
+          },
+          {
+            "count": "52831",
+            "description": "Oral Surgery",
+            "reference": "140"
+          },
+          {
+            "count": "26305",
+            "description": "Orthodontics",
+            "reference": "143"
+          },
+          {
+            "count": "10058",
+            "description": "Paediatric Dentistry",
+            "reference": "142"
+          },
+          {
+            "count": "12446",
+            "description": "Paediatric Neurology",
+            "reference": "421"
+          },
+          {
+            "count": "13172",
+            "description": "Paediatric Surgery",
+            "reference": "171"
+          },
+          {
+            "count": "36661",
+            "description": "Paediatrics",
+            "reference": "420"
+          },
+          {
+            "count": "33825",
+            "description": "Pain Management",
+            "reference": "191"
+          },
+          {
+            "count": "17869",
+            "description": "Plastic Surgery",
+            "reference": "160"
+          },
+          {
+            "count": "8678",
+            "description": "Radiology",
+            "reference": "810"
+          },
+          {
+            "count": "11214",
+            "description": "Rehabilitation",
+            "reference": "314"
+          },
+          {
+            "count": "35911",
+            "description": "Respiratory Medicine",
+            "reference": "340"
+          },
+          {
+            "count": "21056",
+            "description": "Restorative Dentistry",
+            "reference": "141"
+          },
+          {
+            "count": "40647",
+            "description": "Rheumatology",
+            "reference": "410"
+          },
+          {
+            "count": "65261",
+            "description": "Trauma and Orthopaedic",
+            "reference": "110"
+          },
+          {
+            "count": "60069",
+            "description": "Urology",
+            "reference": "101"
+          },
+          {
+            "count": "6293",
+            "description": "Vascular Surgery",
+            "reference": "107"
+          },
+          {
+            "count": "64",
+            "description": "Respiratory Physiology",
+            "reference": "341"
+          },
+          {
+            "count": "112",
+            "description": "Clinical Psychology",
+            "reference": "656"
+          }
+        ],
+        "count": "73904",
+        "description": "Total",
+        "reference": "T"
+      }
+    ]
+  },
+  {
+    "columnName": "stage of pathway",
+    "factTableColumn": "StageOfPathwayCode",
+    "values": [
+      {
+        "children": [
+          {
+            "count": "269889",
+            "description": "Waiting for new OP appointment",
+            "reference": "1"
+          },
+          {
+            "count": "189185",
+            "description": "Waiting for diagnostic or AHP test, intervention or result",
+            "reference": "2"
+          },
+          {
+            "count": "259029",
+            "description": "Waiting for follow-up OP appointment or decision (after OP appointment/diagnostic/AHP intervention result) or waiting & stage unknown",
+            "reference": "3"
+          },
+          {
+            "count": "231497",
+            "description": "Waiting for admitted diagnostic or therapeutic intervention only",
+            "reference": "4"
+          }
+        ],
+        "count": "326742",
+        "description": "All Stages of Pathway",
+        "reference": "T"
+      }
+    ]
+  },
+  {
+    "columnName": "age group",
+    "factTableColumn": "AgeGroupAtReferralCode",
+    "values": [
+      {
+        "children": [
+          {
+            "count": "158391",
+            "description": "Less than 18 years of age",
+            "reference": "17"
+          },
+          {
+            "count": "343172",
+            "description": "Not Known/Not Recorded",
+            "reference": "99"
+          },
+          {
+            "count": "215076",
+            "description": "Over 18 years of age",
+            "reference": "18"
+          }
+        ],
+        "count": "559703",
+        "description": "Total",
+        "reference": "T"
+      }
+    ]
+  },
+  {
+    "columnName": "Data description",
+    "factTableColumn": "Measure",
+    "values": [
+      {
+        "count": "396355",
+        "description": "Pathways waiting less than 26 weeks",
+        "reference": "26"
+      },
+      {
+        "count": "241533",
+        "description": "Pathways waiting more than 36 weeks",
+        "reference": "36"
+      },
+      {
+        "count": "163629",
+        "description": "Pathways waiting more than 52 weeks",
+        "reference": "52"
+      },
+      {
+        "count": "70222",
+        "description": "Pathways waiting more than 104 weeks",
+        "reference": "104"
+      },
+      {
+        "count": "404603",
+        "description": "Total pathways waiting",
+        "reference": "TP"
+      }
+    ]
+  }
+]

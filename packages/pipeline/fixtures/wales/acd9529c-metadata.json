@@ -1,0 +1,130 @@
+{
+  "first_published_at": "2025-10-23T08:30:00.000Z",
+  "id": "acd9529c-979a-48ef-a773-870b3ebe4391",
+  "published_revision": {
+    "approved_at": "2026-09-15T10:30:34.273Z",
+    "coverage_end_date": "2026-07-31",
+    "coverage_start_date": "2011-09-01",
+    "created_at": "2026-08-26T10:41:07.380Z",
+    "designation": "accredited",
+    "id": "25c7133b-288b-4d7f-87c1-d8b7258a7a49",
+    "metadata": [
+      {
+        "collection": "Tynnir data o systemau gweinyddol y Bwrdd Iechyd Lleol sy'n ymwneud â rheoli cleifion sydd wedi cael eu cyfeirio am driniaeth ysbyty. Adroddir am ddata yn fisol gan Fyrddau Iechyd Lleol drwy Iechyd a Gofal Digidol Cymru. Mae’r trefniadau casglu data wedi bod ar waith ers mis Ebrill 2007.\n\nMae'r llwybr rhwng atgyfeirio a thriniaeth (RTT) yn cwmpasu'r amser aros o'r atgyfeiriad i'r ysbyty am driniaeth ac mae'n cynnwys yr amser a dreulir yn aros am unrhyw apwyntiadau ysbyty, profion, sganiau neu driniaethau eraill a allai fod eu hangen cyn y gellir trin yr unigolyn. Mae amseroedd aros yn seiliedig ar wythnosau cyflawn a arhoswyd. Er enghraifft, dim ond os ydynt wedi aros am 53 o wythnosau cyflawn neu ragor yr adroddir am lwybrau yn y categori “mwy na 52 o wythnosau”.\n\nYm mis Ebrill 2019, symudodd darpariaeth y gwasanaeth iechyd ar gyfer trigolion awdurdod lleol Pen-y-bont ar Ogwr o Abertawe Bro Morgannwg i Gwm Taf. Newidiwyd enwau'r byrddau iechyd; daeth Bwrdd Iechyd Prifysgol Cwm Taf yn Fwrdd Iechyd Prifysgol Cwm Taf Morgannwg a daeth Bwrdd Iechyd Prifysgol Abertawe Bro Morgannwg yn Fwrdd Iechyd Prifysgol Bae Abertawe.",
+        "language": "cy-GB",
+        "quality": "Mae diffiniadau a safonau data yn cael eu gorfodi gan Fwrdd Safonau Gwybodaeth Cymru (WISB).\n\nMae llwybr y claf yn agor, a'r amser aros yn dechrau, pan fydd yr ysbyty yn derbyn yr atgyfeiriad. Meddygon teulu sy’n cyflwyno atgyfeiriadau gan amlaf, ond gallant hefyd ddeillio o weithwyr gofal iechyd proffesiynol eraill. Mae'r ffigurau'n seiliedig ar gyfrif nifer y llwybrau cleifion sydd ar agor ar ddiwedd bob mis. Dyma’r ‘rhestr aros’ i bob pwrpas.\n\nYna caiff llwybrau’r claf eu cau os bydd y claf yn dechrau’r driniaeth, neu os penderfynir nad oes angen triniaeth yn yr ysbyty. Gallai hyn gynnwys: claf a dderbyniwyd i'r ysbyty ar gyfer llawdriniaeth neu driniaeth; dechrau triniaeth nad oes angen aros yn yr ysbyty ar ei gyfer (er enghraifft, meddyginiaeth neu ffisiotherapi); dechrau gosod dyfais feddygol fel heyrn coesau; dechrau cyfnod o amser y cytunwyd arno i fonitro cyflwr y claf i asesu'r angen am driniaeth bellach.\n\nNid yw nifer y llwybrau cleifion yr un fath â nifer y cleifion unigol sy'n aros. Mae hyn oherwydd bod gan rai cleifion, er enghraifft y rhai ag anghenion cymhleth, lwybrau lluosog ar agor.\n\nYm mis Mehefin 2026, gwelwyd gostyngiad o tua 1000 yn nifer llwybrau arbenigedd deintyddiaeth adferol Bwrdd Iechyd Prifysgol Caerdydd a’r Fro. Cafodd y rhain eu tynnu o’r rhestr yn rhan o ymarfer dilysu, lle’r oeddent wedi’u hagor yn flaenorol, rhwng mis Tachwedd 2025 a mis Mai 2026, mewn camgymeriad.",
+        "reason": "Mis newydd wedi'i ychwanegu a diwygiadau wedi'u cymhwyso i ddata blaenorol lle bo'n berthnasol",
+        "rounding_description": "mae canrannau wedi'u talgrynnu i un lle degol",
+        "summary": "Gwybodaeth am amseroedd aros rhwng atgyfeirio a thriniaeth (RTT), a adroddwyd gan Fyrddau Iechyd Lleol. Mae data'n ymdrin â'r cyfnod o amser rhwng atgyfeirio gan feddyg teulu neu ymarferydd meddygol arall a mynd i'r ysbyty i gael triniaeth yn y GIG yng Nghymru. Mae amseroedd aros yn cynnwys yr amser a dreulir yn aros am unrhyw apwyntiadau ysbyty, profion, sganiau neu driniaethau eraill a allai fod eu hangen cyn derbyn triniaeth.",
+        "title": "Rhestrau aros y GIG: gweithgaredd atgyfeirio i driniaeth, amseroedd aros canolrifol a'r 90fed ganradd, o fis Medi 2011 ymlaen"
+      },
+      {
+        "collection": "Data are drawn from Local Health Board administrative systems relating to the management of patients who have been referred for hospital treatment. Data are reported monthly by Local Health Boards via Digital Health and Care Wales (DHCW). The data collection has been in place since April 2007.\r\n\r\nA referral to treatment (RTT) pathway covers the time waiting from referral to hospital for treatment and includes time spent waiting for any hospital appointments, tests, scans or other procedures that may be needed before being treated. Waiting times are based on completed weeks waiting. For example, pathways are only reported in the “more than 52 weeks” category if they have waited 53 full weeks or longer. \r\n\r\nIn April 2019 health service provision for residents of Bridgend local authority moved from Abertawe Bro Morgannwg to Cwm Taf. The health board names changed, with Cwm Taf University Health Board becoming Cwm Taf Morgannwg University Health Board, and Abertawe Bro Morgannwg University Health Board becoming Swansea Bay University Health Board.",
+        "language": "en-GB",
+        "quality": "Data definitions and standards are mandated by the Welsh Information Standards Board (WISB).\r\n\r\nA patient pathway opens, and a waiting time begins, at the point a hospital receives a referral. Referrals are most commonly submitted by GPs but may also come from other health care professionals. The figures are based on a count of the number of patient pathways which are open at the end of each month. This can be thought of as ‘the waiting list’.\r\n\r\nPatient pathways are closed if either the patient starts treatment, or if it is determined no hospital treatment is necessary. This could include: patient admitted to hospital for an operation or treatment; starting treatment that does not need a stay in hospital (for example, medication or physiotherapy); beginning the fitting of a medical device such as leg braces; starting an agreed period of time to monitor the patient’s condition to assess the need for further treatment.\r\n\r\nThe number of patient pathways is not the same as the number of individual patients waiting. This is because some patients, for example those with complex needs, have multiple open pathways.\r\n\r\nIn June 2026 there was a fall of around one thousand pathways in the restorative dentistry specialty in Cardiff and Vale University health board. These were removed as part of a validation exercise, having previously been opened in error between November 2025 and May 2026.",
+        "reason": "New month added and revisions applied to previous data where applicable",
+        "rounding_description": "percentages are rounded to one decimal place",
+        "summary": "Information on referral to treatment (RTT) waiting times, reported by Local Health Boards. Data cover the period of time from referral by a GP or other medical practitioner to hospital for treatment in the NHS in Wales. Waiting times include time spent waiting for any hospital appointments, tests, scans or other procedures that may be needed before being treated.",
+        "title": "NHS waiting lists: referral to treatment performance measures, median and 90th centile waiting times, September 2011 onwards"
+      }
+    ],
+    "previous_revision_id": "916d1cbd-102f-4003-9890-d1a585236737",
+    "providers": [
+      {
+        "created_at": "2026-08-26T10:41:07.380Z",
+        "group_id": "58a990fb-b730-45fb-b2e1-82c9a0ba5f0d",
+        "id": "b779e39c-fdb2-4a51-bdb1-114e8ef9bfef",
+        "language": "cy-gb",
+        "provider_id": "f57e82cc-9c97-442b-a195-de74f443f36c",
+        "provider_name": "Iechyd a Gofal Digidol Cymru (DHCW)",
+        "revision_id": "25c7133b-288b-4d7f-87c1-d8b7258a7a49",
+        "source_id": "108ccceb-0719-46af-a7e9-647d16ebcc8f",
+        "source_name": "Amseroedd atgyfeiriad am driniaeth (RTT)"
+      },
+      {
+        "created_at": "2026-08-26T10:41:07.380Z",
+        "group_id": "58a990fb-b730-45fb-b2e1-82c9a0ba5f0d",
+        "id": "18915ef8-90f6-430a-8613-314c562a77f3",
+        "language": "en-gb",
+        "provider_id": "f57e82cc-9c97-442b-a195-de74f443f36c",
+        "provider_name": "Digital Health and Care Wales (DHCW)",
+        "revision_id": "25c7133b-288b-4d7f-87c1-d8b7258a7a49",
+        "source_id": "108ccceb-0719-46af-a7e9-647d16ebcc8f",
+        "source_name": "Referral to Treatment Times (RTT)"
+      }
+    ],
+    "publish_at": "2026-09-17T08:30:00.000Z",
+    "related_links": [
+      {
+        "created_at": "2025-10-07T08:52:29.551Z",
+        "id": "S1vfy",
+        "label_cy": "Crynodeb o weithgarwch a pherfformiad y GIG, datganiad ystadegol [Saesneg]",
+        "label_en": "NHS activity and performance summary, statistical release [English]",
+        "url": "https://www.gov.wales/nhs-activity-and-performance-summary"
+      },
+      {
+        "created_at": "2025-10-07T08:52:44.985Z",
+        "id": "dzsNq",
+        "label_cy": "Crynodeb o weithgarwch a pherfformiad y GIG: adroddiad ansawdd [Saesneg]",
+        "label_en": "NHS activity and performance summary: quality report [English]",
+        "url": "https://www.gov.wales/nhs-activity-and-performance-summary-quality-report"
+      },
+      {
+        "created_at": "2026-01-08T11:43:56.606Z",
+        "id": "jOPGb",
+        "label_cy": "Crynodeb o weithgarwch a pherfformiad y GIG, datganiad ystadegol [Cymraeg]",
+        "label_en": "NHS activity and performance summary, statistical release [Welsh]",
+        "url": "https://www.llyw.cymru/crynodeb-perfformiad-gweithgaredd-y-gig"
+      },
+      {
+        "created_at": "2026-01-08T11:45:21.507Z",
+        "id": "wKEDj",
+        "label_cy": "Crynodeb o weithgarwch a pherfformiad y GIG, adroddiad ansawdd [Cymraeg]",
+        "label_en": "NHS activity and performance summary: quality report [Welsh]",
+        "url": "https://www.llyw.cymru/crynodeb-perfformiad-gweithgaredd-y-gig-adroddiad-ansawdd"
+      }
+    ],
+    "revision_index": 13,
+    "rounding_applied": true,
+    "topics": [
+      {
+        "id": 40,
+        "name_cy": "Iechyd a gofal cymdeithasol",
+        "name_en": "Health and social care",
+        "path": "40"
+      },
+      {
+        "id": 47,
+        "name_cy": "Gweithgarwch ysbyty a lleoliadau gofal eraill",
+        "name_en": "Hospital and other care setting activity",
+        "path": "40.47"
+      },
+      {
+        "id": 50,
+        "name_cy": "Perfformiad ac amseroedd aros",
+        "name_en": "Performance and waiting times",
+        "path": "40.50"
+      }
+    ],
+    "update_frequency": {
+      "date": {
+        "day": "22",
+        "month": "10",
+        "year": "2026"
+      },
+      "update_type": "update"
+    },
+    "updated_at": "2026-09-15T10:30:34.275Z"
+  },
+  "publisher": {
+    "group": {
+      "email": "stats.healthinfo@gov.wales",
+      "id": "8f61b0bf-1824-4d12-beb0-207fb7132bde",
+      "name": "Hospital & secondary care"
+    },
+    "organisation": {
+      "id": "4ef4facf-c488-4837-a65b-e66d4b525965",
+      "name": "Welsh Government"
+    }
+  }
+}
