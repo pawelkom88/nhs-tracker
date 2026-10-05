@@ -1,9 +1,10 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@kyw/model/*": ["../model/src/*"]
+    }
   },
-  "references": [{ "path": "../model" }],
-  "include": ["src", "test", "*.config.ts"]
+  "include": ["src", "test", "scripts", "*.config.ts"]
 }

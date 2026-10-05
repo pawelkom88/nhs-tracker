@@ -6,3 +6,4 @@ out/
 coverage/
 dist/
 *.tsbuildinfo
+.pnpm-store/

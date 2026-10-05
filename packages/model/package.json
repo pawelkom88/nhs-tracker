@@ -5,6 +5,9 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
+    "./england/*": "./src/england/*.ts",
+    "./wales/*": "./src/wales/*.ts",
+    "./scotland/*": "./src/scotland/*.ts",
     "./*": "./src/*.ts"
   },
   "scripts": {
