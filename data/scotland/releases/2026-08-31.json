@@ -1,0 +1,3501 @@
+{
+  "comparisonFigures": [
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 130
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 80.5
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 111
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 142
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 166
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 107
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 39
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 129.5
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 117
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 138
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 144
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 299
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 136
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 48
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 174
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 114.5
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 61
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 159
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:G1",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "suppressed"
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 48
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 64
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 107
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 171
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 16
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2025-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 214
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    }
+  ],
+  "figures": [
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 88
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 3188
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 79598
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 39039
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 89
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 22
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 1398
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 680
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 90
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 66
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 143663
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 68596
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 206
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 421
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2734
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 468
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 100
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 218
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 12858
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 5743
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 96
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 658
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 7824
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 3600
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 92.5
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 0
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 218
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 103
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 87
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 0
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 348
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 173
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 83
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 0
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 13312
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 6824
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 104
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 19828
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 8528
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 213
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 412
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2289
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 180
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 227
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 7
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 132
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 28
+      },
+      "waitStage": "scotland:new-outpatient"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 115
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 1501
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 21858
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 8832
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 116
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 78
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 405
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 166
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 132
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 4506
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 41973
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 15049
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 104
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 618
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 6644
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:Z9",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 3125
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 67
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 32
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2169
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 1279
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 133
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 340
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 4330
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 1491
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:G1",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "suppressed"
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:G1",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "suppressed"
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000024",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:G1",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "suppressed"
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 349
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 78
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 159
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 19
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 96
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 0
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 87
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000025",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 35
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 130
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 311
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 6168
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2210
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 131
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 675
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 10845
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:S08000031",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 3564
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 20
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 78
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2123
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C7",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 1928
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Median"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:median-ongoing-wait",
+      "unit": "days",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 237
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "WaitsOver52Weeks"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:long-wait-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 340
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "kind": "official",
+        "sourceField": "Waits"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:total-waiting",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 2321
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    },
+    {
+      "nation": "scotland",
+      "provenance": {
+        "inputs": [
+          "LessThan4WeekWait",
+          "4To8WeekWait",
+          "8To12WeekWait"
+        ],
+        "kind": "derived",
+        "method": "exact-sum"
+      },
+      "publicationDate": "2026-09-29",
+      "reportingPeriod": "2026-08-31",
+      "reportingUnit": "scotland:SB0801",
+      "source": {
+        "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+        "licence": "OGL-3.0",
+        "nation": "scotland",
+        "publisher": "Public Health Scotland",
+        "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+        "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+      },
+      "specialty": "scotland:C8",
+      "statistic": "scotland:within-waiting-standard-count",
+      "unit": "count",
+      "value": {
+        "provisional": false,
+        "status": "published",
+        "value": 215
+      },
+      "waitStage": "scotland:inpatient-day-case"
+    }
+  ],
+  "nation": "scotland",
+  "publicationDate": "2026-09-29",
+  "reportingPeriod": "2026-08-31",
+  "reportingUnits": [
+    "scotland:S08000024",
+    "scotland:S08000025",
+    "scotland:S08000031",
+    "scotland:SB0801"
+  ],
+  "retrievedAt": "2026-10-05T05:43:06.443Z",
+  "schemaVersion": 1,
+  "source": {
+    "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+    "licence": "OGL-3.0",
+    "nation": "scotland",
+    "publisher": "Public Health Scotland",
+    "title": "Stage of Treatment Waiting Times - Inpatients, Day Cases and New Outpatients",
+    "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+  },
+  "sourceFiles": [
+    {
+      "revised": false,
+      "sha256": "86ead1bfea80eb9caf7164620e86413d1483f5040ed951e3e268fad69fc9e1fd",
+      "url": "https://www.opendata.nhs.scot/dataset/e9dbef36-a343-4b9a-ab7e-b6e6cbcbb38e/resource/ac63b747-fdcc-410c-ae43-de6fe3c46abf/download/sot_performance_ongoing_completed_waits_monthly_aug26.csv"
+    },
+    {
+      "revised": false,
+      "sha256": "e0b0eb152602da769e3110fa77ade22eca4c982ff116815d8c832c2543c96331",
+      "url": "https://www.opendata.nhs.scot/dataset/e9dbef36-a343-4b9a-ab7e-b6e6cbcbb38e/resource/f9232c17-a90e-4d35-a863-11bdb3a748c0/download/sot_distribution_of_ongoing_completed_waits_monthly_aug26.csv"
+    }
+  ]
+}

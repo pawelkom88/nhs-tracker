@@ -1,0 +1,894 @@
+{
+  "hospitalSites": [
+    {
+      "id": "scotland:N101H",
+      "name": "Aberdeen Royal Infirmary",
+      "officialCode": "N101H",
+      "reportingUnit": "scotland:S08000020",
+      "town": "Aberdeenshire"
+    },
+    {
+      "id": "scotland:A210H",
+      "name": "Ayr Hospital",
+      "officialCode": "A210H",
+      "reportingUnit": "scotland:S08000015",
+      "town": "Ayrshire"
+    },
+    {
+      "id": "scotland:O101H",
+      "name": "Balfour Hospital",
+      "officialCode": "O101H",
+      "reportingUnit": "scotland:S08000025",
+      "town": "Orkney"
+    },
+    {
+      "id": "scotland:H202H",
+      "name": "Belford Hospital",
+      "officialCode": "H202H",
+      "reportingUnit": "scotland:S08000022",
+      "town": "Inverness-Shire"
+    },
+    {
+      "id": "scotland:B120H",
+      "name": "Borders General Hospital",
+      "officialCode": "B120H",
+      "reportingUnit": "scotland:S08000016",
+      "town": "Roxburghshire"
+    },
+    {
+      "id": "scotland:H304H",
+      "name": "Caithness General Hospital",
+      "officialCode": "H304H",
+      "reportingUnit": "scotland:S08000022",
+      "town": "Caithness"
+    },
+    {
+      "id": "scotland:A101H",
+      "name": "Crosshouse Hospital",
+      "officialCode": "A101H",
+      "reportingUnit": "scotland:S08000015",
+      "town": "Ayrshire"
+    },
+    {
+      "id": "scotland:N161H",
+      "name": "Dr Gray's Hospital",
+      "officialCode": "N161H",
+      "reportingUnit": "scotland:S08000020",
+      "town": "Moray"
+    },
+    {
+      "id": "scotland:Y104H",
+      "name": "Dumfries & Galloway Royal Infirmary",
+      "officialCode": "Y104H",
+      "reportingUnit": "scotland:S08000017",
+      "town": "Dumfries-Shire"
+    },
+    {
+      "id": "scotland:V102H",
+      "name": "Forth Valley Royal Hospital",
+      "officialCode": "V102H",
+      "reportingUnit": "scotland:S08000019",
+      "town": "Stirlingshire"
+    },
+    {
+      "id": "scotland:Y146H",
+      "name": "Galloway Community Hospital",
+      "officialCode": "Y146H",
+      "reportingUnit": "scotland:S08000017",
+      "town": "Wigtownshire"
+    },
+    {
+      "id": "scotland:R101H",
+      "name": "Gilbert Bain Hospital",
+      "officialCode": "R101H",
+      "reportingUnit": "scotland:S08000026",
+      "town": "Shetland"
+    },
+    {
+      "id": "scotland:G405H",
+      "name": "Glasgow Royal Infirmary",
+      "officialCode": "G405H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Glasgow"
+    },
+    {
+      "id": "scotland:D102H",
+      "name": "Golden Jubilee National Hospital",
+      "officialCode": "D102H",
+      "reportingUnit": "scotland:SB0801",
+      "town": "Dunbartonshire"
+    },
+    {
+      "id": "scotland:L106H",
+      "name": "Hairmyres Hospital",
+      "officialCode": "L106H",
+      "reportingUnit": "scotland:S08000032",
+      "town": "Lanarkshire"
+    },
+    {
+      "id": "scotland:G515H",
+      "name": "Inverclyde Royal Hospital",
+      "officialCode": "G515H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Renfrewshire"
+    },
+    {
+      "id": "scotland:L201H",
+      "name": "Monklands Hospital",
+      "officialCode": "L201H",
+      "reportingUnit": "scotland:S08000032",
+      "town": "Lanarkshire"
+    },
+    {
+      "id": "scotland:G606H",
+      "name": "New Victoria Hospital",
+      "officialCode": "G606H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Glasgow"
+    },
+    {
+      "id": "scotland:T101H",
+      "name": "Ninewells Hospital",
+      "officialCode": "T101H",
+      "reportingUnit": "scotland:S08000030",
+      "town": "Angus"
+    },
+    {
+      "id": "scotland:T202H",
+      "name": "Perth Royal Infirmary",
+      "officialCode": "T202H",
+      "reportingUnit": "scotland:S08000030",
+      "town": "Perthshire"
+    },
+    {
+      "id": "scotland:G107H",
+      "name": "Queen Elizabeth University Hospital",
+      "officialCode": "G107H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Glasgow"
+    },
+    {
+      "id": "scotland:F705H",
+      "name": "Queen Margaret Hospital",
+      "officialCode": "F705H",
+      "reportingUnit": "scotland:S08000029",
+      "town": "Fife"
+    },
+    {
+      "id": "scotland:H102H",
+      "name": "Raigmore Hospital",
+      "officialCode": "H102H",
+      "reportingUnit": "scotland:S08000022",
+      "town": "Inverness-Shire"
+    },
+    {
+      "id": "scotland:G513H",
+      "name": "Royal Alexandra Hospital",
+      "officialCode": "G513H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Renfrewshire"
+    },
+    {
+      "id": "scotland:N121H",
+      "name": "Royal Cornhill Hospital",
+      "officialCode": "N121H",
+      "reportingUnit": "scotland:S08000020",
+      "town": "Aberdeen"
+    },
+    {
+      "id": "scotland:S102H",
+      "name": "Royal Infirmary of Edinburgh",
+      "officialCode": "S102H",
+      "reportingUnit": "scotland:S08000024",
+      "town": "Midlothian"
+    },
+    {
+      "id": "scotland:S217H",
+      "name": "St John's Hospital",
+      "officialCode": "S217H",
+      "reportingUnit": "scotland:S08000024",
+      "town": "West Lothian"
+    },
+    {
+      "id": "scotland:G605H",
+      "name": "Stobhill Hospital",
+      "officialCode": "G605H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Glasgow"
+    },
+    {
+      "id": "scotland:T311H",
+      "name": "Stracathro Hospital",
+      "officialCode": "T311H",
+      "reportingUnit": "scotland:S08000030",
+      "town": "Angus"
+    },
+    {
+      "id": "scotland:G602H",
+      "name": "Vale of Leven General Hospital",
+      "officialCode": "G602H",
+      "reportingUnit": "scotland:S08000031",
+      "town": "Dunbartonshire"
+    },
+    {
+      "id": "scotland:F704H",
+      "name": "Victoria Hospital",
+      "officialCode": "F704H",
+      "reportingUnit": "scotland:S08000029",
+      "town": "Fife"
+    },
+    {
+      "id": "scotland:S201H",
+      "name": "Western General Hospital",
+      "officialCode": "S201H",
+      "reportingUnit": "scotland:S08000024",
+      "town": "Midlothian"
+    },
+    {
+      "id": "scotland:W107H",
+      "name": "Western Isles Hospital",
+      "officialCode": "W107H",
+      "reportingUnit": "scotland:S08000028",
+      "town": "Isle of Lewis"
+    },
+    {
+      "id": "scotland:L302H",
+      "name": "Wishaw General Hospital",
+      "officialCode": "L302H",
+      "reportingUnit": "scotland:S08000032",
+      "town": "Lanarkshire"
+    },
+    {
+      "id": "scotland:N411H",
+      "name": "Woodend Hospital",
+      "officialCode": "N411H",
+      "reportingUnit": "scotland:S08000020",
+      "town": "Aberdeen"
+    }
+  ],
+  "nation": "scotland",
+  "reportingUnits": [
+    {
+      "displayName": "Golden Jubilee National Hospital",
+      "hospitalSites": [
+        "scotland:D102H"
+      ],
+      "id": "scotland:SB0801",
+      "kind": "special-health-board",
+      "notes": [
+        "treats-patients-from-all-boards"
+      ],
+      "officialCode": "SB0801",
+      "officialName": "Golden Jubilee National Hospital",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Ayrshire and Arran",
+      "hospitalSites": [
+        "scotland:A210H",
+        "scotland:A101H"
+      ],
+      "id": "scotland:S08000015",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000015",
+      "officialName": "NHS Ayrshire and Arran",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Borders",
+      "hospitalSites": [
+        "scotland:B120H"
+      ],
+      "id": "scotland:S08000016",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000016",
+      "officialName": "NHS Borders",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Dumfries and Galloway",
+      "hospitalSites": [
+        "scotland:Y104H",
+        "scotland:Y146H"
+      ],
+      "id": "scotland:S08000017",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000017",
+      "officialName": "NHS Dumfries and Galloway",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Fife",
+      "hospitalSites": [
+        "scotland:F705H",
+        "scotland:F704H"
+      ],
+      "id": "scotland:S08000029",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000029",
+      "officialName": "NHS Fife",
+      "operational": {
+        "from": "2019-04-01",
+        "to": null
+      },
+      "predecessors": [
+        "scotland:S08000018"
+      ],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Forth Valley",
+      "hospitalSites": [
+        "scotland:V102H"
+      ],
+      "id": "scotland:S08000019",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000019",
+      "officialName": "NHS Forth Valley",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Grampian",
+      "hospitalSites": [
+        "scotland:N101H",
+        "scotland:N161H",
+        "scotland:N121H",
+        "scotland:N411H"
+      ],
+      "id": "scotland:S08000020",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000020",
+      "officialName": "NHS Grampian",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Greater Glasgow and Clyde",
+      "hospitalSites": [
+        "scotland:G405H",
+        "scotland:G515H",
+        "scotland:G606H",
+        "scotland:G107H",
+        "scotland:G513H",
+        "scotland:G605H",
+        "scotland:G602H"
+      ],
+      "id": "scotland:S08000031",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000031",
+      "officialName": "NHS Greater Glasgow and Clyde",
+      "operational": {
+        "from": "2019-04-01",
+        "to": null
+      },
+      "predecessors": [
+        "scotland:S08000021"
+      ],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Highland",
+      "hospitalSites": [
+        "scotland:H202H",
+        "scotland:H304H",
+        "scotland:H102H"
+      ],
+      "id": "scotland:S08000022",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000022",
+      "officialName": "NHS Highland",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Lanarkshire",
+      "hospitalSites": [
+        "scotland:L106H",
+        "scotland:L201H",
+        "scotland:L302H"
+      ],
+      "id": "scotland:S08000032",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000032",
+      "officialName": "NHS Lanarkshire",
+      "operational": {
+        "from": "2019-04-01",
+        "to": null
+      },
+      "predecessors": [
+        "scotland:S08000023"
+      ],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Lothian",
+      "hospitalSites": [
+        "scotland:S102H",
+        "scotland:S217H",
+        "scotland:S201H"
+      ],
+      "id": "scotland:S08000024",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000024",
+      "officialName": "NHS Lothian",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Orkney",
+      "hospitalSites": [
+        "scotland:O101H"
+      ],
+      "id": "scotland:S08000025",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000025",
+      "officialName": "NHS Orkney",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Shetland",
+      "hospitalSites": [
+        "scotland:R101H"
+      ],
+      "id": "scotland:S08000026",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000026",
+      "officialName": "NHS Shetland",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Tayside",
+      "hospitalSites": [
+        "scotland:T101H",
+        "scotland:T202H",
+        "scotland:T311H"
+      ],
+      "id": "scotland:S08000030",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000030",
+      "officialName": "NHS Tayside",
+      "operational": {
+        "from": "2019-04-01",
+        "to": null
+      },
+      "predecessors": [
+        "scotland:S08000027"
+      ],
+      "successors": []
+    },
+    {
+      "displayName": "NHS Western Isles",
+      "hospitalSites": [
+        "scotland:W107H"
+      ],
+      "id": "scotland:S08000028",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "S08000028",
+      "officialName": "NHS Western Isles",
+      "operational": {
+        "from": "2014-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    }
+  ],
+  "retrievedAt": "2026-10-01T00:00:00.000Z",
+  "sources": [
+    {
+      "attribution": "Source: Public Health Scotland, Stage of Treatment Waiting Times (opendata.nhs.scot). Contains public sector information licensed under the Open Government Licence v3.0.",
+      "licence": "OGL-3.0",
+      "nation": "scotland",
+      "publisher": "Public Health Scotland",
+      "title": "Stage of Treatment Waiting Times",
+      "url": "https://www.opendata.nhs.scot/dataset/stage-of-treatment-waiting-times"
+    },
+    {
+      "attribution": "Source: Public Health Scotland. Contains public sector information licensed under the Open Government Licence v3.0.",
+      "licence": "OGL-3.0",
+      "nation": "scotland",
+      "publisher": "Public Health Scotland",
+      "title": "NHS Scotland Geography and Hospital Codes",
+      "url": "https://www.opendata.nhs.scot/dataset/geography-codes-and-labels"
+    }
+  ],
+  "specialties": [
+    {
+      "descriptionKey": "scotland/all-specialties",
+      "id": "scotland:Z9",
+      "isAllSpecialties": true,
+      "officialCode": "Z9",
+      "officialName": "All specialties",
+      "slug": "all-specialties"
+    },
+    {
+      "descriptionKey": "scotland/general-medicine",
+      "id": "scotland:A1",
+      "isAllSpecialties": false,
+      "officialCode": "A1",
+      "officialName": "General Medicine",
+      "slug": "general-medicine"
+    },
+    {
+      "descriptionKey": "scotland/cardiology",
+      "id": "scotland:A2",
+      "isAllSpecialties": false,
+      "officialCode": "A2",
+      "officialName": "Cardiology",
+      "slug": "cardiology"
+    },
+    {
+      "descriptionKey": "scotland/clinical-genetics",
+      "id": "scotland:A3",
+      "isAllSpecialties": false,
+      "officialCode": "A3",
+      "officialName": "Clinical Genetics",
+      "slug": "clinical-genetics"
+    },
+    {
+      "descriptionKey": "scotland/clinical-oncology",
+      "id": "scotland:A6",
+      "isAllSpecialties": false,
+      "officialCode": "A6",
+      "officialName": "Clinical Oncology",
+      "slug": "clinical-oncology"
+    },
+    {
+      "descriptionKey": "scotland/dermatology",
+      "id": "scotland:A7",
+      "isAllSpecialties": false,
+      "officialCode": "A7",
+      "officialName": "Dermatology",
+      "slug": "dermatology"
+    },
+    {
+      "descriptionKey": "scotland/endocrinology-and-diabetes",
+      "id": "scotland:A8",
+      "isAllSpecialties": false,
+      "officialCode": "A8",
+      "officialName": "Endocrinology & Diabetes",
+      "slug": "endocrinology-and-diabetes"
+    },
+    {
+      "descriptionKey": "scotland/gastroenterology",
+      "id": "scotland:A9",
+      "isAllSpecialties": false,
+      "officialCode": "A9",
+      "officialName": "Gastroenterology",
+      "slug": "gastroenterology"
+    },
+    {
+      "descriptionKey": "scotland/genito-urinary-medicine",
+      "id": "scotland:AA",
+      "isAllSpecialties": false,
+      "officialCode": "AA",
+      "officialName": "Genito-Urinary Medicine",
+      "slug": "genito-urinary-medicine"
+    },
+    {
+      "descriptionKey": "scotland/geriatric-medicine",
+      "id": "scotland:AB",
+      "isAllSpecialties": false,
+      "officialCode": "AB",
+      "officialName": "Geriatric Medicine",
+      "slug": "geriatric-medicine"
+    },
+    {
+      "descriptionKey": "scotland/medical-oncology",
+      "id": "scotland:AC",
+      "isAllSpecialties": false,
+      "officialCode": "AC",
+      "officialName": "Medical Oncology",
+      "slug": "medical-oncology"
+    },
+    {
+      "descriptionKey": "scotland/nephrology",
+      "id": "scotland:AD",
+      "isAllSpecialties": false,
+      "officialCode": "AD",
+      "officialName": "Nephrology",
+      "slug": "nephrology"
+    },
+    {
+      "descriptionKey": "scotland/neurology",
+      "id": "scotland:AF",
+      "isAllSpecialties": false,
+      "officialCode": "AF",
+      "officialName": "Neurology",
+      "slug": "neurology"
+    },
+    {
+      "descriptionKey": "scotland/rehabilitation-medicine",
+      "id": "scotland:AG",
+      "isAllSpecialties": false,
+      "officialCode": "AG",
+      "officialName": "Rehabilitation Medicine",
+      "slug": "rehabilitation-medicine"
+    },
+    {
+      "descriptionKey": "scotland/respiratory-medicine",
+      "id": "scotland:AH",
+      "isAllSpecialties": false,
+      "officialCode": "AH",
+      "officialName": "Respiratory Medicine",
+      "slug": "respiratory-medicine"
+    },
+    {
+      "descriptionKey": "scotland/rheumatology",
+      "id": "scotland:AJ",
+      "isAllSpecialties": false,
+      "officialCode": "AJ",
+      "officialName": "Rheumatology",
+      "slug": "rheumatology"
+    },
+    {
+      "descriptionKey": "scotland/palliative-medicine",
+      "id": "scotland:AM",
+      "isAllSpecialties": false,
+      "officialCode": "AM",
+      "officialName": "Palliative Medicine",
+      "slug": "palliative-medicine"
+    },
+    {
+      "descriptionKey": "scotland/medical-paediatrics",
+      "id": "scotland:AP",
+      "isAllSpecialties": false,
+      "officialCode": "AP",
+      "officialName": "Medical Paediatrics",
+      "slug": "medical-paediatrics"
+    },
+    {
+      "descriptionKey": "scotland/general-surgery",
+      "id": "scotland:C1",
+      "isAllSpecialties": false,
+      "officialCode": "C1",
+      "officialName": "General Surgery",
+      "slug": "general-surgery"
+    },
+    {
+      "descriptionKey": "scotland/colorectal-surgery",
+      "id": "scotland:C2",
+      "isAllSpecialties": false,
+      "officialCode": "C2",
+      "officialName": "Colorectal Surgery",
+      "slug": "colorectal-surgery"
+    },
+    {
+      "descriptionKey": "scotland/dental-surgery",
+      "id": "scotland:C3",
+      "isAllSpecialties": false,
+      "officialCode": "C3",
+      "officialName": "Dental Surgery",
+      "slug": "dental-surgery"
+    },
+    {
+      "descriptionKey": "scotland/cardiothoracic-surgery",
+      "id": "scotland:C4",
+      "isAllSpecialties": false,
+      "officialCode": "C4",
+      "officialName": "Cardiothoracic Surgery",
+      "slug": "cardiothoracic-surgery"
+    },
+    {
+      "descriptionKey": "scotland/ent",
+      "id": "scotland:C5",
+      "isAllSpecialties": false,
+      "officialCode": "C5",
+      "officialName": "Ear, Nose & Throat (ENT)",
+      "slug": "ent"
+    },
+    {
+      "descriptionKey": "scotland/neurosurgery",
+      "id": "scotland:C6",
+      "isAllSpecialties": false,
+      "officialCode": "C6",
+      "officialName": "Neurosurgery",
+      "slug": "neurosurgery"
+    },
+    {
+      "descriptionKey": "scotland/ophthalmology",
+      "id": "scotland:C7",
+      "isAllSpecialties": false,
+      "officialCode": "C7",
+      "officialName": "Ophthalmology",
+      "slug": "ophthalmology"
+    },
+    {
+      "descriptionKey": "scotland/trauma-and-orthopaedics",
+      "id": "scotland:C8",
+      "isAllSpecialties": false,
+      "officialCode": "C8",
+      "officialName": "Trauma and Orthopaedic Surgery",
+      "slug": "trauma-and-orthopaedics"
+    },
+    {
+      "descriptionKey": "scotland/plastic-surgery",
+      "id": "scotland:C9",
+      "isAllSpecialties": false,
+      "officialCode": "C9",
+      "officialName": "Plastic Surgery",
+      "slug": "plastic-surgery"
+    },
+    {
+      "descriptionKey": "scotland/paediatric-surgery",
+      "id": "scotland:CA",
+      "isAllSpecialties": false,
+      "officialCode": "CA",
+      "officialName": "Paediatric Surgery",
+      "slug": "paediatric-surgery"
+    },
+    {
+      "descriptionKey": "scotland/urology",
+      "id": "scotland:CB",
+      "isAllSpecialties": false,
+      "officialCode": "CB",
+      "officialName": "Urology",
+      "slug": "urology"
+    },
+    {
+      "descriptionKey": "scotland/vascular-surgery",
+      "id": "scotland:CC",
+      "isAllSpecialties": false,
+      "officialCode": "CC",
+      "officialName": "Vascular Surgery",
+      "slug": "vascular-surgery"
+    },
+    {
+      "descriptionKey": "scotland/community-dental-practice",
+      "id": "scotland:D1",
+      "isAllSpecialties": false,
+      "officialCode": "D1",
+      "officialName": "Community Dental Practice",
+      "slug": "community-dental-practice"
+    },
+    {
+      "descriptionKey": "scotland/oral-surgery",
+      "id": "scotland:D3",
+      "isAllSpecialties": false,
+      "officialCode": "D3",
+      "officialName": "Oral Surgery",
+      "slug": "oral-surgery"
+    },
+    {
+      "descriptionKey": "scotland/orthodontics",
+      "id": "scotland:D4",
+      "isAllSpecialties": false,
+      "officialCode": "D4",
+      "officialName": "Orthodontics",
+      "slug": "orthodontics"
+    },
+    {
+      "descriptionKey": "scotland/paediatric-dentistry",
+      "id": "scotland:D5",
+      "isAllSpecialties": false,
+      "officialCode": "D5",
+      "officialName": "Paediatric Dentistry",
+      "slug": "paediatric-dentistry"
+    },
+    {
+      "descriptionKey": "scotland/restorative-dentistry",
+      "id": "scotland:D6",
+      "isAllSpecialties": false,
+      "officialCode": "D6",
+      "officialName": "Restorative Dentistry",
+      "slug": "restorative-dentistry"
+    },
+    {
+      "descriptionKey": "scotland/oral-medicine",
+      "id": "scotland:D8",
+      "isAllSpecialties": false,
+      "officialCode": "D8",
+      "officialName": "Oral Medicine",
+      "slug": "oral-medicine"
+    },
+    {
+      "descriptionKey": "scotland/gynaecology",
+      "id": "scotland:F2",
+      "isAllSpecialties": false,
+      "officialCode": "F2",
+      "officialName": "Gynaecology",
+      "slug": "gynaecology"
+    },
+    {
+      "descriptionKey": "scotland/general-psychiatry",
+      "id": "scotland:G1",
+      "isAllSpecialties": false,
+      "officialCode": "G1",
+      "officialName": "General Psychiatry",
+      "slug": "general-psychiatry"
+    },
+    {
+      "descriptionKey": "scotland/clinical-radiology",
+      "id": "scotland:H2",
+      "isAllSpecialties": false,
+      "officialCode": "H2",
+      "officialName": "Clinical Radiology",
+      "slug": "clinical-radiology"
+    },
+    {
+      "descriptionKey": "scotland/chemical-pathology",
+      "id": "scotland:J3",
+      "isAllSpecialties": false,
+      "officialCode": "J3",
+      "officialName": "Chemical Pathology",
+      "slug": "chemical-pathology"
+    },
+    {
+      "descriptionKey": "scotland/haematology",
+      "id": "scotland:J4",
+      "isAllSpecialties": false,
+      "officialCode": "J4",
+      "officialName": "Haematology",
+      "slug": "haematology"
+    },
+    {
+      "descriptionKey": "scotland/immunology",
+      "id": "scotland:J5",
+      "isAllSpecialties": false,
+      "officialCode": "J5",
+      "officialName": "Immunology",
+      "slug": "immunology"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "lastCheck": "2026-10-05T05:43:06.441Z",
+  "seenFiles": {
+    "2026-07-31:25c7133b-288b-4d7f-87c1-d8b7258a7a49:a74af7bb-c186-4a69-9b62-3489cfd34e74": {
+      "fetchedAt": "2026-10-05T05:43:06.441Z",
+      "sha256": "66e299db641a0b2ef478c58058587675133b07ac119b7670270bcde8868c6592"
+    },
+    "https://api.stats.gov.wales/v2/3ef3a1d8-1467-4afe-ad60-4fc3d92228a1": {
+      "fetchedAt": "2026-10-05T05:43:06.420Z",
+      "sha256": "74ab956a89c5f5ff40137a5c7b7e231c54c68f96941bef028a1e6c10aba0f5b4"
+    },
+    "https://api.stats.gov.wales/v2/acd9529c-979a-48ef-a773-870b3ebe4391": {
+      "fetchedAt": "2026-10-05T05:43:06.418Z",
+      "sha256": "f6c22b8c43539d18f083ce02f1b40aa9af5198113ef3dd7fe9be3d7e3c237d04"
+    },
+    "https://api.stats.gov.wales/v2/acd9529c-979a-48ef-a773-870b3ebe4391/metadata": {
+      "fetchedAt": "2026-10-05T05:43:06.420Z",
+      "sha256": "20e63df21bde49538c2338cdc4e1315de2620d907c647fbaaaf33ab5f72a1bc4"
+    }
+  }
+}

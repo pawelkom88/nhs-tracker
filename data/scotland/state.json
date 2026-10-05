@@ -1,0 +1,21 @@
+{
+  "lastCheck": "2026-10-05T05:43:06.487Z",
+  "seenFiles": {
+    "2026-08-31:https://www.opendata.nhs.scot/dataset/e9dbef36-a343-4b9a-ab7e-b6e6cbcbb38e/resource/ac63b747-fdcc-410c-ae43-de6fe3c46abf/download/sot_performance_ongoing_completed_waits_monthly_aug26.csv#2026-09-29T12:55:00.368498|https://www.opendata.nhs.scot/dataset/e9dbef36-a343-4b9a-ab7e-b6e6cbcbb38e/resource/f9232c17-a90e-4d35-a863-11bdb3a748c0/download/sot_distribution_of_ongoing_completed_waits_monthly_aug26.csv#2026-09-29T08:58:15.493218": {
+      "fetchedAt": "2026-10-05T05:43:06.487Z",
+      "sha256": "438df69931edb16814d7abee8def90f4b2b152593b0c63c7e463eaed711a54fd"
+    },
+    "https://www.opendata.nhs.scot/api/3/action/package_show?id=stage-of-treatment-waiting-times": {
+      "fetchedAt": "2026-10-05T05:43:06.442Z",
+      "sha256": "030cf3f6928eced2e80194087ec7c511e09db878fa6bbfe42cbee3c769985258"
+    },
+    "https://www.opendata.nhs.scot/dataset/e9dbef36-a343-4b9a-ab7e-b6e6cbcbb38e/resource/ac63b747-fdcc-410c-ae43-de6fe3c46abf/download/sot_performance_ongoing_completed_waits_monthly_aug26.csv": {
+      "fetchedAt": "2026-10-05T05:43:06.443Z",
+      "sha256": "86ead1bfea80eb9caf7164620e86413d1483f5040ed951e3e268fad69fc9e1fd"
+    },
+    "https://www.opendata.nhs.scot/dataset/e9dbef36-a343-4b9a-ab7e-b6e6cbcbb38e/resource/f9232c17-a90e-4d35-a863-11bdb3a748c0/download/sot_distribution_of_ongoing_completed_waits_monthly_aug26.csv": {
+      "fetchedAt": "2026-10-05T05:43:06.443Z",
+      "sha256": "e0b0eb152602da769e3110fa77ade22eca4c982ff116815d8c832c2543c96331"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "lastCheck": "2026-10-05T05:43:06.415Z",
+  "seenFiles": {
+    "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/02/Incomplete-Provider-Jul25-XLSX-9M-revised-2.xlsx": {
+      "fetchedAt": "2026-10-05T05:43:06.143Z",
+      "sha256": "69f7e791875870ded72c3bf0af9c82a1718668073aeb4debf5fd2ba9444d86d1"
+    },
+    "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/07/Incomplete-Provider-Mar26-XLSX-9M-revised.xlsx": {
+      "fetchedAt": "2026-10-05T05:43:06.296Z",
+      "sha256": "f396b2b8b4b7ee4c7fd0806cd4c44695e788bd96d9bd3d1ba04e8df2ab24ca0e"
+    },
+    "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/09/Incomplete-Provider-Jul26-XLSX-9M-97ylx5.xlsx": {
+      "fetchedAt": "2026-10-05T05:43:06.415Z",
+      "sha256": "924cd20ef34f6091eee2ec0c49baa3d015cef035b5e97b0992870653fd152348"
+    }
+  }
+}

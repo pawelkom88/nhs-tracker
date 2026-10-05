@@ -1,0 +1,972 @@
+{
+  "hospitalSites": [
+    {
+      "id": "wales:7A2B3",
+      "name": "Amman Valley Hospital",
+      "officialCode": "7A2B3",
+      "reportingUnit": "wales:7A2",
+      "town": "Ammanford"
+    },
+    {
+      "id": "wales:7A4B1",
+      "name": "Barry Hospital",
+      "officialCode": "7A4B1",
+      "reportingUnit": "wales:7A4",
+      "town": "Barry"
+    },
+    {
+      "id": "wales:7A7A1",
+      "name": "Brecon War Memorial Hospital",
+      "officialCode": "7A7A1",
+      "reportingUnit": "wales:7A7",
+      "town": "Brecon"
+    },
+    {
+      "id": "wales:7A2A3",
+      "name": "Bronglais General Hospital",
+      "officialCode": "7A2A3",
+      "reportingUnit": "wales:7A2",
+      "town": "Aberystwyth"
+    },
+    {
+      "id": "wales:7A7A7",
+      "name": "Bronllys Hospital",
+      "officialCode": "7A7A7",
+      "reportingUnit": "wales:7A7",
+      "town": "Brecon"
+    },
+    {
+      "id": "wales:7A1C1",
+      "name": "Bryn Beryl Hospital",
+      "officialCode": "7A1C1",
+      "reportingUnit": "wales:7A1",
+      "town": "Pwllheli"
+    },
+    {
+      "id": "wales:7A4B3",
+      "name": "Cardiff Royal Infirmary",
+      "officialCode": "7A4B3",
+      "reportingUnit": "wales:7A4",
+      "town": "Cardiff"
+    },
+    {
+      "id": "wales:7A6B3",
+      "name": "Chepstow Community Hospital",
+      "officialCode": "7A6B3",
+      "reportingUnit": "wales:7A6",
+      "town": "Chepstow"
+    },
+    {
+      "id": "wales:7A1B3",
+      "name": "Colwyn Bay Community Hospital",
+      "officialCode": "7A1B3",
+      "reportingUnit": "wales:7A1",
+      "town": "Colwyn Bay"
+    },
+    {
+      "id": "wales:7A6B4",
+      "name": "County Hospital",
+      "officialCode": "7A6B4",
+      "reportingUnit": "wales:7A6",
+      "town": "Griffithstown"
+    },
+    {
+      "id": "wales:7A1B4",
+      "name": "Denbigh Community Hospital",
+      "officialCode": "7A1B4",
+      "reportingUnit": "wales:7A1",
+      "town": "Denbigh"
+    },
+    {
+      "id": "wales:7A1B8",
+      "name": "Dolgellau and Barmouth Hospital",
+      "officialCode": "7A1B8",
+      "reportingUnit": "wales:7A1",
+      "town": "Dolgellau"
+    },
+    {
+      "id": "wales:7A2A1",
+      "name": "Glangwili General Hospital",
+      "officialCode": "7A2A1",
+      "reportingUnit": "wales:7A2",
+      "town": "Carmarthen"
+    },
+    {
+      "id": "wales:7A3B1",
+      "name": "Gorseinon Hospital",
+      "officialCode": "7A3B1",
+      "reportingUnit": "wales:7A3",
+      "town": "Swansea"
+    },
+    {
+      "id": "wales:7A1B6",
+      "name": "Holywell Community Hospital",
+      "officialCode": "7A1B6",
+      "reportingUnit": "wales:7A1",
+      "town": "Holywell"
+    },
+    {
+      "id": "wales:7A7A8",
+      "name": "Knighton Community Hospital",
+      "officialCode": "7A7A8",
+      "reportingUnit": "wales:7A7",
+      "town": "Knighton"
+    },
+    {
+      "id": "wales:7A7A2",
+      "name": "Llandrindod Wells Memorial Hospital",
+      "officialCode": "7A7A2",
+      "reportingUnit": "wales:7A7",
+      "town": "Llandrindod Wells"
+    },
+    {
+      "id": "wales:7A7A4",
+      "name": "Llanidloes War Memorial Hospital",
+      "officialCode": "7A7A4",
+      "reportingUnit": "wales:7A7",
+      "town": "Llanidloes"
+    },
+    {
+      "id": "wales:7A5B3",
+      "name": "Maesteg Community Hospital",
+      "officialCode": "7A5B3",
+      "reportingUnit": "wales:7A5",
+      "town": "Maesteg"
+    },
+    {
+      "id": "wales:7A1B5",
+      "name": "Mold Community Hospital",
+      "officialCode": "7A1B5",
+      "reportingUnit": "wales:7A1",
+      "town": "Mold"
+    },
+    {
+      "id": "wales:7A7A5",
+      "name": "Montgomery County Infirmary",
+      "officialCode": "7A7A5",
+      "reportingUnit": "wales:7A7",
+      "town": "Newtown"
+    },
+    {
+      "id": "wales:7A3A1",
+      "name": "Morriston Hospital",
+      "officialCode": "7A3A1",
+      "reportingUnit": "wales:7A3",
+      "town": "Swansea"
+    },
+    {
+      "id": "wales:7A3A3",
+      "name": "Neath Port Talbot Hospital",
+      "officialCode": "7A3A3",
+      "reportingUnit": "wales:7A3",
+      "town": "Port Talbot"
+    },
+    {
+      "id": "wales:7A6A3",
+      "name": "Nevill Hall Hospital",
+      "officialCode": "7A6A3",
+      "reportingUnit": "wales:7A6",
+      "town": "Abergavenny"
+    },
+    {
+      "id": "wales:7A5A2",
+      "name": "Prince Charles Hospital",
+      "officialCode": "7A5A2",
+      "reportingUnit": "wales:7A5",
+      "town": "Merthyr Tydfil"
+    },
+    {
+      "id": "wales:7A2A4",
+      "name": "Prince Philip Hospital",
+      "officialCode": "7A2A4",
+      "reportingUnit": "wales:7A2",
+      "town": "Llanelli"
+    },
+    {
+      "id": "wales:7A5A3",
+      "name": "Princess of Wales Hospital",
+      "officialCode": "7A5A3",
+      "reportingUnit": "wales:7A5",
+      "town": "Bridgend"
+    },
+    {
+      "id": "wales:7A5A1",
+      "name": "Royal Glamorgan Hospital",
+      "officialCode": "7A5A1",
+      "reportingUnit": "wales:7A5",
+      "town": "Llantrisant"
+    },
+    {
+      "id": "wales:7A6A2",
+      "name": "Royal Gwent Hospital",
+      "officialCode": "7A6A2",
+      "reportingUnit": "wales:7A6",
+      "town": "Newport"
+    },
+    {
+      "id": "wales:7A1B7",
+      "name": "Ruthin Community Hospital",
+      "officialCode": "7A1B7",
+      "reportingUnit": "wales:7A1",
+      "town": "Ruthin"
+    },
+    {
+      "id": "wales:7A3A2",
+      "name": "Singleton Hospital",
+      "officialCode": "7A3A2",
+      "reportingUnit": "wales:7A3",
+      "town": "Swansea"
+    },
+    {
+      "id": "wales:7A2B1",
+      "name": "South Pembrokeshire Hospital",
+      "officialCode": "7A2B1",
+      "reportingUnit": "wales:7A2",
+      "town": "Pembroke Dock"
+    },
+    {
+      "id": "wales:7A4B2",
+      "name": "St Davids Hospital",
+      "officialCode": "7A4B2",
+      "reportingUnit": "wales:7A4",
+      "town": "Cardiff"
+    },
+    {
+      "id": "wales:7A6B5",
+      "name": "St Woolos Hospital",
+      "officialCode": "7A6B5",
+      "reportingUnit": "wales:7A6",
+      "town": "Newport"
+    },
+    {
+      "id": "wales:7A2B2",
+      "name": "Tenby Cottage Hospital",
+      "officialCode": "7A2B2",
+      "reportingUnit": "wales:7A2",
+      "town": "Tenby"
+    },
+    {
+      "id": "wales:7A6A1",
+      "name": "The Grange University Hospital",
+      "officialCode": "7A6A1",
+      "reportingUnit": "wales:7A6",
+      "town": "Cwmbran"
+    },
+    {
+      "id": "wales:7A1B9",
+      "name": "Tywyn Hospital",
+      "officialCode": "7A1B9",
+      "reportingUnit": "wales:7A1",
+      "town": "Tywyn"
+    },
+    {
+      "id": "wales:7A4A2",
+      "name": "University Hospital of Llandough",
+      "officialCode": "7A4A2",
+      "reportingUnit": "wales:7A4",
+      "town": "Penarth"
+    },
+    {
+      "id": "wales:7A4A1",
+      "name": "University Hospital of Wales",
+      "officialCode": "7A4A1",
+      "reportingUnit": "wales:7A4",
+      "town": "Cardiff"
+    },
+    {
+      "id": "wales:7A7A3",
+      "name": "Victoria Memorial Hospital",
+      "officialCode": "7A7A3",
+      "reportingUnit": "wales:7A7",
+      "town": "Welshpool"
+    },
+    {
+      "id": "wales:7A2A2",
+      "name": "Withybush General Hospital",
+      "officialCode": "7A2A2",
+      "reportingUnit": "wales:7A2",
+      "town": "Haverfordwest"
+    },
+    {
+      "id": "wales:7A1AU",
+      "name": "Wrexham Maelor Hospital",
+      "officialCode": "7A1AU",
+      "reportingUnit": "wales:7A1",
+      "town": "Wrexham"
+    },
+    {
+      "id": "wales:7A1B1",
+      "name": "Ysbyty Alltwen",
+      "officialCode": "7A1B1",
+      "reportingUnit": "wales:7A1",
+      "town": "Porthmadog"
+    },
+    {
+      "id": "wales:7A6B2",
+      "name": "Ysbyty Aneurin Bevan",
+      "officialCode": "7A6B2",
+      "reportingUnit": "wales:7A6",
+      "town": "Ebbw Vale"
+    },
+    {
+      "id": "wales:7A5B2",
+      "name": "Ysbyty Cwm Cynon",
+      "officialCode": "7A5B2",
+      "reportingUnit": "wales:7A5",
+      "town": "Mountain Ash"
+    },
+    {
+      "id": "wales:7A5B1",
+      "name": "Ysbyty Cwm Rhondda",
+      "officialCode": "7A5B1",
+      "reportingUnit": "wales:7A5",
+      "town": "Llwyn-y-Pia"
+    },
+    {
+      "id": "wales:7A5B4",
+      "name": "Ysbyty George Thomas",
+      "officialCode": "7A5B4",
+      "reportingUnit": "wales:7A5",
+      "town": "Treorchy"
+    },
+    {
+      "id": "wales:7A1A4",
+      "name": "Ysbyty Glan Clwyd",
+      "officialCode": "7A1A4",
+      "reportingUnit": "wales:7A1",
+      "town": "Rhyl"
+    },
+    {
+      "id": "wales:7A1A1",
+      "name": "Ysbyty Gwynedd",
+      "officialCode": "7A1A1",
+      "reportingUnit": "wales:7A1",
+      "town": "Bangor"
+    },
+    {
+      "id": "wales:7A1B2",
+      "name": "Ysbyty Penrhos Stanley",
+      "officialCode": "7A1B2",
+      "reportingUnit": "wales:7A1",
+      "town": "Holyhead"
+    },
+    {
+      "id": "wales:7A6B1",
+      "name": "Ysbyty Ystrad Fawr",
+      "officialCode": "7A6B1",
+      "reportingUnit": "wales:7A6",
+      "town": "Ystrad Mynach"
+    },
+    {
+      "id": "wales:7A7A6",
+      "name": "Ystradgynlais Community Hospital",
+      "officialCode": "7A7A6",
+      "reportingUnit": "wales:7A7",
+      "town": "Ystradgynlais"
+    }
+  ],
+  "nation": "wales",
+  "reportingUnits": [
+    {
+      "displayName": "Betsi Cadwaladr University Health Board",
+      "hospitalSites": [
+        "wales:7A1C1",
+        "wales:7A1B3",
+        "wales:7A1B4",
+        "wales:7A1B8",
+        "wales:7A1B6",
+        "wales:7A1B5",
+        "wales:7A1B7",
+        "wales:7A1B9",
+        "wales:7A1AU",
+        "wales:7A1B1",
+        "wales:7A1A4",
+        "wales:7A1A1",
+        "wales:7A1B2"
+      ],
+      "id": "wales:7A1",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A1",
+      "officialName": "Betsi Cadwaladr University Local Health Board",
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "Hywel Dda University Health Board",
+      "hospitalSites": [
+        "wales:7A2B3",
+        "wales:7A2A3",
+        "wales:7A2A1",
+        "wales:7A2A4",
+        "wales:7A2B1",
+        "wales:7A2B2",
+        "wales:7A2A2"
+      ],
+      "id": "wales:7A2",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A2",
+      "officialName": "Hywel Dda University Local Health Board",
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "Swansea Bay University Health Board",
+      "hospitalSites": [
+        "wales:7A3B1",
+        "wales:7A3A1",
+        "wales:7A3A3",
+        "wales:7A3A2"
+      ],
+      "id": "wales:7A3",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A3",
+      "officialName": "Swansea Bay University Local Health Board",
+      "operational": {
+        "from": "2019-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "Cardiff and Vale University Health Board",
+      "hospitalSites": [
+        "wales:7A4B1",
+        "wales:7A4B3",
+        "wales:7A4B2",
+        "wales:7A4A2",
+        "wales:7A4A1"
+      ],
+      "id": "wales:7A4",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A4",
+      "officialName": "Cardiff and Vale University Local Health Board",
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "Cwm Taf Morgannwg University Health Board",
+      "hospitalSites": [
+        "wales:7A5B3",
+        "wales:7A5A2",
+        "wales:7A5A3",
+        "wales:7A5A1",
+        "wales:7A5B2",
+        "wales:7A5B1",
+        "wales:7A5B4"
+      ],
+      "id": "wales:7A5",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A5",
+      "officialName": "Cwm Taf Morgannwg University Local Health Board",
+      "operational": {
+        "from": "2019-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "Aneurin Bevan University Health Board",
+      "hospitalSites": [
+        "wales:7A6B3",
+        "wales:7A6B4",
+        "wales:7A6A3",
+        "wales:7A6A2",
+        "wales:7A6B5",
+        "wales:7A6A1",
+        "wales:7A6B2",
+        "wales:7A6B1"
+      ],
+      "id": "wales:7A6",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A6",
+      "officialName": "Aneurin Bevan University Local Health Board",
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    },
+    {
+      "displayName": "Powys Teaching Health Board",
+      "hospitalSites": [
+        "wales:7A7A1",
+        "wales:7A7A7",
+        "wales:7A7A8",
+        "wales:7A7A2",
+        "wales:7A7A4",
+        "wales:7A7A5",
+        "wales:7A7A3",
+        "wales:7A7A6"
+      ],
+      "id": "wales:7A7",
+      "kind": "health-board",
+      "notes": [],
+      "officialCode": "7A7",
+      "officialName": "Powys Teaching Local Health Board",
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": []
+    }
+  ],
+  "retrievedAt": "2026-10-01T00:00:00.000Z",
+  "sources": [
+    {
+      "attribution": "Source: Welsh Government, StatsWales (data provider: Digital Health and Care Wales). Contains public sector information licensed under the Open Government Licence v3.0.",
+      "licence": "OGL-3.0",
+      "nation": "wales",
+      "publisher": "Welsh Government, StatsWales",
+      "title": "NHS Activity and Performance Summary: Referral to Treatment (RTT)",
+      "url": "https://stats.gov.wales/en-GB/topic/50/performance-and-waiting-times"
+    },
+    {
+      "attribution": "Contains Organisation Data Service data © NHS England, licensed under the Open Government Licence v3.0.",
+      "licence": "OGL-3.0",
+      "nation": "wales",
+      "publisher": "NHS England Organisation Data Service",
+      "title": "Organisation Data Service: Welsh Local Health Boards and Sites",
+      "url": "https://www.odsdatasearchandexport.nhs.uk/"
+    }
+  ],
+  "specialties": [
+    {
+      "descriptionKey": "wales/all-specialties",
+      "id": "wales:all",
+      "isAllSpecialties": true,
+      "officialCode": "all",
+      "officialName": "All specialties",
+      "slug": "all-specialties"
+    },
+    {
+      "descriptionKey": "wales/general-surgery",
+      "id": "wales:100",
+      "isAllSpecialties": false,
+      "officialCode": "100",
+      "officialName": "General Surgery",
+      "slug": "general-surgery"
+    },
+    {
+      "descriptionKey": "wales/urology",
+      "id": "wales:101",
+      "isAllSpecialties": false,
+      "officialCode": "101",
+      "officialName": "Urology",
+      "slug": "urology"
+    },
+    {
+      "descriptionKey": "wales/breast-surgery",
+      "id": "wales:103",
+      "isAllSpecialties": false,
+      "officialCode": "103",
+      "officialName": "Breast Surgery",
+      "slug": "breast-surgery"
+    },
+    {
+      "descriptionKey": "wales/colorectal-surgery",
+      "id": "wales:104",
+      "isAllSpecialties": false,
+      "officialCode": "104",
+      "officialName": "Colorectal Surgery",
+      "slug": "colorectal-surgery"
+    },
+    {
+      "descriptionKey": "wales/hepatobiliary-and-pancreatic-surgery",
+      "id": "wales:105",
+      "isAllSpecialties": false,
+      "officialCode": "105",
+      "officialName": "Hepatobiliary and Pancreatic Surgery",
+      "slug": "hepatobiliary-and-pancreatic-surgery"
+    },
+    {
+      "descriptionKey": "wales/upper-gastrointestinal-surgery",
+      "id": "wales:106",
+      "isAllSpecialties": false,
+      "officialCode": "106",
+      "officialName": "Upper Gastrointestinal Surgery",
+      "slug": "upper-gastrointestinal-surgery"
+    },
+    {
+      "descriptionKey": "wales/vascular-surgery",
+      "id": "wales:107",
+      "isAllSpecialties": false,
+      "officialCode": "107",
+      "officialName": "Vascular Surgery",
+      "slug": "vascular-surgery"
+    },
+    {
+      "descriptionKey": "wales/trauma-and-orthopaedics",
+      "id": "wales:110",
+      "isAllSpecialties": false,
+      "officialCode": "110",
+      "officialName": "Trauma and Orthopaedic",
+      "slug": "trauma-and-orthopaedics"
+    },
+    {
+      "descriptionKey": "wales/ear-nose-and-throat",
+      "id": "wales:120",
+      "isAllSpecialties": false,
+      "officialCode": "120",
+      "officialName": "ENT",
+      "slug": "ear-nose-and-throat"
+    },
+    {
+      "descriptionKey": "wales/ophthalmology",
+      "id": "wales:130",
+      "isAllSpecialties": false,
+      "officialCode": "130",
+      "officialName": "Ophthalmology",
+      "slug": "ophthalmology"
+    },
+    {
+      "descriptionKey": "wales/oral-surgery",
+      "id": "wales:140",
+      "isAllSpecialties": false,
+      "officialCode": "140",
+      "officialName": "Oral Surgery",
+      "slug": "oral-surgery"
+    },
+    {
+      "descriptionKey": "wales/restorative-dentistry",
+      "id": "wales:141",
+      "isAllSpecialties": false,
+      "officialCode": "141",
+      "officialName": "Restorative Dentistry",
+      "slug": "restorative-dentistry"
+    },
+    {
+      "descriptionKey": "wales/paediatric-dentistry",
+      "id": "wales:142",
+      "isAllSpecialties": false,
+      "officialCode": "142",
+      "officialName": "Paediatric Dentistry",
+      "slug": "paediatric-dentistry"
+    },
+    {
+      "descriptionKey": "wales/orthodontics",
+      "id": "wales:143",
+      "isAllSpecialties": false,
+      "officialCode": "143",
+      "officialName": "Orthodontics",
+      "slug": "orthodontics"
+    },
+    {
+      "descriptionKey": "wales/neurosurgery",
+      "id": "wales:150",
+      "isAllSpecialties": false,
+      "officialCode": "150",
+      "officialName": "Neurosurgery",
+      "slug": "neurosurgery"
+    },
+    {
+      "descriptionKey": "wales/plastic-surgery",
+      "id": "wales:160",
+      "isAllSpecialties": false,
+      "officialCode": "160",
+      "officialName": "Plastic Surgery",
+      "slug": "plastic-surgery"
+    },
+    {
+      "descriptionKey": "wales/cardiothoracic-surgery",
+      "id": "wales:170",
+      "isAllSpecialties": false,
+      "officialCode": "170",
+      "officialName": "Cardiothoracic Surgery",
+      "slug": "cardiothoracic-surgery"
+    },
+    {
+      "descriptionKey": "wales/paediatric-surgery",
+      "id": "wales:171",
+      "isAllSpecialties": false,
+      "officialCode": "171",
+      "officialName": "Paediatric Surgery",
+      "slug": "paediatric-surgery"
+    },
+    {
+      "descriptionKey": "wales/emergency-medicine",
+      "id": "wales:180",
+      "isAllSpecialties": false,
+      "officialCode": "180",
+      "officialName": "Emergency Medicine",
+      "slug": "emergency-medicine"
+    },
+    {
+      "descriptionKey": "wales/anaesthetics",
+      "id": "wales:190",
+      "isAllSpecialties": false,
+      "officialCode": "190",
+      "officialName": "Anaesthetics",
+      "slug": "anaesthetics"
+    },
+    {
+      "descriptionKey": "wales/pain-management",
+      "id": "wales:191",
+      "isAllSpecialties": false,
+      "officialCode": "191",
+      "officialName": "Pain Management",
+      "slug": "pain-management"
+    },
+    {
+      "descriptionKey": "wales/general-internal-medicine",
+      "id": "wales:300",
+      "isAllSpecialties": false,
+      "officialCode": "300",
+      "officialName": "General Internal Medicine",
+      "slug": "general-internal-medicine"
+    },
+    {
+      "descriptionKey": "wales/gastroenterology",
+      "id": "wales:301",
+      "isAllSpecialties": false,
+      "officialCode": "301",
+      "officialName": "Gastroenterology",
+      "slug": "gastroenterology"
+    },
+    {
+      "descriptionKey": "wales/endocrinology",
+      "id": "wales:302",
+      "isAllSpecialties": false,
+      "officialCode": "302",
+      "officialName": "Endocrinology",
+      "slug": "endocrinology"
+    },
+    {
+      "descriptionKey": "wales/clinical-haematology",
+      "id": "wales:303",
+      "isAllSpecialties": false,
+      "officialCode": "303",
+      "officialName": "Clinical Haematology",
+      "slug": "clinical-haematology"
+    },
+    {
+      "descriptionKey": "wales/clinical-immunology-and-allergy",
+      "id": "wales:304",
+      "isAllSpecialties": false,
+      "officialCode": "304",
+      "officialName": "Clinical Immunology and Allergy",
+      "slug": "clinical-immunology-and-allergy"
+    },
+    {
+      "descriptionKey": "wales/clinical-pharmacology",
+      "id": "wales:305",
+      "isAllSpecialties": false,
+      "officialCode": "305",
+      "officialName": "Clinical Pharmacology",
+      "slug": "clinical-pharmacology"
+    },
+    {
+      "descriptionKey": "wales/audio-vestibular-medicine",
+      "id": "wales:310",
+      "isAllSpecialties": false,
+      "officialCode": "310",
+      "officialName": "Audio Vestibular Medicine",
+      "slug": "audio-vestibular-medicine"
+    },
+    {
+      "descriptionKey": "wales/clinical-genetics",
+      "id": "wales:311",
+      "isAllSpecialties": false,
+      "officialCode": "311",
+      "officialName": "Clinical Genetics",
+      "slug": "clinical-genetics"
+    },
+    {
+      "descriptionKey": "wales/clinical-oncology",
+      "id": "wales:313",
+      "isAllSpecialties": false,
+      "officialCode": "313",
+      "officialName": "Clinical Oncology",
+      "slug": "clinical-oncology"
+    },
+    {
+      "descriptionKey": "wales/rehabilitation-medicine",
+      "id": "wales:314",
+      "isAllSpecialties": false,
+      "officialCode": "314",
+      "officialName": "Rehabilitation Medicine",
+      "slug": "rehabilitation-medicine"
+    },
+    {
+      "descriptionKey": "wales/palliative-medicine",
+      "id": "wales:315",
+      "isAllSpecialties": false,
+      "officialCode": "315",
+      "officialName": "Palliative Medicine",
+      "slug": "palliative-medicine"
+    },
+    {
+      "descriptionKey": "wales/cardiology",
+      "id": "wales:320",
+      "isAllSpecialties": false,
+      "officialCode": "320",
+      "officialName": "Cardiology",
+      "slug": "cardiology"
+    },
+    {
+      "descriptionKey": "wales/sport-and-exercise-medicine",
+      "id": "wales:325",
+      "isAllSpecialties": false,
+      "officialCode": "325",
+      "officialName": "Sport and Exercise Medicine",
+      "slug": "sport-and-exercise-medicine"
+    },
+    {
+      "descriptionKey": "wales/dermatology",
+      "id": "wales:330",
+      "isAllSpecialties": false,
+      "officialCode": "330",
+      "officialName": "Dermatology",
+      "slug": "dermatology"
+    },
+    {
+      "descriptionKey": "wales/respiratory-medicine",
+      "id": "wales:340",
+      "isAllSpecialties": false,
+      "officialCode": "340",
+      "officialName": "Respiratory Medicine",
+      "slug": "respiratory-medicine"
+    },
+    {
+      "descriptionKey": "wales/infectious-diseases",
+      "id": "wales:350",
+      "isAllSpecialties": false,
+      "officialCode": "350",
+      "officialName": "Infectious Diseases",
+      "slug": "infectious-diseases"
+    },
+    {
+      "descriptionKey": "wales/genitourinary-medicine",
+      "id": "wales:360",
+      "isAllSpecialties": false,
+      "officialCode": "360",
+      "officialName": "Genitourinary Medicine",
+      "slug": "genitourinary-medicine"
+    },
+    {
+      "descriptionKey": "wales/nephrology",
+      "id": "wales:361",
+      "isAllSpecialties": false,
+      "officialCode": "361",
+      "officialName": "Nephrology",
+      "slug": "nephrology"
+    },
+    {
+      "descriptionKey": "wales/medical-oncology",
+      "id": "wales:370",
+      "isAllSpecialties": false,
+      "officialCode": "370",
+      "officialName": "Medical Oncology",
+      "slug": "medical-oncology"
+    },
+    {
+      "descriptionKey": "wales/neurology",
+      "id": "wales:400",
+      "isAllSpecialties": false,
+      "officialCode": "400",
+      "officialName": "Neurology",
+      "slug": "neurology"
+    },
+    {
+      "descriptionKey": "wales/rheumatology",
+      "id": "wales:410",
+      "isAllSpecialties": false,
+      "officialCode": "410",
+      "officialName": "Rheumatology",
+      "slug": "rheumatology"
+    },
+    {
+      "descriptionKey": "wales/paediatrics",
+      "id": "wales:420",
+      "isAllSpecialties": false,
+      "officialCode": "420",
+      "officialName": "Paediatrics",
+      "slug": "paediatrics"
+    },
+    {
+      "descriptionKey": "wales/geriatric-medicine",
+      "id": "wales:430",
+      "isAllSpecialties": false,
+      "officialCode": "430",
+      "officialName": "Geriatric Medicine",
+      "slug": "geriatric-medicine"
+    },
+    {
+      "descriptionKey": "wales/gynaecology",
+      "id": "wales:502",
+      "isAllSpecialties": false,
+      "officialCode": "502",
+      "officialName": "Gynaecology",
+      "slug": "gynaecology"
+    },
+    {
+      "descriptionKey": "wales/adult-mental-health",
+      "id": "wales:710",
+      "isAllSpecialties": false,
+      "officialCode": "710",
+      "officialName": "Adult Mental Health",
+      "slug": "adult-mental-health"
+    },
+    {
+      "descriptionKey": "wales/child-and-adolescent-mental-health",
+      "id": "wales:711",
+      "isAllSpecialties": false,
+      "officialCode": "711",
+      "officialName": "Child and Adolescent Mental Health Services",
+      "slug": "child-and-adolescent-mental-health"
+    },
+    {
+      "descriptionKey": "wales/forensic-psychiatry",
+      "id": "wales:712",
+      "isAllSpecialties": false,
+      "officialCode": "712",
+      "officialName": "Forensic Psychiatry",
+      "slug": "forensic-psychiatry"
+    },
+    {
+      "descriptionKey": "wales/radiology",
+      "id": "wales:810",
+      "isAllSpecialties": false,
+      "officialCode": "810",
+      "officialName": "Radiology",
+      "slug": "radiology"
+    },
+    {
+      "descriptionKey": "wales/diagnostic-services",
+      "id": "wales:998",
+      "isAllSpecialties": false,
+      "officialCode": "998",
+      "officialName": "Diagnostic Services",
+      "slug": "diagnostic-services"
+    },
+    {
+      "descriptionKey": "wales/allied-health-profession-services",
+      "id": "wales:999",
+      "isAllSpecialties": false,
+      "officialCode": "999",
+      "officialName": "Allied Health Profession Services",
+      "slug": "allied-health-profession-services"
+    }
+  ]
+}
