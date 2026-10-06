@@ -1,0 +1,7 @@
+{
+  "label": "Filter this list",
+  "placeholder": "Filter by name or keyword…",
+  "status": "{shown} of {total} shown",
+  "statusAll": "Showing all {total} items",
+  "clear": "Clear search filter"
+}
