@@ -1,0 +1,8 @@
+{
+  "newOutpatientHeading": "New Outpatient",
+  "inpatientDayCaseHeading": "Inpatient/Day case",
+  "medianStatement": "Half of people waiting at {reportingPeriod} had waited about {weeks} {weeks, plural, one {week} other {weeks}} ({days} {days, plural, one {day} other {days}}) or less.{yearEarlier}",
+  "yearEarlierComparison": " (a year earlier: about {weeks} {weeks, plural, one {week} other {weeks}} ({days} {days, plural, one {day} other {days}}))",
+  "withinStandardStatement": "{within} of {total} {totalCount, plural, one {person} other {people}} had waited less than 12 weeks.",
+  "longWaitStatement": "{count, plural, one {1 person had waited over a year.} other {{formattedCount} people had waited over a year.}}"
+}
