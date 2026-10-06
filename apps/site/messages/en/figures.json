@@ -1,0 +1,4 @@
+{
+  "caption": "This shows people already on the list as of {reportingPeriod}, from {source}. It is not a prediction of how long you will wait. Waits change month to month and depend on your clinical need.",
+  "published": "Published {publicationDate} by {publisher}"
+}

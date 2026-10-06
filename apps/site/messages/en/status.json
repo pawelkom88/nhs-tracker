@@ -1,0 +1,7 @@
+{
+  "suppressed": "Not published (small numbers)",
+  "provisional": "Provisional",
+  "derived": "Calculated by Know Your Wait by adding published figures from the same release.",
+  "carriedForward": "These are the most recent figures for {unitName}, as at {reportingPeriod}. {unitName} was not in the latest release ({latestReportingPeriod}).",
+  "noRecentFigures": "No figures published since {reportingPeriod}."
+}
