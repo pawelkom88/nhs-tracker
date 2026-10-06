@@ -73,7 +73,9 @@ export default tseslint.config(
         {
           devDependencies: [
             '**/*.test.ts',
+            '**/*.test.tsx',
             '**/*.spec.ts',
+            '**/*.spec.tsx',
             '**/*.test-d.ts',
             '**/*.config.ts',
             '**/*.config.js',

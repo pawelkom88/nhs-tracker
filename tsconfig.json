@@ -3,6 +3,7 @@
   "references": [
     { "path": "packages/model" },
     { "path": "packages/pipeline" },
-    { "path": "tools/eslint-plugin-kyw" }
+    { "path": "tools/eslint-plugin-kyw" },
+    { "path": "apps/site" }
   ]
 }
