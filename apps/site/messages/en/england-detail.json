@@ -1,0 +1,12 @@
+{
+  "backToSpecialty": "Back to {specialtyName}",
+  "ispBadge": "Independent provider (NHS-funded)",
+  "ispNotice": "This is an independent provider treating NHS-funded patients, free to the patient.",
+  "region": "NHS region: {regionName}",
+  "officialCode": "Organisation code: {code}",
+  "hospitalSitesHeading": "Hospital sites",
+  "hospitalSitesIntro": "This organisation runs the following hospital sites:",
+  "noHospitalSites": "No hospital sites recorded for this organisation.",
+  "aboutTheFigures": "About the figures",
+  "yourRights": "Your rights to choose where you are treated"
+}
