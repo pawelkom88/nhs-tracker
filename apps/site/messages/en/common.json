@@ -1,0 +1,19 @@
+{
+  "siteName": "Know Your Wait",
+  "siteDescription": "Patient-facing explanations of official NHS waiting-time statistics for England, Wales and Scotland.",
+  "england": "England",
+  "wales": "Wales",
+  "scotland": "Scotland",
+  "nation.england": "England",
+  "nation.wales": "Wales",
+  "nation.scotland": "Scotland",
+  "skipLink": "Skip to main content",
+  "back": "Back",
+  "close": "Close",
+  "loading": "Loading",
+  "error": "An error occurred",
+  "navigation": "Navigation",
+  "externalLink": "(opens in new tab)",
+  "resultsCount": "{count, plural, one {# result} other {# results}}",
+  "peopleCount": "{count, plural, one {# person} other {# people}}"
+}
