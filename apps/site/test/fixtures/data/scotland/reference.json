@@ -1,0 +1,80 @@
+{
+  "nation": "scotland",
+  "specialties": [
+    {
+      "id": "scotland:C8",
+      "officialCode": "C8",
+      "officialName": "Trauma and Orthopaedic Surgery",
+      "slug": "trauma-and-orthopaedics",
+      "descriptionKey": "specialty.traumaAndOrthopaedics.description",
+      "isAllSpecialties": false
+    },
+    {
+      "id": "scotland:C1",
+      "officialCode": "C1",
+      "officialName": "General Surgery",
+      "slug": "general-surgery",
+      "descriptionKey": "specialty.generalSurgery.description",
+      "isAllSpecialties": false
+    }
+  ],
+  "hospitalSites": [
+    {
+      "id": "scotland:SB080101",
+      "officialCode": "SB080101",
+      "name": "Golden Jubilee University National Hospital",
+      "town": "Clydebank",
+      "reportingUnit": "scotland:SB0801"
+    },
+    {
+      "id": "scotland:S0800001501",
+      "officialCode": "S0800001501",
+      "name": "University Hospital Crosshouse",
+      "town": "Kilmarnock",
+      "reportingUnit": "scotland:S08000015"
+    }
+  ],
+  "reportingUnits": [
+    {
+      "id": "scotland:SB0801",
+      "officialCode": "SB0801",
+      "officialName": "Golden Jubilee National Hospital",
+      "displayName": "Golden Jubilee National Hospital",
+      "kind": "special-health-board",
+      "hospitalSites": ["scotland:SB080101"],
+      "operational": {
+        "from": "2002-06-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": ["treats-patients-from-all-boards"]
+    },
+    {
+      "id": "scotland:S08000015",
+      "officialCode": "S08000015",
+      "officialName": "NHS Ayrshire and Arran",
+      "displayName": "NHS Ayrshire and Arran",
+      "kind": "health-board",
+      "hospitalSites": ["scotland:S0800001501"],
+      "operational": {
+        "from": "2004-01-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    }
+  ],
+  "retrievedAt": "2026-11-24T10:00:00.000Z",
+  "sources": [
+    {
+      "licence": "OGL-3.0",
+      "attribution": "Contains Public Health Scotland data licensed under the Open Government Licence v3.0.",
+      "nation": "scotland",
+      "publisher": "Public Health Scotland",
+      "title": "Stage of Treatment Waiting Times",
+      "url": "https://publichealthscotland.scot/publications/stage-of-treatment-waiting-times/"
+    }
+  ]
+}

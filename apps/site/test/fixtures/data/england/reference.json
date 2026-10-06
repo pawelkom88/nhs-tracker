@@ -1,0 +1,140 @@
+{
+  "nation": "england",
+  "nhsRegions": [
+    {
+      "id": "england:Y56",
+      "officialCode": "Y56",
+      "name": "London"
+    },
+    {
+      "id": "england:Y59",
+      "officialCode": "Y59",
+      "name": "South East"
+    }
+  ],
+  "specialties": [
+    {
+      "id": "england:C_110",
+      "officialCode": "110",
+      "officialName": "Trauma and Orthopaedic Service",
+      "slug": "trauma-and-orthopaedics",
+      "descriptionKey": "specialty.traumaAndOrthopaedics.description",
+      "isAllSpecialties": false
+    },
+    {
+      "id": "england:C_100",
+      "officialCode": "100",
+      "officialName": "General Surgery Service",
+      "slug": "general-surgery",
+      "descriptionKey": "specialty.generalSurgery.description",
+      "isAllSpecialties": false
+    }
+  ],
+  "hospitalSites": [
+    {
+      "id": "england:RRK01",
+      "officialCode": "RRK01",
+      "name": "Queen Elizabeth Hospital Birmingham",
+      "town": "Birmingham",
+      "reportingUnit": "england:RRK"
+    },
+    {
+      "id": "england:R1H12",
+      "officialCode": "R1H12",
+      "name": "The Royal London Hospital",
+      "town": "London",
+      "reportingUnit": "england:R1H"
+    },
+    {
+      "id": "england:NT301",
+      "officialCode": "NT301",
+      "name": "Practice Plus Group Surgical Centre St Marys",
+      "town": "Portsmouth",
+      "reportingUnit": "england:NT3"
+    },
+    {
+      "id": "england:OLD01",
+      "officialCode": "OLD01",
+      "name": "Old Berkshire Hospital",
+      "town": "Reading",
+      "reportingUnit": "england:OLD1"
+    }
+  ],
+  "reportingUnits": [
+    {
+      "id": "england:RRK",
+      "officialCode": "RRK",
+      "officialName": "University Hospitals Birmingham NHS Foundation Trust",
+      "displayName": "University Hospitals Birmingham NHS Foundation Trust",
+      "kind": "nhs-trust",
+      "nhsRegion": "england:Y56",
+      "hospitalSites": ["england:RRK01"],
+      "operational": {
+        "from": "2000-01-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    },
+    {
+      "id": "england:R1H",
+      "officialCode": "R1H",
+      "officialName": "Barts Health NHS Trust",
+      "displayName": "Barts Health NHS Trust",
+      "kind": "nhs-trust",
+      "nhsRegion": "england:Y56",
+      "hospitalSites": ["england:R1H12"],
+      "operational": {
+        "from": "2012-04-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    },
+    {
+      "id": "england:NT3",
+      "officialCode": "NT3",
+      "officialName": "Practice Plus Group Hospitals Limited",
+      "displayName": "Practice Plus Group Hospitals",
+      "kind": "independent-sector-provider",
+      "nhsRegion": "england:Y59",
+      "hospitalSites": ["england:NT301"],
+      "operational": {
+        "from": "2015-01-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    },
+    {
+      "id": "england:OLD1",
+      "officialCode": "OLD1",
+      "officialName": "Old Berkshire Healthcare NHS Trust",
+      "displayName": "Old Berkshire Healthcare NHS Trust",
+      "kind": "nhs-trust",
+      "nhsRegion": "england:Y59",
+      "hospitalSites": ["england:OLD01"],
+      "operational": {
+        "from": "2000-01-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    }
+  ],
+  "retrievedAt": "2026-09-10T10:00:00.000Z",
+  "sources": [
+    {
+      "licence": "OGL-3.0",
+      "attribution": "Contains NHS ODS data licensed under the Open Government Licence v3.0.",
+      "nation": "england",
+      "publisher": "NHS England",
+      "title": "NHS Organisation Data Service",
+      "url": "https://www.odsdatasearchandexport.nhs.uk/"
+    }
+  ]
+}

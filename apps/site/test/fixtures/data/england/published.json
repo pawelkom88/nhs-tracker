@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "nation": "england",
+  "latestRelease": {
+    "reportingPeriod": "2026-07-31",
+    "publicationDate": "2026-09-10",
+    "source": {
+      "licence": "OGL-3.0",
+      "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+      "nation": "england",
+      "publisher": "NHS England",
+      "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+      "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+    }
+  },
+  "generatedAt": "2026-09-10T12:00:00.000Z",
+  "entries": [
+    {
+      "reportingUnit": "england:RRK",
+      "specialty": "england:C_110",
+      "state": {
+        "kind": "current"
+      },
+      "figures": [
+        {
+          "nation": "england",
+          "reportingUnit": "england:RRK",
+          "specialty": "england:C_110",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:median-ongoing-wait",
+          "reportingPeriod": "2026-07-31",
+          "publicationDate": "2026-09-10",
+          "unit": "weeks",
+          "value": {
+            "status": "published",
+            "value": 12.5,
+            "provisional": false
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "Average (median) waiting time (in weeks)"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "shown",
+            "value": {
+              "status": "published",
+              "value": 14.1,
+              "provisional": false
+            },
+            "reportingPeriod": "2025-07-31",
+            "publicationDate": "2025-09-11"
+          }
+        },
+        {
+          "nation": "england",
+          "reportingUnit": "england:RRK",
+          "specialty": "england:C_110",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:within-waiting-standard",
+          "reportingPeriod": "2026-07-31",
+          "publicationDate": "2026-09-10",
+          "unit": "proportion",
+          "value": {
+            "status": "published",
+            "value": 0.65,
+            "provisional": false
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "% within 18 weeks"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "omitted",
+            "reason": "not-median"
+          }
+        },
+        {
+          "nation": "england",
+          "reportingUnit": "england:RRK",
+          "specialty": "england:C_110",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:long-wait-count",
+          "reportingPeriod": "2026-07-31",
+          "publicationDate": "2026-09-10",
+          "unit": "count",
+          "value": {
+            "status": "published",
+            "value": 42,
+            "provisional": false
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "Total 52 plus weeks"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "omitted",
+            "reason": "not-median"
+          }
+        }
+      ]
+    },
+    {
+      "reportingUnit": "england:R1H",
+      "specialty": "england:C_110",
+      "state": {
+        "kind": "current"
+      },
+      "figures": [
+        {
+          "nation": "england",
+          "reportingUnit": "england:R1H",
+          "specialty": "england:C_110",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:median-ongoing-wait",
+          "reportingPeriod": "2026-07-31",
+          "publicationDate": "2026-09-10",
+          "unit": "weeks",
+          "value": {
+            "status": "suppressed",
+            "provisional": false
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "Average (median) waiting time (in weeks)"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "omitted",
+            "reason": "suppressed"
+          }
+        },
+        {
+          "nation": "england",
+          "reportingUnit": "england:R1H",
+          "specialty": "england:C_110",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:within-waiting-standard",
+          "reportingPeriod": "2026-07-31",
+          "publicationDate": "2026-09-10",
+          "unit": "proportion",
+          "value": {
+            "status": "published",
+            "value": 0.58,
+            "provisional": true
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "% within 18 weeks"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "omitted",
+            "reason": "not-median"
+          }
+        }
+      ]
+    },
+    {
+      "reportingUnit": "england:NT3",
+      "specialty": "england:C_110",
+      "state": {
+        "kind": "carried-forward",
+        "monthsOld": 3
+      },
+      "figures": [
+        {
+          "nation": "england",
+          "reportingUnit": "england:NT3",
+          "specialty": "england:C_110",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:median-ongoing-wait",
+          "reportingPeriod": "2026-04-30",
+          "publicationDate": "2026-06-11",
+          "unit": "weeks",
+          "value": {
+            "status": "published",
+            "value": 8.2,
+            "provisional": false
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "Average (median) waiting time (in weeks)"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "omitted",
+            "reason": "not-in-release"
+          }
+        }
+      ]
+    },
+    {
+      "reportingUnit": "england:OLD1",
+      "specialty": "england:C_110",
+      "state": {
+        "kind": "no-recent-figures",
+        "lastReportingPeriod": "2025-04-30"
+      },
+      "figures": []
+    },
+    {
+      "reportingUnit": "england:RRK",
+      "specialty": "england:C_100",
+      "state": {
+        "kind": "current"
+      },
+      "figures": [
+        {
+          "nation": "england",
+          "reportingUnit": "england:RRK",
+          "specialty": "england:C_100",
+          "waitStage": "england:rtt-incomplete-pathway",
+          "statistic": "england:median-ongoing-wait",
+          "reportingPeriod": "2026-07-31",
+          "publicationDate": "2026-09-10",
+          "unit": "weeks",
+          "value": {
+            "status": "published",
+            "value": 10.1,
+            "provisional": false
+          },
+          "provenance": {
+            "kind": "official",
+            "sourceField": "Average (median) waiting time (in weeks)"
+          },
+          "source": {
+            "licence": "OGL-3.0",
+            "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. Source: NHS England, Consultant-led Referral to Treatment Waiting Times.",
+            "nation": "england",
+            "publisher": "NHS England",
+            "title": "NHS England Consultant-led Referral to Treatment (RTT) Waiting Times",
+            "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/"
+          },
+          "yearEarlier": {
+            "status": "omitted",
+            "reason": "unit-changed"
+          }
+        }
+      ]
+    }
+  ]
+}

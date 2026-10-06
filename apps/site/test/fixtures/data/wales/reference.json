@@ -1,0 +1,80 @@
+{
+  "nation": "wales",
+  "specialties": [
+    {
+      "id": "wales:110",
+      "officialCode": "110",
+      "officialName": "Trauma and Orthopaedics",
+      "slug": "trauma-and-orthopaedics",
+      "descriptionKey": "specialty.traumaAndOrthopaedics.description",
+      "isAllSpecialties": false
+    },
+    {
+      "id": "wales:100",
+      "officialCode": "100",
+      "officialName": "General Surgery",
+      "slug": "general-surgery",
+      "descriptionKey": "specialty.generalSurgery.description",
+      "isAllSpecialties": false
+    }
+  ],
+  "hospitalSites": [
+    {
+      "id": "wales:7A101",
+      "officialCode": "7A101",
+      "name": "Ysbyty Gwynedd",
+      "town": "Bangor",
+      "reportingUnit": "wales:7A1"
+    },
+    {
+      "id": "wales:7A201",
+      "officialCode": "7A201",
+      "name": "Glanwili Hospital",
+      "town": "Carmarthen",
+      "reportingUnit": "wales:7A2"
+    }
+  ],
+  "reportingUnits": [
+    {
+      "id": "wales:7A1",
+      "officialCode": "7A1",
+      "officialName": "Betsi Cadwaladr University Health Board",
+      "displayName": "Betsi Cadwaladr University Health Board",
+      "kind": "health-board",
+      "hospitalSites": ["wales:7A101"],
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    },
+    {
+      "id": "wales:7A2",
+      "officialCode": "7A2",
+      "officialName": "Hywel Dda University Health Board",
+      "displayName": "Hywel Dda University Health Board",
+      "kind": "health-board",
+      "hospitalSites": ["wales:7A201"],
+      "operational": {
+        "from": "2009-10-01",
+        "to": null
+      },
+      "predecessors": [],
+      "successors": [],
+      "notes": []
+    }
+  ],
+  "retrievedAt": "2026-09-17T10:00:00.000Z",
+  "sources": [
+    {
+      "licence": "OGL-3.0",
+      "attribution": "Contains StatsWales data licensed under the Open Government Licence v3.0.",
+      "nation": "wales",
+      "publisher": "Welsh Government / StatsWales",
+      "title": "NHS Wales Referral to Treatment Waiting Times",
+      "url": "https://statswales.gov.wales/"
+    }
+  ]
+}
