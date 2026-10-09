@@ -347,6 +347,26 @@ describe('Scotland UnitList (T-8.14)', () => {
     ]);
   });
 
+  test('renders Golden Jubilee national referral note badge (T-8.14 & ADR-0003)', () => {
+    const { container } = render(
+      <UnitList specialty={targetSpecialty} units={mockUnits} hospitalSites={mockHospitalSites} />,
+    );
+
+    const goldenJubileeItem = Array.from(container.querySelectorAll('li')).find((li) =>
+      li.textContent.includes('Golden Jubilee'),
+    );
+
+    expect(goldenJubileeItem).toBeDefined();
+    expect(goldenJubileeItem?.querySelector('.golden-jubilee-badge')?.textContent).toBe(
+      'Treats patients referred from all health boards in Scotland.',
+    );
+
+    const ayrshireItem = Array.from(container.querySelectorAll('li')).find((li) =>
+      li.textContent.includes('NHS Ayrshire and Arran'),
+    );
+    expect(ayrshireItem?.querySelector('.golden-jubilee-badge')).toBeNull();
+  });
+
   test('renders official health board directory finder link (B-5)', () => {
     render(
       <UnitList specialty={targetSpecialty} units={mockUnits} hospitalSites={mockHospitalSites} />,
@@ -629,7 +649,13 @@ describe('Scotland Page Route (/scotland) (T-8.14)', () => {
     expect(explainerLinks).toContain('/scotland/about-the-figures');
     expect(explainerLinks).toContain('/scotland/your-rights');
 
-    expect(container.querySelector('[role="note"]')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/england', '/wales']);
+    expect(borderLinks).not.toContain('/scotland');
   });
 });
 
@@ -660,7 +686,13 @@ describe('Scotland Specialty Page Route (/scotland/[specialty]) (T-8.14)', () =>
     expect(explainerLinks).toContain('/scotland/your-rights');
 
     expect(container.querySelector('#editorial-intro-slot')).toBeDefined();
-    expect(container.querySelector('[role="note"]')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/england', '/wales']);
+    expect(borderLinks).not.toContain('/scotland');
   });
 
   test('renders "All specialties" heading for all-specialties slug', async () => {
@@ -708,7 +740,7 @@ describe('Scotland Unit Detail Page Route (/scotland/[specialty]/[unit]) (T-8.14
       }),
     });
 
-    render(page);
+    const { container } = render(page);
 
     const backLink = screen.getByRole('link', {
       name: '← Back to Trauma and Orthopaedic Surgery',
@@ -718,7 +750,13 @@ describe('Scotland Unit Detail Page Route (/scotland/[specialty]/[unit]) (T-8.14
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe(
       'Golden Jubilee National Hospital',
     );
-    expect(screen.getByRole('complementary')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/england', '/wales']);
+    expect(borderLinks).not.toContain('/scotland');
   });
 
   test('triggers notFound for unknown specialty', async () => {

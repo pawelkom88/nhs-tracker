@@ -25,14 +25,14 @@ export default async function EnglandPage() {
         </nav>
       </header>
 
-      <main>
+      <div>
         <section aria-labelledby="specialties-heading">
           <h2 id="specialties-heading">{t('england-lists', 'specialtiesHeading')}</h2>
           <SpecialtyList specialties={specialties} />
         </section>
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="england" />
     </div>
   );
 }

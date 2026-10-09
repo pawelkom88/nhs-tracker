@@ -45,7 +45,7 @@ export default async function ScotlandSpecialtyPage({ params }: ScotlandSpecialt
     <div className="scotland-specialty-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
         <Link href="/scotland" className="back-link">
-          ← {t('scotland-pages', 'backToScotland')}
+          {t('scotland-pages', 'backToScotland')}
         </Link>
       </nav>
 
@@ -71,11 +71,11 @@ export default async function ScotlandSpecialtyPage({ params }: ScotlandSpecialt
       {/* Editorial intro slot (T-9.3) */}
       <div id="editorial-intro-slot" />
 
-      <main>
+      <div>
         <UnitList specialty={specialty} units={units} hospitalSites={reference.hospitalSites} />
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="scotland" />
     </div>
   );
 }

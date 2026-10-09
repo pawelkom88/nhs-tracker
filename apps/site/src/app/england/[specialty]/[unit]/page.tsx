@@ -75,15 +75,15 @@ export default async function EnglandUnitPage({ params }: EnglandUnitPageProps) 
     <div className="england-unit-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
         <Link href={`/england/${specialty.slug}`} className="back-link">
-          ← {t('england-detail', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
+          {t('england-detail', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
         </Link>
       </nav>
 
-      <main>
+      <div>
         <UnitDetail detail={detail} />
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="england" />
     </div>
   );
 }

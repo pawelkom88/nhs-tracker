@@ -57,6 +57,9 @@ function renderWithinStandardBlock(fig: PublishedFigure<'wales'>) {
   let statement: string | undefined;
 
   if (fig.value.status === 'published') {
+    const rawPercent = fig.value.value;
+    const isExact = Math.abs(rawPercent - Math.round(rawPercent / 10) * 10) < 0.001;
+    const approx = isExact ? 'false' : 'true';
     const ratio = Math.round(fig.value.value / 10);
     const percent = fig.value.value.toLocaleString('en-GB', {
       minimumFractionDigits: 1,
@@ -65,6 +68,7 @@ function renderWithinStandardBlock(fig: PublishedFigure<'wales'>) {
     const standardWeeks = WALES_WAIT_STAGE_RTT_PATHWAY.waitingStandard.weeks;
 
     statement = t('wales', 'withinStandardStatement', {
+      approx,
       ratio,
       percent,
       standardWeeks,

@@ -476,7 +476,13 @@ describe('Wales Page Route (/wales) (T-8.13)', () => {
     expect(explainerLinks).toContain('/wales/about-the-figures');
     expect(explainerLinks).toContain('/wales/your-rights');
 
-    expect(container.querySelector('[role="note"]')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/england', '/scotland']);
+    expect(borderLinks).not.toContain('/wales');
   });
 });
 
@@ -505,7 +511,13 @@ describe('Wales Specialty Page Route (/wales/[specialty]) (T-8.13)', () => {
     expect(explainerLinks).toContain('/wales/your-rights');
 
     expect(container.querySelector('#editorial-intro-slot')).toBeDefined();
-    expect(container.querySelector('[role="note"]')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/england', '/scotland']);
+    expect(borderLinks).not.toContain('/wales');
   });
 
   test('renders "All specialties" heading for all-specialties slug', async () => {
@@ -553,7 +565,7 @@ describe('Wales Unit Detail Page Route (/wales/[specialty]/[unit]) (T-8.13)', ()
       }),
     });
 
-    render(page);
+    const { container } = render(page);
 
     const backLink = screen.getByRole('link', {
       name: '← Back to Trauma and Orthopaedic',
@@ -563,7 +575,13 @@ describe('Wales Unit Detail Page Route (/wales/[specialty]/[unit]) (T-8.13)', ()
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe(
       'Betsi Cadwaladr University Health Board',
     );
-    expect(screen.getByRole('complementary')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/england', '/scotland']);
+    expect(borderLinks).not.toContain('/wales');
   });
 
   test('triggers notFound for unknown specialty', async () => {

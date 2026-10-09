@@ -219,7 +219,7 @@ describe('England Unit Detail Component (T-8.12)', () => {
     expect(screen.getByText('St Bartholomew Hospital (London)')).toBeDefined();
 
     // No ISP badge or notice for NHS trust
-    expect(screen.queryByText('Independent provider (NHS-funded)')).toBeNull();
+    expect(screen.queryByText('Independent Sector Provider')).toBeNull();
   });
 
   test('renders ISP unit with ISP badge and explanatory notice', () => {
@@ -236,7 +236,7 @@ describe('England Unit Detail Component (T-8.12)', () => {
     render(<UnitDetail detail={detail} />);
 
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('SpaMedica Wembley');
-    expect(screen.getByText('Independent provider (NHS-funded)')).toBeDefined();
+    expect(screen.getByText('Independent Sector Provider')).toBeDefined();
     expect(
       screen.getByText(
         'This is an independent provider treating NHS-funded patients, free to the patient.',
@@ -386,7 +386,7 @@ describe('England Unit Detail Page Route (T-8.12)', () => {
       }),
     });
 
-    render(page);
+    const { container } = render(page);
 
     // Breadcrumb navigation back to specialty
     const backLink = screen.getByRole('link', {
@@ -397,8 +397,14 @@ describe('England Unit Detail Page Route (T-8.12)', () => {
     // Page header
     expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Barts Health NHS Trust');
 
-    // Border notice
-    expect(screen.getByRole('complementary')).toBeDefined();
+    // Border notice present and links to other nations
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/wales', '/scotland']);
+    expect(borderLinks).not.toContain('/england');
   });
 
   test('triggers notFound for unknown specialty', async () => {

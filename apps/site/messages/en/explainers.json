@@ -1,0 +1,10 @@
+{
+  "aboutFiguresTitle": "About the figures: {nation}",
+  "aboutFiguresDescription": "Understanding official NHS waiting-time statistics for {nation}.",
+  "yourRightsTitle": "Your rights: {nation}",
+  "yourRightsDescription": "Understanding NHS referral and patient rights in {nation}.",
+  "placeholderNotice": "This page is being written. The sections below outline what will be covered.",
+  "sourcesHeading": "Sources",
+  "notAdvice": "This is not medical advice. Speak to your GP or care team about your own care.",
+  "lastReviewed": "Last reviewed: {date}"
+}

@@ -12,7 +12,7 @@ export function Footer() {
           <strong>{t('layout', 'footer.independenceStatement')}</strong>{' '}
           {t('layout', 'footer.disclaimer')}
         </p>
-        <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-2">
+        <nav aria-label={t('layout', 'footerNavLabel')} className="flex flex-wrap gap-x-6 gap-y-2">
           <Link href="/about" className="underline hover:text-gray-900">
             {t('layout', 'footer.about')}
           </Link>

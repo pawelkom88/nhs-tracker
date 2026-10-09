@@ -12,11 +12,13 @@ export const ALLOWED_SOURCE_DOMAINS = [
   'legislation.gov.uk',
   'gov.wales',
   'nhs.wales',
+  'llaiswales.org',
   'nhs.scot',
   'nhsinform.scot',
   'gov.scot',
   'publichealthscotland.scot',
   'opendata.nhs.scot',
+  'pass-scotland.org.uk',
   'statswales.gov.wales',
   'stats.gov.wales',
 ] as const;

@@ -1,0 +1,45 @@
+# UI Craft Pipeline — Progress Tracker (TODO.md)
+
+- [x] **Setup & Orchestration Planning**: Master Plan, Todo tracker, and pipeline architecture created.
+- [x] **Phase 0 — Vocabulary & Motion Glossary (Reference)**
+  - [x] Load `animation-vocabulary/SKILL.md`
+  - [x] Map UI behaviors in spec to Emil Kowalski canonical motion vocabulary
+  - [x] Create `ui-pipeline/HANDOFF.md` with "Motion Glossary & Intent"
+  - [x] Formulate Phase 1 prompt with context and handover pointing to `MASTER-PLAN.md`
+- [x] **Phase 1 — Design System & Primitives Selection**
+  - [x] Load `emil-design-eng/SKILL.md` and `pick-ui-library/SKILL.md`
+  - [x] Audit existing typography, Tailwind v4 tokens, and CSS variables
+  - [x] Define spacing scale ($4\text{px}/8\text{px}$), nested radius hierarchy, layered box shadows, and WCAG 2.2 AA color tokens
+  - [x] Select headless primitives (`@base-ui-components/react` / native HTML)
+  - [x] Update `ui-pipeline/HANDOFF.md` and verify Phase 1 exit criteria
+- [x] **Phase 2 — Exploration & Prototyping**
+  - [x] Load `prototype/SKILL.md`
+  - [x] Build 2–3 distinct visual directions behind an interactive visual picker
+  - [x] Capture Chrome DevTools MCP screenshots of each direction
+  - [x] 🛑 **PAUSE 1**: Present visual picker & screenshots to user for direction selection (Direction A chosen)
+  - [x] Clean up unchosen variants and document winning direction in `HANDOFF.md`
+- [x] **Phase 3 — Interaction Physics & Gestures (Conditional)**
+  - [x] Load `apple-design/SKILL.md`
+  - [x] Evaluate direct manipulation requirements (drag, bottom sheet, fluid dismissals)
+  - [x] Formally document _"Skipped — no direct manipulation"_ with explicit architectural justification
+  - [x] Verify keyboard & button fallbacks, skip-links, and zero-JS accessibility
+  - [x] Update `ui-pipeline/HANDOFF.md` and formulate Phase 4 prompt
+- [x] **Phase 4 — Worst-Case Stress Testing**
+  - [x] Load `break-ui/SKILL.md`
+  - [x] Implement "Demo data / Worst case" toggle with extreme content
+  - [x] Test layout at 200% zoom and mobile viewport ($320\text{px}$)
+  - [x] Fix any text clipping, overlap, or horizontal scroll leaks
+  - [x] Update `ui-pipeline/HANDOFF.md`
+- [x] **Phase 5 — Motion Polish & Micro-Interactions**
+  - [x] Load `emilkowalski-motion/SKILL.md` and `animate/SKILL.md`
+  - [x] Implement press feedback (`active:scale-[0.98]`), ease-out entrances, and state transitions
+  - [x] Enforce `prefers-reduced-motion` media query fallbacks
+  - [x] Verify 60fps GPU acceleration (transforms and opacity only)
+  - [x] Update `ui-pipeline/HANDOFF.md`
+- [x] **Phase 6 — Motion Audit & Final Polish Gate**
+  - [x] Load `review-animations/SKILL.md`, `emil-design-eng/SKILL.md`, `a11y-audit/SKILL.md`
+  - [x] Run motion audit on diffs
+  - [x] Produce Emil Kowalski Before/After table
+  - [x] Run automated WCAG 2.2 AA audit (0 Critical/Serious issues)
+  - [x] Capture final screenshots across viewports, dark/light modes, and reduced-motion
+  - [x] 🛑 **PAUSE 2**: Present final review and complete handoff to user

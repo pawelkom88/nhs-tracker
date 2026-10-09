@@ -50,7 +50,7 @@ export function UnitDetail({ detail, className }: UnitDetailProps) {
         </nav>
       </header>
 
-      <section className="figures-section" aria-label="Waiting time figures">
+      <section className="figures-section" aria-label={t('common', 'figuresSectionLabel')}>
         {hasCarriedForward && (
           <CarriedForwardWarning
             unitName={unit.displayName}

@@ -269,9 +269,7 @@ describe('England UnitList (T-8.11)', () => {
     );
 
     expect(ispItem).toBeDefined();
-    expect(ispItem?.querySelector('.isp-badge')?.textContent).toBe(
-      'Independent provider (NHS-funded)',
-    );
+    expect(ispItem?.querySelector('.isp-badge')?.textContent).toBe('Independent Sector Provider');
 
     const trustItem = Array.from(container.querySelectorAll('li')).find((li) =>
       li.textContent.includes('Barts Health'),
@@ -347,8 +345,14 @@ describe('England page (/england) (T-8.11)', () => {
     expect(explainerLinks).toContain('/england/about-the-figures');
     expect(explainerLinks).toContain('/england/your-rights');
 
-    // Asserts border notice is present
-    expect(container.querySelector('[role="note"]')).toBeDefined();
+    // Asserts border notice is present and links to other nations
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/wales', '/scotland']);
+    expect(borderLinks).not.toContain('/england');
   });
 });
 
@@ -382,7 +386,13 @@ describe('England specialty page (/england/[specialty]) (T-8.11)', () => {
     expect(container.querySelector('#editorial-intro-slot')).toBeDefined();
 
     // Border notice present
-    expect(container.querySelector('[role="note"]')).toBeDefined();
+    const borderNotice = container.querySelector('aside[aria-labelledby="border-notice-title"]');
+    expect(borderNotice).not.toBeNull();
+    const borderLinks = Array.from(borderNotice?.querySelectorAll('a') ?? []).map((a) =>
+      a.getAttribute('href'),
+    );
+    expect(borderLinks).toEqual(['/wales', '/scotland']);
+    expect(borderLinks).not.toContain('/england');
   });
 
   test('renders "All specialties" heading for all-specialties slug', async () => {

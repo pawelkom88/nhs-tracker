@@ -75,15 +75,15 @@ export default async function ScotlandUnitPage({ params }: ScotlandUnitPageProps
     <div className="scotland-unit-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
         <Link href={`/scotland/${specialty.slug}`} className="back-link">
-          ← {t('scotland-pages', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
+          {t('scotland-pages', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
         </Link>
       </nav>
 
-      <main>
+      <div>
         <UnitDetail detail={detail} />
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="scotland" />
     </div>
   );
 }

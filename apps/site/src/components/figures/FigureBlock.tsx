@@ -31,7 +31,7 @@ export function FigureBlock({
   const isSuppressed = status.status === 'suppressed';
 
   return (
-    <figure className={className}>
+    <figure className={className} data-figure data-figure-status={status.status}>
       {isSuppressed ? (
         <SuppressedNotice className="figure-statement" />
       ) : (

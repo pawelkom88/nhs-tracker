@@ -64,11 +64,21 @@ export function UnitList({ specialty, units, hospitalSites, className }: UnitLis
               const filterTerms = [unit.displayName, ...siteNames, ...siteTowns];
               const filterText = filterTerms.join(' ').toLowerCase();
 
+              const isGoldenJubilee =
+                unit.kind === 'special-health-board' ||
+                unit.notes.includes('treats-patients-from-all-boards') ||
+                unit.officialCode.toUpperCase() === 'SB0801';
+
               return (
                 <li key={unit.id} data-filter-text={filterText} className="unit-item">
                   <Link href={`/scotland/${specialty.slug}/${unit.officialCode.toLowerCase()}`}>
                     {unit.displayName}
                   </Link>
+                  {isGoldenJubilee && (
+                    <span className="golden-jubilee-badge">
+                      {t('scotland-pages', 'goldenJubileeNote')}
+                    </span>
+                  )}
                 </li>
               );
             })}

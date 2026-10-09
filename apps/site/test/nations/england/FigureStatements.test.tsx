@@ -213,6 +213,28 @@ describe('England FigureStatements (T-8.7)', () => {
     expect(statement?.textContent).toBe('About 6 in 10 (58.0%) had waited less than 18 weeks.');
   });
 
+  test('renders within-standard statement without "About" for exact multiple of 10 (0.70 -> 7 in 10 (70.0%))', () => {
+    const entry = createMockEntry([
+      createMockFigure(ENGLAND_STATISTIC_WITHIN_WAITING_STANDARD.id, 0.7),
+    ]);
+
+    const { container } = render(<FigureStatements entry={entry} />);
+
+    const statement = container.querySelector('.figure-statement');
+    expect(statement?.textContent).toBe('7 in 10 (70.0%) had waited less than 18 weeks.');
+  });
+
+  test('renders within-standard statement with "About" for approximate percentage (0.652 -> About 7 in 10 (65.2%))', () => {
+    const entry = createMockEntry([
+      createMockFigure(ENGLAND_STATISTIC_WITHIN_WAITING_STANDARD.id, 0.652),
+    ]);
+
+    const { container } = render(<FigureStatements entry={entry} />);
+
+    const statement = container.querySelector('.figure-statement');
+    expect(statement?.textContent).toBe('About 7 in 10 (65.2%) had waited less than 18 weeks.');
+  });
+
   test('renders long wait statement with singular plural form for 1 person', () => {
     const entry = createMockEntry([createMockFigure(ENGLAND_STATISTIC_LONG_WAIT_COUNT.id, 1)]);
 

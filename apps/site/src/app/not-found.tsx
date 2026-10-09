@@ -37,7 +37,7 @@ export default function NotFound() {
 
       <p className="mt-6">
         <Link href="/" className="text-blue-700 underline">
-          ← {t('not-found', 'homeLink')}
+          {t('not-found', 'homeLink')}
         </Link>
       </p>
 

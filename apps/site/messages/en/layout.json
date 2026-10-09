@@ -1,9 +1,11 @@
 {
   "skipLink": "Skip to main content",
+  "footerNavLabel": "Footer",
   "header": {
     "title": "Know Your Wait"
   },
   "footer": {
+    "footerNavLabel": "Footer",
     "independenceStatement": "Know Your Wait is an independent information site.",
     "disclaimer": "We are not part of, or endorsed by, the NHS, NHS England, NHS Wales, NHS Scotland or any government. We republish official statistics and link to official sources; always check the source before making decisions. Nothing on this site is medical advice. Speak to your GP or care team about your own care.",
     "about": "About Know Your Wait",

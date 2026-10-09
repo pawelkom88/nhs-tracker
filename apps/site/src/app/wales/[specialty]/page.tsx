@@ -45,7 +45,7 @@ export default async function WalesSpecialtyPage({ params }: WalesSpecialtyPageP
     <div className="wales-specialty-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
         <Link href="/wales" className="back-link">
-          ← {t('wales-pages', 'backToWales')}
+          {t('wales-pages', 'backToWales')}
         </Link>
       </nav>
 
@@ -69,11 +69,11 @@ export default async function WalesSpecialtyPage({ params }: WalesSpecialtyPageP
       {/* Editorial intro slot (T-9.3) */}
       <div id="editorial-intro-slot" />
 
-      <main>
+      <div>
         <UnitList specialty={specialty} units={units} hospitalSites={reference.hospitalSites} />
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="wales" />
     </div>
   );
 }

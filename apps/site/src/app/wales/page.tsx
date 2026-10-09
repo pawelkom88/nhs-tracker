@@ -25,14 +25,14 @@ export default async function WalesPage() {
         </nav>
       </header>
 
-      <main>
+      <div>
         <section aria-labelledby="specialties-heading">
           <h2 id="specialties-heading">{t('wales-pages', 'specialtiesHeading')}</h2>
           <SpecialtyList specialties={specialties} />
         </section>
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="wales" />
     </div>
   );
 }

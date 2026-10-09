@@ -75,15 +75,15 @@ export default async function WalesUnitPage({ params }: WalesUnitPageProps) {
     <div className="wales-unit-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
         <Link href={`/wales/${specialty.slug}`} className="back-link">
-          ← {t('wales-pages', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
+          {t('wales-pages', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
         </Link>
       </nav>
 
-      <main>
+      <div>
         <UnitDetail detail={detail} />
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="wales" />
     </div>
   );
 }

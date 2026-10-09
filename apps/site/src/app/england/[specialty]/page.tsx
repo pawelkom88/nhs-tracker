@@ -47,7 +47,7 @@ export default async function EnglandSpecialtyPage({ params }: EnglandSpecialtyP
     <div className="england-specialty-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
         <Link href="/england" className="back-link">
-          ← {t('england-lists', 'backToEngland')}
+          {t('england-lists', 'backToEngland')}
         </Link>
       </nav>
 
@@ -71,16 +71,16 @@ export default async function EnglandSpecialtyPage({ params }: EnglandSpecialtyP
       {/* Editorial intro slot (T-9.3) */}
       <div id="editorial-intro-slot" />
 
-      <main>
+      <div>
         <UnitList
           specialty={specialty}
           units={units}
           regions={regions}
           hospitalSites={reference.hospitalSites}
         />
-      </main>
+      </div>
 
-      <BorderNotice />
+      <BorderNotice current="england" />
     </div>
   );
 }

@@ -2,6 +2,6 @@
   "stageHeading": "Referral to treatment (incomplete pathways)",
   "medianStatement": "Half of people waiting at {reportingPeriod} had waited {weeks} {count, plural, one {week} other {weeks}} or less.{yearEarlier}",
   "yearEarlierComparison": " (a year earlier: {weeks} {count, plural, one {week} other {weeks}})",
-  "withinStandardStatement": "About {ratio} in 10 ({percent}%) had waited less than {standardWeeks} weeks.",
+  "withinStandardStatement": "{approx, select, true {About } other {}}{ratio} in 10 ({percent}%) had waited less than {standardWeeks} weeks.",
   "longWaitStatement": "{count, plural, one {1 person had waited over a year.} other {{formattedCount} people had waited over a year.}}"
 }

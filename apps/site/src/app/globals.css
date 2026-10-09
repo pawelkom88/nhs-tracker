@@ -1,1 +1,150 @@
 @import 'tailwindcss';
+
+@theme {
+  /* Typography Scale */
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing Scale (4pt/8pt grid) */
+  --spacing-1: 0.25rem; /* 4px - micro gap / badge padding */
+  --spacing-2: 0.5rem; /* 8px - tight spacing / chip margin */
+  --spacing-3: 0.75rem; /* 12px - input Y padding */
+  --spacing-4: 1rem; /* 16px - standard card padding / base gap */
+  --spacing-6: 1.5rem; /* 24px - card content padding / section gap */
+  --spacing-8: 2rem; /* 32px - container gutters */
+  --spacing-12: 3rem; /* 48px - section vertical rhythm */
+  --spacing-16: 4rem; /* 64px - page hero rhythm */
+
+  /* Radius Hierarchy: R_inner = max(0, R_outer - Padding) */
+  --radius-outer: 1rem; /* 16px - outer container / card */
+  --radius-card: 0.75rem; /* 12px - standard card */
+  --radius-inner: 0.5rem; /* 8px  - nested element with 8px pad */
+  --radius-nested: 0.25rem; /* 4px  - nested element with 12px pad */
+  --radius-full: 9999px;
+
+  /* Color Palette (Calm Editorial / Deep Pine Teal & Slate - Zero NHS Blue) */
+  --color-canvas: #ffffff;
+  --color-surface-subtle: #f8fafc;
+  --color-surface-muted: #f1f5f9;
+
+  --color-text-primary: #0f172a; /* Slate 900 (16.6:1 contrast against white) */
+  --color-text-secondary: #475569; /* Slate 600 (6.0:1 contrast against white) */
+  --color-text-tertiary: #64748b; /* Slate 500 (4.6:1 contrast against white) */
+
+  --color-brand-primary: #044e54; /* Deep Pine/Teal (8.8:1 contrast against white) */
+  --color-brand-hover: #086972; /* Teal hover (6.2:1 contrast against white) */
+  --color-brand-surface: #ecfdf5; /* Tinted accent container */
+
+  --color-border-subtle: rgba(15, 23, 42, 0.08);
+  --color-border-default: rgba(15, 23, 42, 0.16); /* >= 3:1 UI boundary contrast */
+
+  /* Status Tokens (WCAG 2.2 AA Verified) */
+  --color-status-standard-text: #065f46; /* Emerald 800 (8.3:1 contrast on surface) */
+  --color-status-standard-bg: #ecfdf5; /* Emerald 50 */
+  --color-status-longwait-text: #9a3412; /* Amber 800 (7.5:1 contrast on surface) */
+  --color-status-longwait-bg: #fffbeb; /* Amber 50 */
+  --color-status-suppressed-text: #475569; /* Slate 600 (6.0:1 contrast on surface) */
+  --color-status-suppressed-bg: #f1f5f9; /* Slate 100 */
+
+  /* Layered Shadows (Emil Kowalski craft: ambient blur + ring outline) */
+  --shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+  --shadow-card:
+    0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 6px 12px -2px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(15, 23, 42, 0.07);
+  --shadow-popover:
+    0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 12px 24px -4px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(15, 23, 42, 0.08);
+
+  /* Easing curve */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tabular figures for all statistical metrics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* High-contrast visible focus outline (WCAG 2.2 AA compliant) */
+:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+}
+
+/* Emil Kowalski responsive press feedback */
+@media (hover: hover) and (pointer: fine) {
+  .pressable {
+    transition: transform 120ms var(--ease-out);
+    will-change: transform;
+  }
+  .pressable:active {
+    transform: scale(0.98);
+  }
+}
+
+/* GPU-accelerated step entrance and stagger animations */
+.animate-step-enter {
+  animation: stepEnter 180ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.animate-card-stagger {
+  opacity: 0;
+  animation: cardEnter 180ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--stagger-delay, 0ms);
+  will-change: transform, opacity;
+}
+
+@keyframes stepEnter {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Disclosure / Accordion smooth transition using CSS grid rows (Zero JS) */
+details.disclosure-group > summary {
+  cursor: pointer;
+  list-style: none;
+}
+details.disclosure-group > summary::-webkit-details-marker {
+  display: none;
+}
+details.disclosure-group .disclosure-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+details.disclosure-group[open] .disclosure-content {
+  grid-template-rows: 1fr;
+}
+details.disclosure-group .disclosure-inner {
+  overflow: hidden;
+}
+
+/* Reduced motion guarantee */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

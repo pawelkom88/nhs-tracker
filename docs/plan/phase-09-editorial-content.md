@@ -118,7 +118,7 @@ Body: Markdown. Claims link sources with `[text][nhs-choice]` reference links re
   1. Test: any `reviewed` file with `lastReviewed` older than 183 days fails CI (and the scheduled pipeline workflow posts a reminder issue, T-7.6 reads this script's output).
   2. Test: body contains no digits followed by `weeks`/`days`/`%`/`people` unless inside a blockquote citing a source (warn → fail list for PO).
   3. Test: every reference-style link resolves to a `sources[]` id.
-  4. `scripts/check-launch-content.ts` (run in T-10.9): fails if any explainer or any T&O file is not `reviewed`.
+  4. `scripts/check-launch-content.ts` (run in T-10.8): fails if any explainer or any T&O file is not `reviewed`.
 - **Acceptance criteria:** tests pass on placeholder content; script fails on current placeholders (expected until PO writes copy).
 - **Out of scope:** writing copy.
 - **Size:** S

@@ -4,6 +4,7 @@ import { t } from '../i18n';
 import { siteConfig } from '../config/site';
 import { SiteHeader } from '../components/SiteHeader';
 import { Footer } from '../components/Footer';
+import { Analytics } from '../components/Analytics';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -18,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <body className="flex min-h-screen flex-col bg-white text-gray-900 antialiased">
+      <body className="flex min-h-screen flex-col bg-[var(--color-canvas)] text-[var(--color-text-primary)] antialiased">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black focus:ring-2 focus:ring-blue-600"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-[var(--color-canvas)] focus:text-[var(--color-text-primary)] focus:ring-2 focus:ring-[var(--color-brand-primary)]"
         >
           {t('layout', 'skipLink')}
         </a>
@@ -30,6 +31,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

@@ -25,9 +25,12 @@ describe('Editorial Content Schema & Source Validation', () => {
     expect(isAllowedSourceHostname('legislation.gov.uk')).toBe(true);
     expect(isAllowedSourceHostname('gov.wales')).toBe(true);
     expect(isAllowedSourceHostname('nhs.wales')).toBe(true);
+    expect(isAllowedSourceHostname('llaiswales.org')).toBe(true);
+    expect(isAllowedSourceHostname('www.llaiswales.org')).toBe(true);
     expect(isAllowedSourceHostname('nhs.scot')).toBe(true);
     expect(isAllowedSourceHostname('nhsinform.scot')).toBe(true);
     expect(isAllowedSourceHostname('www.nhsinform.scot')).toBe(true);
+    expect(isAllowedSourceHostname('pass-scotland.org.uk')).toBe(true);
     expect(isAllowedSourceHostname('statswales.gov.wales')).toBe(true);
   });
 

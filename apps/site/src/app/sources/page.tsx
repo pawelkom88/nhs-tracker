@@ -18,10 +18,12 @@ export default function SourcesPage() {
         <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'sources.figuresHeading')}</h2>
         <div className="space-y-4 text-gray-700">
           <p>
-            <strong>Official Figures:</strong> {t('pages', 'sources.officialFiguresDef')}
+            <strong>{t('pages', 'sources.officialFiguresLabel')}</strong>{' '}
+            {t('pages', 'sources.officialFiguresDef')}
           </p>
           <p>
-            <strong>Derived Figures:</strong> {t('pages', 'sources.derivedFiguresDef')}
+            <strong>{t('pages', 'sources.derivedFiguresLabel')}</strong>{' '}
+            {t('pages', 'sources.derivedFiguresDef')}
           </p>
         </div>
       </section>
@@ -29,10 +31,12 @@ export default function SourcesPage() {
       <section className="mb-8">
         <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'sources.englandHeading')}</h2>
         <p className="mb-1 text-gray-700">
-          <strong>Publisher:</strong> {t('pages', 'sources.englandPublisher')}
+          <strong>{t('pages', 'sources.publisherLabel')}</strong>{' '}
+          {t('pages', 'sources.englandPublisher')}
         </p>
         <p className="mb-2 text-gray-700">
-          <strong>Dataset:</strong> {t('pages', 'sources.englandDataset')}
+          <strong>{t('pages', 'sources.datasetLabel')}</strong>{' '}
+          {t('pages', 'sources.englandDataset')}
         </p>
         <blockquote className="mb-3 border-l-4 border-gray-300 pl-4 italic text-gray-700">
           {t('pages', 'sources.englandAttribution')}
@@ -52,10 +56,11 @@ export default function SourcesPage() {
       <section className="mb-8">
         <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'sources.walesHeading')}</h2>
         <p className="mb-1 text-gray-700">
-          <strong>Publisher:</strong> {t('pages', 'sources.walesPublisher')}
+          <strong>{t('pages', 'sources.publisherLabel')}</strong>{' '}
+          {t('pages', 'sources.walesPublisher')}
         </p>
         <p className="mb-2 text-gray-700">
-          <strong>Dataset:</strong> {t('pages', 'sources.walesDataset')}
+          <strong>{t('pages', 'sources.datasetLabel')}</strong> {t('pages', 'sources.walesDataset')}
         </p>
         <blockquote className="mb-3 border-l-4 border-gray-300 pl-4 italic text-gray-700">
           {t('pages', 'sources.walesAttribution')}
@@ -75,10 +80,12 @@ export default function SourcesPage() {
       <section className="mb-8">
         <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'sources.scotlandHeading')}</h2>
         <p className="mb-1 text-gray-700">
-          <strong>Publisher:</strong> {t('pages', 'sources.scotlandPublisher')}
+          <strong>{t('pages', 'sources.publisherLabel')}</strong>{' '}
+          {t('pages', 'sources.scotlandPublisher')}
         </p>
         <p className="mb-2 text-gray-700">
-          <strong>Dataset:</strong> {t('pages', 'sources.scotlandDataset')}
+          <strong>{t('pages', 'sources.datasetLabel')}</strong>{' '}
+          {t('pages', 'sources.scotlandDataset')}
         </p>
         <blockquote className="mb-3 border-l-4 border-gray-300 pl-4 italic text-gray-700">
           {t('pages', 'sources.scotlandAttribution')}
@@ -98,10 +105,11 @@ export default function SourcesPage() {
       <section className="mb-8">
         <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'sources.odsHeading')}</h2>
         <p className="mb-1 text-gray-700">
-          <strong>Publisher:</strong> {t('pages', 'sources.odsPublisher')}
+          <strong>{t('pages', 'sources.publisherLabel')}</strong>{' '}
+          {t('pages', 'sources.odsPublisher')}
         </p>
         <p className="mb-2 text-gray-700">
-          <strong>Dataset:</strong> {t('pages', 'sources.odsDataset')}
+          <strong>{t('pages', 'sources.datasetLabel')}</strong> {t('pages', 'sources.odsDataset')}
         </p>
         <blockquote className="mb-3 border-l-4 border-gray-300 pl-4 italic text-gray-700">
           {t('pages', 'sources.odsAttribution')}

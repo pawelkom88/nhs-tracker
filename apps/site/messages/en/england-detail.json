@@ -1,6 +1,6 @@
 {
-  "backToSpecialty": "Back to {specialtyName}",
-  "ispBadge": "Independent provider (NHS-funded)",
+  "backToSpecialty": "← Back to {specialtyName}",
+  "ispBadge": "Independent Sector Provider",
   "ispNotice": "This is an independent provider treating NHS-funded patients, free to the patient.",
   "region": "NHS region: {regionName}",
   "officialCode": "Organisation code: {code}",

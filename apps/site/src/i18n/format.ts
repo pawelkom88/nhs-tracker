@@ -39,6 +39,14 @@ export function formatPublicationDate(date: PublicationDate): string {
 }
 
 /**
+ * Formats an unbranded ISO date string (YYYY-MM-DD) as "D MMMM YYYY" in en-GB (e.g. "1 October 2026").
+ * Used for Editorial Content review dates.
+ */
+export function formatIsoDate(isoString: string): string {
+  return dateFormatter.format(parseIsoDateToUtc(isoString));
+}
+
+/**
  * Formats a count with thousands separators in en-GB (e.g. "1,234").
  */
 export function formatCount(count: number): string {

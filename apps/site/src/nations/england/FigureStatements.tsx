@@ -57,14 +57,18 @@ function renderWithinStandardBlock(fig: PublishedFigure<'england'>) {
   let statement: string | undefined;
 
   if (fig.value.status === 'published') {
+    const rawPercent = fig.value.value * 100;
+    const isExact = Math.abs(rawPercent - Math.round(rawPercent / 10) * 10) < 0.001;
+    const approx = isExact ? 'false' : 'true';
     const ratio = Math.round(fig.value.value * 10);
-    const percent = (fig.value.value * 100).toLocaleString('en-GB', {
+    const percent = rawPercent.toLocaleString('en-GB', {
       minimumFractionDigits: 1,
       maximumFractionDigits: 1,
     });
     const standardWeeks = ENGLAND_WAIT_STAGE_RTT_INCOMPLETE_PATHWAY.waitingStandard.weeks;
 
     statement = t('england', 'withinStandardStatement', {
+      approx,
       ratio,
       percent,
       standardWeeks,

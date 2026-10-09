@@ -33,7 +33,7 @@ export default tseslint.config(
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ['vitest.config.ts'],
+          allowDefaultProject: ['vitest.config.ts', 'scripts/check-launch-content.ts'],
           defaultProject: 'tsconfig.base.json',
         },
         tsconfigRootDir: import.meta.dirname,
@@ -77,6 +77,8 @@ export default tseslint.config(
             '**/*.spec.ts',
             '**/*.spec.tsx',
             '**/*.test-d.ts',
+            '**/e2e/**',
+            '**/scripts/**',
             '**/*.config.ts',
             '**/*.config.js',
             'eslint.config.js',
@@ -150,7 +152,12 @@ export default tseslint.config(
     },
   },
   {
-    files: ['apps/site/src/nations/**/*.{ts,tsx,js,jsx,mjs,cjs}'],
+    files: [
+      'apps/site/src/nations/**/*.{ts,tsx,js,jsx,mjs,cjs}',
+      'apps/site/src/app/england/**/*.{ts,tsx,js,jsx,mjs,cjs}',
+      'apps/site/src/app/wales/**/*.{ts,tsx,js,jsx,mjs,cjs}',
+      'apps/site/src/app/scotland/**/*.{ts,tsx,js,jsx,mjs,cjs}',
+    ],
     rules: {
       'import-x/no-restricted-paths': [
         'error',
@@ -159,19 +166,79 @@ export default tseslint.config(
           zones: [
             {
               target: './apps/site/src/nations/england',
-              from: ['./apps/site/src/nations/wales', './apps/site/src/nations/scotland'],
+              from: [
+                './apps/site/src/nations/wales',
+                './apps/site/src/nations/scotland',
+                './apps/site/src/app/wales',
+                './apps/site/src/app/scotland',
+                './apps/site/src/data/wales',
+                './apps/site/src/data/scotland',
+              ],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './apps/site/src/app/england',
+              from: [
+                './apps/site/src/nations/wales',
+                './apps/site/src/nations/scotland',
+                './apps/site/src/app/wales',
+                './apps/site/src/app/scotland',
+                './apps/site/src/data/wales',
+                './apps/site/src/data/scotland',
+              ],
               message:
                 'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
             },
             {
               target: './apps/site/src/nations/wales',
-              from: ['./apps/site/src/nations/england', './apps/site/src/nations/scotland'],
+              from: [
+                './apps/site/src/nations/england',
+                './apps/site/src/nations/scotland',
+                './apps/site/src/app/england',
+                './apps/site/src/app/scotland',
+                './apps/site/src/data/england',
+                './apps/site/src/data/scotland',
+              ],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './apps/site/src/app/wales',
+              from: [
+                './apps/site/src/nations/england',
+                './apps/site/src/nations/scotland',
+                './apps/site/src/app/england',
+                './apps/site/src/app/scotland',
+                './apps/site/src/data/england',
+                './apps/site/src/data/scotland',
+              ],
               message:
                 'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
             },
             {
               target: './apps/site/src/nations/scotland',
-              from: ['./apps/site/src/nations/england', './apps/site/src/nations/wales'],
+              from: [
+                './apps/site/src/nations/england',
+                './apps/site/src/nations/wales',
+                './apps/site/src/app/england',
+                './apps/site/src/app/wales',
+                './apps/site/src/data/england',
+                './apps/site/src/data/wales',
+              ],
+              message:
+                'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
+            },
+            {
+              target: './apps/site/src/app/scotland',
+              from: [
+                './apps/site/src/nations/england',
+                './apps/site/src/nations/wales',
+                './apps/site/src/app/england',
+                './apps/site/src/app/wales',
+                './apps/site/src/data/england',
+                './apps/site/src/data/wales',
+              ],
               message:
                 'Cross-nation imports between England, Wales, and Scotland are forbidden (ADR-0006).',
             },

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "pipeline": "tsx src/cli.ts",
+    "content:stubs": "tsx src/content/stubs.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

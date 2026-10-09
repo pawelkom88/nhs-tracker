@@ -211,6 +211,28 @@ describe('Wales FigureStatements (T-8.8)', () => {
     expect(statement?.textContent).toBe('About 6 in 10 (58.0%) had waited less than 26 weeks.');
   });
 
+  test('renders within-standard statement without "About" for exact multiple of 10 (70.0 -> 7 in 10 (70.0%))', () => {
+    const entry = createMockEntry([
+      createMockFigure(WALES_STATISTIC_WITHIN_WAITING_STANDARD.id, 70.0),
+    ]);
+
+    const { container } = render(<FigureStatements entry={entry} />);
+
+    const statement = container.querySelector('.figure-statement');
+    expect(statement?.textContent).toBe('7 in 10 (70.0%) had waited less than 26 weeks.');
+  });
+
+  test('renders within-standard statement with "About" for approximate percentage (65.2 -> About 7 in 10 (65.2%))', () => {
+    const entry = createMockEntry([
+      createMockFigure(WALES_STATISTIC_WITHIN_WAITING_STANDARD.id, 65.2),
+    ]);
+
+    const { container } = render(<FigureStatements entry={entry} />);
+
+    const statement = container.querySelector('.figure-statement');
+    expect(statement?.textContent).toBe('About 7 in 10 (65.2%) had waited less than 26 weeks.');
+  });
+
   test('asserts no 18 weeks or 12 weeks string appears anywhere in Wales statements', () => {
     const entry = createMockEntry([
       createMockFigure(WALES_STATISTIC_MEDIAN_ONGOING_WAIT.id, 12.5),

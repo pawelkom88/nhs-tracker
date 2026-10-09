@@ -15,5 +15,9 @@
   "navigation": "Navigation",
   "externalLink": "(opens in new tab)",
   "resultsCount": "{count, plural, one {# result} other {# results}}",
-  "peopleCount": "{count, plural, one {# person} other {# people}}"
+  "peopleCount": "{count, plural, one {# person} other {# people}}",
+  "figuresSectionLabel": "Waiting time figures",
+  "specialtyIntroLabel": "Specialty overview and patient rights",
+  "lastReviewed": "Last reviewed: {date}",
+  "notMedicalAdvice": "This is not medical advice. Speak to your GP or care team about your own care."
 }

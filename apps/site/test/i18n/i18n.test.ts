@@ -8,6 +8,7 @@ import {
 import {
   daysToWholeWeeks,
   formatCount,
+  formatIsoDate,
   formatMedianWeeks,
   formatPublicationDate,
   formatReportingPeriod,
@@ -24,6 +25,10 @@ describe('i18n date formatters', () => {
   test('formats PublicationDate as en-GB D MMMM YYYY', () => {
     const pd = publicationDate('2026-10-09');
     expect(formatPublicationDate(pd)).toBe('9 October 2026');
+  });
+
+  test('formats unbranded ISO date with formatIsoDate as en-GB D MMMM YYYY', () => {
+    expect(formatIsoDate('2026-10-01')).toBe('1 October 2026');
   });
 
   test('is timezone resilient across UTC boundaries', () => {

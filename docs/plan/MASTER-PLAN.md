@@ -572,26 +572,26 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 
 - [x] T-8.1 — Scaffold the Next.js static site
 - [x] T-8.2 — Build-time data loader with validation
-- [ ] T-8.3 — Build the i18n layer and date/number formatting
-- [ ] T-8.4 — Root layout, footer, skip link and "Spotted a mistake?" link
-- [ ] T-8.5 — Home page and the border notice
-- [ ] T-8.6 — Shared figure primitives: caption, source line, status labels
-- [ ] T-8.7 — England figure statements
-- [ ] T-8.8 — Wales figure statements
-- [ ] T-8.9 — Scotland figure statements (two Wait Stages, days)
-- [ ] T-8.10 — Progressive-enhancement list filter
-- [ ] T-8.11 — England Specialty list and Reporting Unit list pages
-- [ ] T-8.12 — England Reporting Unit detail page
-- [ ] T-8.13 — Wales routes: Specialty list, health board list, detail
-- [ ] T-8.14 — Scotland routes: Specialty list, health board list, detail
-- [ ] T-8.15 — Static information pages: about, sources and licences, privacy, accessibility
-- [ ] T-8.16 — Wording guard tests: _Avoid_ terms and required captions
-- [ ] T-8.17 — 404 page, robots, sitemap and no-ranking order tests
+- [x] T-8.3 — Build the i18n layer and date/number formatting
+- [x] T-8.4 — Root layout, footer, skip link and "Spotted a mistake?" link
+- [x] T-8.5 — Home page and the border notice
+- [x] T-8.6 — Shared figure primitives: caption, source line, status labels
+- [x] T-8.7 — England figure statements
+- [x] T-8.8 — Wales figure statements
+- [x] T-8.9 — Scotland figure statements (two Wait Stages, days)
+- [x] T-8.10 — Progressive-enhancement list filter
+- [x] T-8.11 — England Specialty list and Reporting Unit list pages
+- [x] T-8.12 — England Reporting Unit detail page
+- [x] T-8.13 — Wales routes: Specialty list, health board list, detail
+- [x] T-8.14 — Scotland routes: Specialty list, health board list, detail
+- [x] T-8.15 — Static information pages: about, sources and licences, privacy, accessibility
+- [x] T-8.16 — Wording guard tests: _Avoid_ terms and required captions
+- [x] T-8.17 — 404 page, robots, sitemap and no-ranking order tests
 
 ### [Phase 9 — Editorial Content structure](./phase-09-editorial-content.md)
 
-- [ ] T-9.1 — Content schema, loader and Markdown rendering
-- [ ] T-9.2 — Generate Specialty description stubs for every nation
+- [x] T-9.1 — Content schema, loader and Markdown rendering
+- [x] T-9.2 — Generate Specialty description stubs for every nation
 - [ ] T-9.3 — Trauma & Orthopaedics full-content structure in all three nations
 - [ ] T-9.4 — Explainer pages: "About the figures" and "Your rights" per nation
 - [ ] T-9.5 — Content guard tests: freshness, sources, figures and launch gate
