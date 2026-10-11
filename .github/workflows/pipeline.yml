@@ -118,7 +118,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: node .github/scripts/open-pipeline-issue.mjs
+        run: |
+          if [ -f .github/scripts/open-pipeline-issue.mjs ]; then
+            node .github/scripts/open-pipeline-issue.mjs
+          else
+            echo "Skipping issue processing: repository script .github/scripts/open-pipeline-issue.mjs not found."
+          fi
 
       - name: Check weekly content review freshness
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
