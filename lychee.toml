@@ -1,0 +1,31 @@
+# lychee.toml — configuration for Know Your Wait external link checker (T-10.7)
+
+# Network settings
+max_retries = 3
+retry_wait_time = 2
+timeout = 20
+
+# Output format
+format = "markdown"
+
+# Accept HTTP status codes: 200 OK, 202 Accepted (legislation.gov.uk), 204, 206, 429 (rate limit retry)
+accept = [200, 202, 204, 206, 429]
+
+# Base URL to resolve internal root-relative links in HTML/Markdown
+base_url = "https://knowyourwait.org.uk"
+
+# Schemes to check (external web links only)
+scheme = ["http", "https"]
+
+# Exclude patterns
+exclude = [
+  # Internal links mapped to base_url
+  '^https://knowyourwait\.org\.uk',
+  # Repo placeholder until public repo is live (Assumption A-01)
+  '^https://github\.com/knowyourwait/know-your-wait',
+  # Cloudflare insights and analytics beacon
+  '^https://static\.cloudflareinsights\.com',
+  # Localhost and loopback
+  '^https?://localhost',
+  '^https?://127\.0\.0\.1',
+]
