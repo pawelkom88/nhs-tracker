@@ -605,7 +605,7 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 - [ ] T-10.4 — Accessibility and keyboard checks on every route type
 - [ ] T-10.5 — Cloudflare Pages deploy, security headers and Web Analytics
 - [ ] T-10.6 — "Spotted a mistake?" issue form, pipeline-failure template and labels
-- [ ] T-10.7 — External link checker for sources and Editorial Content
+- [x] T-10.7 — External link checker for sources and Editorial Content
 - [ ] T-10.8 — Launch readiness checklist and sign-off
 
 ### [Phase 11 — Visual design (placeholder)](./phase-11-visual-design-placeholder.md)
