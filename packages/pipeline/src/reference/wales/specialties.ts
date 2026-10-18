@@ -361,6 +361,14 @@ export const WALES_SPECIALTIES: readonly Specialty<'wales'>[] = [
     isAllSpecialties: false,
   },
   {
+    id: specialtyId('wales', '401'),
+    officialCode: '401',
+    officialName: 'Clinical Neurophysiology',
+    slug: 'clinical-neurophysiology',
+    descriptionKey: 'wales/clinical-neurophysiology',
+    isAllSpecialties: false,
+  },
+  {
     id: specialtyId('wales', '410'),
     officialCode: '410',
     officialName: 'Rheumatology',
@@ -377,11 +385,27 @@ export const WALES_SPECIALTIES: readonly Specialty<'wales'>[] = [
     isAllSpecialties: false,
   },
   {
+    id: specialtyId('wales', '421'),
+    officialCode: '421',
+    officialName: 'Paediatric Neurology',
+    slug: 'paediatric-neurology',
+    descriptionKey: 'wales/paediatric-neurology',
+    isAllSpecialties: false,
+  },
+  {
     id: specialtyId('wales', '430'),
     officialCode: '430',
     officialName: 'Geriatric Medicine',
     slug: 'geriatric-medicine',
     descriptionKey: 'wales/geriatric-medicine',
+    isAllSpecialties: false,
+  },
+  {
+    id: specialtyId('wales', '450'),
+    officialCode: '450',
+    officialName: 'Dental Medicine',
+    slug: 'dental-medicine',
+    descriptionKey: 'wales/dental-medicine',
     isAllSpecialties: false,
   },
   {
@@ -422,6 +446,14 @@ export const WALES_SPECIALTIES: readonly Specialty<'wales'>[] = [
     officialName: 'Radiology',
     slug: 'radiology',
     descriptionKey: 'wales/radiology',
+    isAllSpecialties: false,
+  },
+  {
+    id: specialtyId('wales', '822'),
+    officialCode: '822',
+    officialName: 'Chemical Pathology',
+    slug: 'chemical-pathology',
+    descriptionKey: 'wales/chemical-pathology',
     isAllSpecialties: false,
   },
   {

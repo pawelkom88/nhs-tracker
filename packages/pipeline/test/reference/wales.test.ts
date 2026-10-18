@@ -132,8 +132,8 @@ describe('Wales Reference Data', () => {
   });
 
   describe('Specialties', () => {
-    it('contains 51 treatment functions plus All Specialties (52 total)', () => {
-      expect(WALES_SPECIALTIES).toHaveLength(52);
+    it('contains 55 treatment functions plus All Specialties (56 total)', () => {
+      expect(WALES_SPECIALTIES).toHaveLength(56);
     });
 
     it('has unique slugs and codes adhering to pattern', () => {

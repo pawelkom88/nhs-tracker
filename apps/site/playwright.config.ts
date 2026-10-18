@@ -45,6 +45,7 @@ export default defineConfig({
     command: 'pnpm build && npx serve out -l 4173 --no-port-switching -n',
     url: 'http://localhost:4173',
     reuseExistingServer: !process.env.CI,
+    timeout: 180 * 1000,
     env: {
       KYW_DATA_DIR: 'test/fixtures/data',
     },

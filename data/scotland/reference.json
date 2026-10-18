@@ -571,6 +571,14 @@
       "slug": "general-medicine"
     },
     {
+      "descriptionKey": "scotland/acute-medicine",
+      "id": "scotland:A11",
+      "isAllSpecialties": false,
+      "officialCode": "A11",
+      "officialName": "Acute Medicine",
+      "slug": "acute-medicine"
+    },
+    {
       "descriptionKey": "scotland/cardiology",
       "id": "scotland:A2",
       "isAllSpecialties": false,
@@ -587,12 +595,20 @@
       "slug": "clinical-genetics"
     },
     {
-      "descriptionKey": "scotland/clinical-oncology",
+      "descriptionKey": "scotland/clinical-pharmacology-and-therapeutics",
+      "id": "scotland:A5",
+      "isAllSpecialties": false,
+      "officialCode": "A5",
+      "officialName": "Clinical Pharmacology & Therapeutics",
+      "slug": "clinical-pharmacology-and-therapeutics"
+    },
+    {
+      "descriptionKey": "scotland/infectious-diseases",
       "id": "scotland:A6",
       "isAllSpecialties": false,
       "officialCode": "A6",
-      "officialName": "Clinical Oncology",
-      "slug": "clinical-oncology"
+      "officialName": "Infectious Diseases",
+      "slug": "infectious-diseases"
     },
     {
       "descriptionKey": "scotland/dermatology",
@@ -609,6 +625,22 @@
       "officialCode": "A8",
       "officialName": "Endocrinology & Diabetes",
       "slug": "endocrinology-and-diabetes"
+    },
+    {
+      "descriptionKey": "scotland/endocrinology",
+      "id": "scotland:A81",
+      "isAllSpecialties": false,
+      "officialCode": "A81",
+      "officialName": "Endocrinology",
+      "slug": "endocrinology"
+    },
+    {
+      "descriptionKey": "scotland/diabetes",
+      "id": "scotland:A82",
+      "isAllSpecialties": false,
+      "officialCode": "A82",
+      "officialName": "Diabetes",
+      "slug": "diabetes"
     },
     {
       "descriptionKey": "scotland/gastroenterology",
@@ -636,51 +668,51 @@
     },
     {
       "descriptionKey": "scotland/medical-oncology",
-      "id": "scotland:AC",
+      "id": "scotland:AD",
       "isAllSpecialties": false,
-      "officialCode": "AC",
+      "officialCode": "AD",
       "officialName": "Medical Oncology",
       "slug": "medical-oncology"
     },
     {
-      "descriptionKey": "scotland/nephrology",
-      "id": "scotland:AD",
-      "isAllSpecialties": false,
-      "officialCode": "AD",
-      "officialName": "Nephrology",
-      "slug": "nephrology"
-    },
-    {
-      "descriptionKey": "scotland/neurology",
+      "descriptionKey": "scotland/paediatrics",
       "id": "scotland:AF",
       "isAllSpecialties": false,
       "officialCode": "AF",
+      "officialName": "Paediatrics",
+      "slug": "paediatrics"
+    },
+    {
+      "descriptionKey": "scotland/community-child-health",
+      "id": "scotland:AFA",
+      "isAllSpecialties": false,
+      "officialCode": "AFA",
+      "officialName": "Community Child Health",
+      "slug": "community-child-health"
+    },
+    {
+      "descriptionKey": "scotland/renal-medicine",
+      "id": "scotland:AG",
+      "isAllSpecialties": false,
+      "officialCode": "AG",
+      "officialName": "Renal Medicine",
+      "slug": "renal-medicine"
+    },
+    {
+      "descriptionKey": "scotland/neurology",
+      "id": "scotland:AH",
+      "isAllSpecialties": false,
+      "officialCode": "AH",
       "officialName": "Neurology",
       "slug": "neurology"
     },
     {
-      "descriptionKey": "scotland/rehabilitation-medicine",
-      "id": "scotland:AG",
+      "descriptionKey": "scotland/occupational-medicine",
+      "id": "scotland:AK",
       "isAllSpecialties": false,
-      "officialCode": "AG",
-      "officialName": "Rehabilitation Medicine",
-      "slug": "rehabilitation-medicine"
-    },
-    {
-      "descriptionKey": "scotland/respiratory-medicine",
-      "id": "scotland:AH",
-      "isAllSpecialties": false,
-      "officialCode": "AH",
-      "officialName": "Respiratory Medicine",
-      "slug": "respiratory-medicine"
-    },
-    {
-      "descriptionKey": "scotland/rheumatology",
-      "id": "scotland:AJ",
-      "isAllSpecialties": false,
-      "officialCode": "AJ",
-      "officialName": "Rheumatology",
-      "slug": "rheumatology"
+      "officialCode": "AK",
+      "officialName": "Occupational Medicine",
+      "slug": "occupational-medicine"
     },
     {
       "descriptionKey": "scotland/palliative-medicine",
@@ -691,12 +723,52 @@
       "slug": "palliative-medicine"
     },
     {
-      "descriptionKey": "scotland/medical-paediatrics",
+      "descriptionKey": "scotland/public-health-medicine",
+      "id": "scotland:AN",
+      "isAllSpecialties": false,
+      "officialCode": "AN",
+      "officialName": "Public Health Medicine",
+      "slug": "public-health-medicine"
+    },
+    {
+      "descriptionKey": "scotland/rehabilitation-medicine",
       "id": "scotland:AP",
       "isAllSpecialties": false,
       "officialCode": "AP",
-      "officialName": "Medical Paediatrics",
-      "slug": "medical-paediatrics"
+      "officialName": "Rehabilitation Medicine",
+      "slug": "rehabilitation-medicine"
+    },
+    {
+      "descriptionKey": "scotland/respiratory-medicine",
+      "id": "scotland:AQ",
+      "isAllSpecialties": false,
+      "officialCode": "AQ",
+      "officialName": "Respiratory Medicine",
+      "slug": "respiratory-medicine"
+    },
+    {
+      "descriptionKey": "scotland/rheumatology",
+      "id": "scotland:AR",
+      "isAllSpecialties": false,
+      "officialCode": "AR",
+      "officialName": "Rheumatology",
+      "slug": "rheumatology"
+    },
+    {
+      "descriptionKey": "scotland/clinical-neurophysiology",
+      "id": "scotland:AV",
+      "isAllSpecialties": false,
+      "officialCode": "AV",
+      "officialName": "Clinical Neurophysiology",
+      "slug": "clinical-neurophysiology"
+    },
+    {
+      "descriptionKey": "scotland/allergy",
+      "id": "scotland:AW",
+      "isAllSpecialties": false,
+      "officialCode": "AW",
+      "officialName": "Allergy",
+      "slug": "allergy"
     },
     {
       "descriptionKey": "scotland/general-surgery",
@@ -707,20 +779,52 @@
       "slug": "general-surgery"
     },
     {
-      "descriptionKey": "scotland/colorectal-surgery",
+      "descriptionKey": "scotland/general-surgery-excl-vascular",
+      "id": "scotland:C11",
+      "isAllSpecialties": false,
+      "officialCode": "C11",
+      "officialName": "General Surgery (excl Vascular)",
+      "slug": "general-surgery-excl-vascular"
+    },
+    {
+      "descriptionKey": "scotland/vascular-surgery",
+      "id": "scotland:C12",
+      "isAllSpecialties": false,
+      "officialCode": "C12",
+      "officialName": "Vascular Surgery",
+      "slug": "vascular-surgery"
+    },
+    {
+      "descriptionKey": "scotland/oral-and-maxillofacial-surgery",
+      "id": "scotland:C13",
+      "isAllSpecialties": false,
+      "officialCode": "C13",
+      "officialName": "Oral and Maxillofacial Surgery",
+      "slug": "oral-and-maxillofacial-surgery"
+    },
+    {
+      "descriptionKey": "scotland/accident-and-emergency",
       "id": "scotland:C2",
       "isAllSpecialties": false,
       "officialCode": "C2",
-      "officialName": "Colorectal Surgery",
-      "slug": "colorectal-surgery"
+      "officialName": "Accident & Emergency",
+      "slug": "accident-and-emergency"
     },
     {
-      "descriptionKey": "scotland/dental-surgery",
+      "descriptionKey": "scotland/anaesthetics",
       "id": "scotland:C3",
       "isAllSpecialties": false,
       "officialCode": "C3",
-      "officialName": "Dental Surgery",
-      "slug": "dental-surgery"
+      "officialName": "Anaesthetics",
+      "slug": "anaesthetics"
+    },
+    {
+      "descriptionKey": "scotland/pain-management",
+      "id": "scotland:C31",
+      "isAllSpecialties": false,
+      "officialCode": "C31",
+      "officialName": "Pain Management",
+      "slug": "pain-management"
     },
     {
       "descriptionKey": "scotland/cardiothoracic-surgery",
@@ -731,12 +835,36 @@
       "slug": "cardiothoracic-surgery"
     },
     {
+      "descriptionKey": "scotland/cardiac-surgery",
+      "id": "scotland:C41",
+      "isAllSpecialties": false,
+      "officialCode": "C41",
+      "officialName": "Cardiac Surgery",
+      "slug": "cardiac-surgery"
+    },
+    {
+      "descriptionKey": "scotland/thoracic-surgery",
+      "id": "scotland:C42",
+      "isAllSpecialties": false,
+      "officialCode": "C42",
+      "officialName": "Thoracic Surgery",
+      "slug": "thoracic-surgery"
+    },
+    {
       "descriptionKey": "scotland/ent",
       "id": "scotland:C5",
       "isAllSpecialties": false,
       "officialCode": "C5",
       "officialName": "Ear, Nose & Throat (ENT)",
       "slug": "ent"
+    },
+    {
+      "descriptionKey": "scotland/audiological-medicine",
+      "id": "scotland:C51",
+      "isAllSpecialties": false,
+      "officialCode": "C51",
+      "officialName": "Audiological Medicine",
+      "slug": "audiological-medicine"
     },
     {
       "descriptionKey": "scotland/neurosurgery",
@@ -771,6 +899,14 @@
       "slug": "plastic-surgery"
     },
     {
+      "descriptionKey": "scotland/cleft-lip-and-palate-surgery",
+      "id": "scotland:C91",
+      "isAllSpecialties": false,
+      "officialCode": "C91",
+      "officialName": "Cleft Lip and Palate Surgery",
+      "slug": "cleft-lip-and-palate-surgery"
+    },
+    {
       "descriptionKey": "scotland/paediatric-surgery",
       "id": "scotland:CA",
       "isAllSpecialties": false,
@@ -787,12 +923,12 @@
       "slug": "urology"
     },
     {
-      "descriptionKey": "scotland/vascular-surgery",
+      "descriptionKey": "scotland/intensive-care-medicine",
       "id": "scotland:CC",
       "isAllSpecialties": false,
       "officialCode": "CC",
-      "officialName": "Vascular Surgery",
-      "slug": "vascular-surgery"
+      "officialName": "Intensive Care Medicine",
+      "slug": "intensive-care-medicine"
     },
     {
       "descriptionKey": "scotland/community-dental-practice",
@@ -811,20 +947,20 @@
       "slug": "oral-surgery"
     },
     {
-      "descriptionKey": "scotland/orthodontics",
+      "descriptionKey": "scotland/oral-medicine",
       "id": "scotland:D4",
       "isAllSpecialties": false,
       "officialCode": "D4",
-      "officialName": "Orthodontics",
-      "slug": "orthodontics"
+      "officialName": "Oral Medicine",
+      "slug": "oral-medicine"
     },
     {
-      "descriptionKey": "scotland/paediatric-dentistry",
+      "descriptionKey": "scotland/orthodontics",
       "id": "scotland:D5",
       "isAllSpecialties": false,
       "officialCode": "D5",
-      "officialName": "Paediatric Dentistry",
-      "slug": "paediatric-dentistry"
+      "officialName": "Orthodontics",
+      "slug": "orthodontics"
     },
     {
       "descriptionKey": "scotland/restorative-dentistry",
@@ -835,12 +971,28 @@
       "slug": "restorative-dentistry"
     },
     {
-      "descriptionKey": "scotland/oral-medicine",
+      "descriptionKey": "scotland/paediatric-dentistry",
       "id": "scotland:D8",
       "isAllSpecialties": false,
       "officialCode": "D8",
-      "officialName": "Oral Medicine",
-      "slug": "oral-medicine"
+      "officialName": "Paediatric Dentistry",
+      "slug": "paediatric-dentistry"
+    },
+    {
+      "descriptionKey": "scotland/special-care-dentistry",
+      "id": "scotland:DE",
+      "isAllSpecialties": false,
+      "officialCode": "DE",
+      "officialName": "Special Care Dentistry",
+      "slug": "special-care-dentistry"
+    },
+    {
+      "descriptionKey": "scotland/gp-other-than-obstetrics",
+      "id": "scotland:E12",
+      "isAllSpecialties": false,
+      "officialCode": "E12",
+      "officialName": "GP Other than Obstetrics",
+      "slug": "gp-other-than-obstetrics"
     },
     {
       "descriptionKey": "scotland/gynaecology",
@@ -859,12 +1011,36 @@
       "slug": "general-psychiatry"
     },
     {
+      "descriptionKey": "scotland/learning-disability",
+      "id": "scotland:G5",
+      "isAllSpecialties": false,
+      "officialCode": "G5",
+      "officialName": "Learning Disability",
+      "slug": "learning-disability"
+    },
+    {
       "descriptionKey": "scotland/clinical-radiology",
+      "id": "scotland:H1",
+      "isAllSpecialties": false,
+      "officialCode": "H1",
+      "officialName": "Clinical Radiology",
+      "slug": "clinical-radiology"
+    },
+    {
+      "descriptionKey": "scotland/breast-screening-service",
+      "id": "scotland:H1A",
+      "isAllSpecialties": false,
+      "officialCode": "H1A",
+      "officialName": "Breast Screening Service",
+      "slug": "breast-screening-service"
+    },
+    {
+      "descriptionKey": "scotland/clinical-oncology",
       "id": "scotland:H2",
       "isAllSpecialties": false,
       "officialCode": "H2",
-      "officialName": "Clinical Radiology",
-      "slug": "clinical-radiology"
+      "officialName": "Clinical Oncology",
+      "slug": "clinical-oncology"
     },
     {
       "descriptionKey": "scotland/chemical-pathology",
@@ -889,6 +1065,54 @@
       "officialCode": "J5",
       "officialName": "Immunology",
       "slug": "immunology"
+    },
+    {
+      "descriptionKey": "scotland/clinical-psychology",
+      "id": "scotland:R2",
+      "isAllSpecialties": false,
+      "officialCode": "R2",
+      "officialName": "Clinical psychology",
+      "slug": "clinical-psychology"
+    },
+    {
+      "descriptionKey": "scotland/dietetics",
+      "id": "scotland:R3",
+      "isAllSpecialties": false,
+      "officialCode": "R3",
+      "officialName": "Dietetics",
+      "slug": "dietetics"
+    },
+    {
+      "descriptionKey": "scotland/physiological-measurement",
+      "id": "scotland:RE",
+      "isAllSpecialties": false,
+      "officialCode": "RE",
+      "officialName": "Physiological Measurement",
+      "slug": "physiological-measurement"
+    },
+    {
+      "descriptionKey": "scotland/electrocardiography",
+      "id": "scotland:RK2",
+      "isAllSpecialties": false,
+      "officialCode": "RK2",
+      "officialName": "Electrocardiography",
+      "slug": "electrocardiography"
+    },
+    {
+      "descriptionKey": "scotland/general-nursing",
+      "id": "scotland:T1",
+      "isAllSpecialties": false,
+      "officialCode": "T1",
+      "officialName": "General nursing",
+      "slug": "general-nursing"
+    },
+    {
+      "descriptionKey": "scotland/community-nursing-district-nursing",
+      "id": "scotland:T5",
+      "isAllSpecialties": false,
+      "officialCode": "T5",
+      "officialName": "Community nursing (district nursing)",
+      "slug": "community-nursing-district-nursing"
     }
   ]
 }

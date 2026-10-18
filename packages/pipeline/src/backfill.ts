@@ -132,6 +132,8 @@ export async function backfillEngland(
   let earliestPeriod: ReportingPeriod | undefined;
   let latestPeriod: ReportingPeriod | undefined;
 
+  let existingReleases = await loadAllReleases('england', customDataRoot);
+
   for (const candidate of candidatesToIngest) {
     const rawFiles = await source.fetch(candidate);
     const candidateRelease = await source.normalise(rawFiles, {} as EnglandReferenceData);
@@ -144,7 +146,6 @@ export async function backfillEngland(
     };
     const reference = await buildReferenceForNation('england', refOptions);
 
-    const existingReleases = await loadAllReleases('england', customDataRoot);
     const priorReleases = existingReleases.filter(
       (r) => r.reportingPeriod < candidate.reportingPeriod,
     );
@@ -174,6 +175,11 @@ export async function backfillEngland(
       };
     }
 
+    existingReleases = [
+      ...existingReleases.filter((r) => r.reportingPeriod !== candidate.reportingPeriod),
+      candidateRelease,
+    ].sort((a, b) => a.reportingPeriod.localeCompare(b.reportingPeriod));
+
     if (!dryRun) {
       const releaseTarget = releasePath('england', candidate.reportingPeriod, customDataRoot);
       await writeCanonicalJson(releaseTarget, candidateRelease);
@@ -181,15 +187,10 @@ export async function backfillEngland(
       const referenceTarget = referencePath('england', customDataRoot);
       await writeCanonicalJson(referenceTarget, reference);
 
-      const updatedHistory: Release<'england'>[] = [
-        ...existingReleases.filter((r) => r.reportingPeriod !== candidate.reportingPeriod),
-        candidateRelease,
-      ].sort((a, b) => a.reportingPeriod.localeCompare(b.reportingPeriod));
-
-      const latest = updatedHistory[updatedHistory.length - 1];
+      const latest = existingReleases[existingReleases.length - 1];
       if (!latest) throw new Error('Failed to find latest England release');
 
-      const published = assemblePublished(latest, updatedHistory, reference);
+      const published = assemblePublished(latest, existingReleases, reference);
       await writeCanonicalJson(publishedPath('england', customDataRoot), published);
 
       const newSeenFiles = { ...currentState.seenFiles };
@@ -249,6 +250,8 @@ export async function backfillWales(options: BackfillOptions = {}): Promise<Back
   let earliestPeriod: ReportingPeriod | undefined;
   let latestPeriod: ReportingPeriod | undefined;
 
+  let existingReleases = await loadAllReleases('wales', customDataRoot);
+
   for (const candidate of candidates) {
     const rawFiles = await source.fetch(candidate);
     const candidateRelease = await source.normalise(rawFiles, {} as WalesReferenceData);
@@ -261,7 +264,6 @@ export async function backfillWales(options: BackfillOptions = {}): Promise<Back
     };
     const reference = await buildReferenceForNation('wales', refOptions);
 
-    const existingReleases = await loadAllReleases('wales', customDataRoot);
     const priorReleases = existingReleases.filter(
       (r) => r.reportingPeriod < candidate.reportingPeriod,
     );
@@ -290,6 +292,11 @@ export async function backfillWales(options: BackfillOptions = {}): Promise<Back
       };
     }
 
+    existingReleases = [
+      ...existingReleases.filter((r) => r.reportingPeriod !== candidate.reportingPeriod),
+      candidateRelease,
+    ].sort((a, b) => a.reportingPeriod.localeCompare(b.reportingPeriod));
+
     if (!dryRun) {
       const releaseTarget = releasePath('wales', candidate.reportingPeriod, customDataRoot);
       await writeCanonicalJson(releaseTarget, candidateRelease);
@@ -297,15 +304,10 @@ export async function backfillWales(options: BackfillOptions = {}): Promise<Back
       const referenceTarget = referencePath('wales', customDataRoot);
       await writeCanonicalJson(referenceTarget, reference);
 
-      const updatedHistory: Release<'wales'>[] = [
-        ...existingReleases.filter((r) => r.reportingPeriod !== candidate.reportingPeriod),
-        candidateRelease,
-      ].sort((a, b) => a.reportingPeriod.localeCompare(b.reportingPeriod));
-
-      const latest = updatedHistory[updatedHistory.length - 1];
+      const latest = existingReleases[existingReleases.length - 1];
       if (!latest) throw new Error('Failed to find latest Wales release');
 
-      const published = assemblePublished(latest, updatedHistory, reference);
+      const published = assemblePublished(latest, existingReleases, reference);
       await writeCanonicalJson(publishedPath('wales', customDataRoot), published);
 
       const newSeenFiles = { ...currentState.seenFiles };
@@ -412,6 +414,8 @@ export async function backfillScotland(
       >['publicationDate'])
     : undefined;
 
+  let existingReleases = await loadAllReleases('scotland', customDataRoot);
+
   for (const period of periodsToIngest) {
     const candidateRelease = normaliseScotlandRelease(
       { performance: perfRows, distribution: distRows },
@@ -426,7 +430,6 @@ export async function backfillScotland(
       },
     );
 
-    const existingReleases = await loadAllReleases('scotland', customDataRoot);
     const priorReleases = existingReleases.filter((r) => r.reportingPeriod < period);
     const previousRelease: Release<'scotland'> | null =
       priorReleases.length > 0 ? (priorReleases[priorReleases.length - 1] ?? null) : null;
@@ -453,6 +456,11 @@ export async function backfillScotland(
       };
     }
 
+    existingReleases = [
+      ...existingReleases.filter((r) => r.reportingPeriod !== period),
+      candidateRelease,
+    ].sort((a, b) => a.reportingPeriod.localeCompare(b.reportingPeriod));
+
     if (!dryRun) {
       const releaseTarget = releasePath('scotland', period, customDataRoot);
       await writeCanonicalJson(releaseTarget, candidateRelease);
@@ -460,15 +468,10 @@ export async function backfillScotland(
       const referenceTarget = referencePath('scotland', customDataRoot);
       await writeCanonicalJson(referenceTarget, reference);
 
-      const updatedHistory: Release<'scotland'>[] = [
-        ...existingReleases.filter((r) => r.reportingPeriod !== period),
-        candidateRelease,
-      ].sort((a, b) => a.reportingPeriod.localeCompare(b.reportingPeriod));
-
-      const latest = updatedHistory[updatedHistory.length - 1];
+      const latest = existingReleases[existingReleases.length - 1];
       if (!latest) throw new Error('Failed to find latest Scotland release');
 
-      const published = assemblePublished(latest, updatedHistory, reference);
+      const published = assemblePublished(latest, existingReleases, reference);
       await writeCanonicalJson(publishedPath('scotland', customDataRoot), published);
     }
 

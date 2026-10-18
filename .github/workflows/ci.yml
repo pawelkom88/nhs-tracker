@@ -71,8 +71,6 @@ jobs:
 
       - name: Build site
         run: pnpm --filter site build
-        env:
-          KYW_DATA_DIR: apps/site/test/fixtures/data
 
   e2e:
     name: End-to-End Tests

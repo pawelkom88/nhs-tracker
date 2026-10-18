@@ -889,6 +889,14 @@
       "slug": "neurology"
     },
     {
+      "descriptionKey": "wales/clinical-neurophysiology",
+      "id": "wales:401",
+      "isAllSpecialties": false,
+      "officialCode": "401",
+      "officialName": "Clinical Neurophysiology",
+      "slug": "clinical-neurophysiology"
+    },
+    {
       "descriptionKey": "wales/rheumatology",
       "id": "wales:410",
       "isAllSpecialties": false,
@@ -905,12 +913,28 @@
       "slug": "paediatrics"
     },
     {
+      "descriptionKey": "wales/paediatric-neurology",
+      "id": "wales:421",
+      "isAllSpecialties": false,
+      "officialCode": "421",
+      "officialName": "Paediatric Neurology",
+      "slug": "paediatric-neurology"
+    },
+    {
       "descriptionKey": "wales/geriatric-medicine",
       "id": "wales:430",
       "isAllSpecialties": false,
       "officialCode": "430",
       "officialName": "Geriatric Medicine",
       "slug": "geriatric-medicine"
+    },
+    {
+      "descriptionKey": "wales/dental-medicine",
+      "id": "wales:450",
+      "isAllSpecialties": false,
+      "officialCode": "450",
+      "officialName": "Dental Medicine",
+      "slug": "dental-medicine"
     },
     {
       "descriptionKey": "wales/gynaecology",
@@ -951,6 +975,14 @@
       "officialCode": "810",
       "officialName": "Radiology",
       "slug": "radiology"
+    },
+    {
+      "descriptionKey": "wales/chemical-pathology",
+      "id": "wales:822",
+      "isAllSpecialties": false,
+      "officialCode": "822",
+      "officialName": "Chemical Pathology",
+      "slug": "chemical-pathology"
     },
     {
       "descriptionKey": "wales/diagnostic-services",
