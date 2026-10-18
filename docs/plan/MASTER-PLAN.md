@@ -566,7 +566,7 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 - [x] T-7.4 — Assemble `published.json` per nation
 - [x] T-7.5 — Pipeline CLI orchestrator
 - [x] T-7.6 — Scheduled GitHub Actions pipeline workflow
-- [ ] T-7.7 — Backfill history and commit the first real data
+- [x] T-7.7 — Backfill history and commit the first real data
 
 ### [Phase 8 — Site skeleton (unstyled, semantic)](./phase-08-site-skeleton.md)
 
