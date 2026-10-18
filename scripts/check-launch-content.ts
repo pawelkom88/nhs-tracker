@@ -81,6 +81,43 @@ export interface CheckContentResult {
 }
 
 /**
+ * Finds workspace root by searching upwards for pnpm-workspace.yaml.
+ */
+export function findWorkspaceRoot(startDir: string = process.cwd()): string {
+  let curr = path.resolve(startDir);
+  for (let i = 0; i < 10; i++) {
+    if (fs.existsSync(path.join(curr, 'pnpm-workspace.yaml'))) {
+      return curr;
+    }
+    const parent = path.dirname(curr);
+    if (parent === curr) {
+      break;
+    }
+    curr = parent;
+  }
+  return path.resolve(startDir);
+}
+
+/**
+ * Resolves the default content directory (<workspace>/content).
+ */
+export function resolveDefaultContentDir(): string {
+  const envDir = process.env.KYW_CONTENT_DIR;
+  if (envDir && envDir.trim().length > 0) {
+    if (path.isAbsolute(envDir)) {
+      return envDir;
+    }
+    return path.resolve(process.cwd(), envDir);
+  }
+  const root = findWorkspaceRoot(process.cwd());
+  const candidate = path.resolve(root, 'content');
+  if (fs.existsSync(candidate)) {
+    return candidate;
+  }
+  return path.resolve(process.cwd(), 'content');
+}
+
+/**
  * Finds all markdown files in the content directory.
  */
 export function getAllContentFilePaths(contentDir: string): string[] {
@@ -150,10 +187,13 @@ export function checkFreshness(
 }
 
 const FIGURE_CLAIM_REGEX =
-  /(?:\b\d+\s*(?:weeks?|days?|months?|percent|people)\b|\b\d+\s*%(?!\w)|\b\d+,\d+\s*people\b)/i;
+  /(?:\b\d+[\d,.]*\s*-?\s*(?:weeks?|days?|months?|percent|people)\b|\b\d+[\d,.]*\s*%(?!\w)|\b\d+[\d,.]*\s*people\b)/i;
+
+const ATTRIBUTION_REGEX =
+  /(?:["“”'‘’]|\[[^\]]+\]|\b(?:source|standard|act|constitution|guidance|framework|publication|according)\b)/i;
 
 /**
- * Checks for prohibited figure claims outside blockquotes and code blocks.
+ * Checks for prohibited figure claims outside blockquotes and verifies blockquotes cite sources.
  */
 export function checkFigureClaims(markdown: string, filePath: string): GuardIssue[] {
   const issues: GuardIssue[] = [];
@@ -176,13 +216,24 @@ export function checkFigureClaims(markdown: string, filePath: string): GuardIssu
       continue;
     }
 
-    // Blockquotes start with >
-    if (trimmed.startsWith('>')) {
+    // Ignore HTML comments <!-- ... -->
+    if (trimmed.startsWith('<!--') || trimmed.endsWith('-->')) {
       continue;
     }
 
-    // Ignore HTML comments <!-- ... -->
-    if (trimmed.startsWith('<!--') || trimmed.endsWith('-->')) {
+    // Blockquote handling: lines starting with >
+    if (trimmed.startsWith('>')) {
+      const match = FIGURE_CLAIM_REGEX.exec(trimmed);
+      if (match) {
+        // Must cite a source or quote an official standard
+        if (!ATTRIBUTION_REGEX.test(trimmed)) {
+          issues.push({
+            filePath,
+            message: `Blockquote at line ${String(i + 1)} contains figure claim "${match[0]}" without citing an official source or quotation.`,
+            severity: 'warning',
+          });
+        }
+      }
       continue;
     }
 
@@ -214,7 +265,7 @@ export function checkSourceReferenceLinks(
   let inCodeBlock = false;
 
   // Matches [link text][source-id] or [source-id][]
-  const refLinkRegex = /\[(?:[^\]]*)\]\[([^\]]+)\]/g;
+  const refLinkRegex = /\[([^\]]+)\]\[([^\]]*)\]/g;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -237,9 +288,14 @@ export function checkSourceReferenceLinks(
       continue;
     }
 
+    // Ignore reference link definitions e.g. [id]: https://...
+    if (/^\[[^\]]+\]:\s*\S+/.test(trimmed)) {
+      continue;
+    }
+
     let match: RegExpExecArray | null;
     while ((match = refLinkRegex.exec(line)) !== null) {
-      const refId = match[1]?.trim();
+      const refId = (match[2]?.trim() || match[1]?.trim()) ?? '';
       if (refId && !validSourceIds.has(refId)) {
         issues.push({
           filePath,
@@ -257,9 +313,9 @@ export function checkSourceReferenceLinks(
  * Runs all content guard and launch checks across the editorial content directory.
  */
 export function checkLaunchContent(options: CheckContentOptions = {}): CheckContentResult {
-  const rootDir = process.cwd();
-  const defaultDir = path.resolve(rootDir, 'content');
-  const baseContentDir = options.contentDir ? path.resolve(options.contentDir) : defaultDir;
+  const baseContentDir = options.contentDir
+    ? path.resolve(options.contentDir)
+    : resolveDefaultContentDir();
 
   const errors: GuardIssue[] = [];
   const warnings: GuardIssue[] = [];
@@ -338,7 +394,13 @@ export function checkLaunchContent(options: CheckContentOptions = {}): CheckCont
 
     // Prohibited figures check
     const figureIssues = checkFigureClaims(parsedMatter.content, filePath);
-    errors.push(...figureIssues);
+    for (const issue of figureIssues) {
+      if (issue.severity === 'error') {
+        errors.push(issue);
+      } else {
+        warnings.push(issue);
+      }
+    }
 
     // Source reference links check
     const sourceLinkIssues = checkSourceReferenceLinks(
@@ -400,6 +462,14 @@ export function runCli(argv: readonly string[] = process.argv.slice(2)): void {
   console.warn(`Files checked: ${String(result.totalFilesChecked)}`);
   console.warn(`Reviewed files: ${String(result.reviewedFilesCount)}`);
   console.warn(`Placeholder/draft files: ${String(result.placeholderFilesCount)}\n`);
+
+  if (result.warnings.length > 0) {
+    console.warn(`WARNINGS: ${String(result.warnings.length)} item(s) to verify:\n`);
+    for (const warn of result.warnings) {
+      console.warn(`  - [${warn.severity.toUpperCase()}] ${warn.filePath}`);
+      console.warn(`    ${warn.message}\n`);
+    }
+  }
 
   if (result.errors.length > 0) {
     console.error(`FAILED: ${String(result.errors.length)} issue(s) detected:\n`);

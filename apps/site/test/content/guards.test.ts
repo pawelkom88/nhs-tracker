@@ -44,6 +44,37 @@ describe('Editorial Content Freshness Guard', () => {
     expect(issue?.message).toContain('exceeds maximum permitted age of 183 days');
   });
 
+  it('fails when lastReviewed date format is invalid', () => {
+    const frontMatter: EditorialFrontMatter = {
+      kind: 'about-the-figures',
+      nation: 'england',
+      status: 'reviewed',
+      lastReviewed: 'invalid-date',
+      reviewedBy: 'product-owner',
+      sources: [],
+    };
+
+    const issue = checkFreshness(frontMatter, 'content/england/about-the-figures.md', asOfDate);
+    expect(issue).not.toBeNull();
+    expect(issue?.severity).toBe('error');
+    expect(issue?.message).toContain('Invalid lastReviewed date format');
+  });
+
+  it('fails when status is reviewed but lastReviewed is missing', () => {
+    const frontMatter = {
+      kind: 'about-the-figures',
+      nation: 'england',
+      status: 'reviewed',
+      reviewedBy: 'product-owner',
+      sources: [],
+    } as unknown as EditorialFrontMatter;
+
+    const issue = checkFreshness(frontMatter, 'content/england/about-the-figures.md', asOfDate);
+    expect(issue).not.toBeNull();
+    expect(issue?.severity).toBe('error');
+    expect(issue?.message).toContain('lastReviewed" date is missing');
+  });
+
   it('ignores freshness on placeholder or draft content', () => {
     const placeholderFm: EditorialFrontMatter = {
       kind: 'about-the-figures',
@@ -61,10 +92,13 @@ describe('Editorial Content Figure Claims Guard', () => {
   it('flags prohibited figure mentions in standard body text', () => {
     const samples = [
       'The current wait is 18 weeks long.',
+      'A standard 18-week wait applies.',
       'Patients waiting over 52 weeks are counted.',
+      'Avoid any 52-week wait.',
       'Around 92% of patients are seen on time.',
       'Around 92 percent of patients are seen.',
       'Over 45 days after referral.',
+      'A 45-day turnaround.',
       'More than 500 people are waiting.',
       'Affecting 1,500 people each month.',
     ];
@@ -77,15 +111,28 @@ describe('Editorial Content Figure Claims Guard', () => {
     }
   });
 
-  it('permits official figure quotes inside blockquotes', () => {
+  it('permits official figure quotes inside blockquotes citing official standards/sources', () => {
     const blockquoteText = `
 Here is what the official standard states:
 
 > "Patients have the legal right to start non-urgent consultant-led treatment within 18 weeks."
 > The standard is that 92% of patients should wait no longer than 18 weeks.
+> Source: [NHS Constitution][nhs-constitution] states an 18-week standard.
 `;
     const issues = checkFigureClaims(blockquoteText, 'test.md');
     expect(issues).toHaveLength(0);
+  });
+
+  it('warns when figure claim appears inside a blockquote without citing a source or quotation', () => {
+    const uncitedBlockquote = `
+> More than 500 people waited 18 weeks for their appointment.
+`;
+    const issues = checkFigureClaims(uncitedBlockquote, 'test.md');
+    expect(issues.length).toBeGreaterThan(0);
+    expect(issues[0]?.severity).toBe('warning');
+    expect(issues[0]?.message).toContain(
+      'contains figure claim "500 people" without citing an official source or quotation',
+    );
   });
 
   it('permits figures inside markdown code blocks and ignores comments', () => {
@@ -119,28 +166,37 @@ describe('Editorial Content Source Reference Link Guard', () => {
 
   it('passes when all reference links match defined source IDs', () => {
     const markdown = `
-Read about your rights in the [NHS Constitution][nhs-constitution] or the [Choice Framework][choice-framework].
-You can also visit [direct external link](https://www.nhs.uk).
+Read about your rights in the [NHS Constitution][nhs-constitution] or the [choice-framework][].
+You can also visit a [direct external link](https://www.nhs.uk).
 `;
     const issues = checkSourceReferenceLinks(markdown, sources, 'test.md');
     expect(issues).toHaveLength(0);
   });
 
-  it('fails when a reference link refers to an unknown source ID', () => {
+  it('fails when a full reference link refers to an unknown source ID', () => {
     const markdown = `
 Read about your rights in [the handbook][unknown-source-id].
 `;
     const issues = checkSourceReferenceLinks(markdown, sources, 'test.md');
     expect(issues).toHaveLength(1);
+    expect(issues[0]?.severity).toBe('error');
+    expect(issues[0]?.message).toContain('references unknown source id "[unknown-source-id]"');
+  });
+
+  it('fails when a collapsed reference link refers to an unknown source ID', () => {
+    const markdown = `
+Read about your rights in [unknown-source-id][].
+`;
+    const issues = checkSourceReferenceLinks(markdown, sources, 'test.md');
+    expect(issues).toHaveLength(1);
+    expect(issues[0]?.severity).toBe('error');
     expect(issues[0]?.message).toContain('references unknown source id "[unknown-source-id]"');
   });
 });
 
 describe('Live Repository Content Audit', () => {
   it('verifies all committed markdown files in content/ pass guards', () => {
-    const repoContentDir = path.resolve(process.cwd(), 'content');
     const result = checkLaunchContent({
-      contentDir: repoContentDir,
       freshnessOnly: true,
     });
 
@@ -207,6 +263,23 @@ See [official guide][official-guide] for details.
       expect(result.errors).toEqual([]);
       expect(result.ok).toBe(true);
       expect(result.reviewedFilesCount).toBe(9);
+    } finally {
+      await fsp.rm(tmpDir, { recursive: true, force: true });
+    }
+  });
+
+  it('reports an error when a required launch file is missing', async () => {
+    const tmpDir = await fsp.mkdtemp(path.join(os.tmpdir(), 'kyw-launch-gate-missing-'));
+
+    try {
+      const result = checkLaunchContent({
+        contentDir: tmpDir,
+        freshnessOnly: false,
+      });
+
+      expect(result.ok).toBe(false);
+      expect(result.errors.length).toBeGreaterThanOrEqual(9);
+      expect(result.errors[0]?.message).toContain('is missing');
     } finally {
       await fsp.rm(tmpDir, { recursive: true, force: true });
     }
