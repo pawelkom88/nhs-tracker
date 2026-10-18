@@ -593,7 +593,7 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 - [x] T-9.1 — Content schema, loader and Markdown rendering
 - [x] T-9.2 — Generate Specialty description stubs for every nation
 - [x] T-9.3 — Trauma & Orthopaedics full-content structure in all three nations
-- [ ] T-9.4 — Explainer pages: "About the figures" and "Your rights" per nation
+- [x] T-9.4 — Explainer pages: "About the figures" and "Your rights" per nation
 - [ ] T-9.5 — Content guard tests: freshness, sources, figures and launch gate
 - [ ] T-9.6 — Product-owner content brief with official source starting points
 
