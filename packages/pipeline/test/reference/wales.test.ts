@@ -204,7 +204,7 @@ describe('Wales Reference Data', () => {
       expect(refData.nation).toBe('wales');
       expect(refData.reportingUnits).toHaveLength(7);
       expect(refData.hospitalSites.length).toBeGreaterThan(30);
-      expect(refData.specialties).toHaveLength(52);
+      expect(refData.specialties).toHaveLength(56);
       expect(refData.sources.length).toBeGreaterThanOrEqual(1);
 
       // Check each reporting unit has linked hospital sites

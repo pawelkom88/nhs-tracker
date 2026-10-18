@@ -487,9 +487,9 @@ describe('Wales Page Route (/wales) (T-8.13)', () => {
 });
 
 describe('Wales Specialty Page Route (/wales/[specialty]) (T-8.13)', () => {
-  test('generateStaticParams returns all 52 Wales specialties', async () => {
+  test('generateStaticParams returns all 56 Wales specialties', async () => {
     const params = await generateSpecialtyParams();
-    expect(params.length).toBe(52);
+    expect(params.length).toBe(56);
     expect(params.map((p) => p.specialty)).toContain('trauma-and-orthopaedics');
     expect(params.map((p) => p.specialty)).toContain('general-surgery');
     expect(params.map((p) => p.specialty)).toContain('all-specialties');

@@ -1,7 +1,7 @@
 ---
 kind: specialty
 nation: scotland
-specialtyId: scotland:AG
+specialtyId: scotland:AP
 summary: ''
 keywords: []
 status: placeholder

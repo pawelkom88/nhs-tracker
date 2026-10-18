@@ -660,9 +660,9 @@ describe('Scotland Page Route (/scotland) (T-8.14)', () => {
 });
 
 describe('Scotland Specialty Page Route (/scotland/[specialty]) (T-8.14)', () => {
-  test('generateStaticParams returns all 42 Scotland specialties', async () => {
+  test('generateStaticParams returns all 70 Scotland specialties', async () => {
     const params = await generateSpecialtyParams();
-    expect(params.length).toBe(42);
+    expect(params.length).toBe(70);
     expect(params.map((p) => p.specialty)).toContain('trauma-and-orthopaedics');
     expect(params.map((p) => p.specialty)).toContain('general-surgery');
     expect(params.map((p) => p.specialty)).toContain('all-specialties');

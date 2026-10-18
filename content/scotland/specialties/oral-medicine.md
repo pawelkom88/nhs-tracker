@@ -1,7 +1,7 @@
 ---
 kind: specialty
 nation: scotland
-specialtyId: scotland:D8
+specialtyId: scotland:D4
 summary: ''
 keywords: []
 status: placeholder

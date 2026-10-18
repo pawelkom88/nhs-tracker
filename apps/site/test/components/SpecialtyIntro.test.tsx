@@ -1,8 +1,10 @@
+import * as fsp from 'node:fs/promises';
+import * as path from 'node:path';
 import { afterEach, describe, expect, test } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 import React from 'react';
 import { SpecialtyIntro } from '../../src/components/SpecialtyIntro';
-import type { LoadedContent } from '../../src/content/load';
+import { contentDir, loadContentFile, type LoadedContent } from '../../src/content/load';
 import type { SpecialtyFrontMatter } from '../../src/content/schema';
 
 afterEach(() => {
@@ -105,5 +107,54 @@ describe('SpecialtyIntro (T-9.3 / ADR-0002 / ADR-0006)', () => {
     expect(container.textContent).toContain(
       'This is not medical advice. Speak to your GP or care team about your own care.',
     );
+  });
+
+  describe('Live Trauma & Orthopaedics content structure (T-9.3 / ADR-0002 / ADR-0006)', () => {
+    const nations: readonly { nation: 'england' | 'wales' | 'scotland'; specialtyId: string }[] = [
+      { nation: 'england', specialtyId: 'england:C_110' },
+      { nation: 'wales', specialtyId: 'wales:110' },
+      { nation: 'scotland', specialtyId: 'scotland:C8' },
+    ];
+
+    for (const { nation, specialtyId } of nations) {
+      test(`verifies ${nation} T&O markdown file structure and placeholder rendering`, async () => {
+        const filePath = path.join(
+          contentDir(),
+          nation,
+          'specialties',
+          'trauma-and-orthopaedics.md',
+        );
+        const raw = await fsp.readFile(filePath, 'utf-8');
+
+        // Verify standard headings and comments exist
+        expect(raw).toContain('## What this specialty covers');
+        expect(raw).toContain(
+          '<!-- PO: Describe clinical scope of Trauma & Orthopaedics in plain English',
+        );
+        expect(raw).toContain('## What the figures for this specialty include');
+        expect(raw).toContain('## Related Patient Rights');
+        expect(raw).toContain(
+          `[your rights in ${nation.charAt(0).toUpperCase() + nation.slice(1)}](/${nation}/your-rights)`,
+        );
+
+        // Nation-specific nuances (ADR-0002 for Scotland)
+        if (nation === 'scotland') {
+          expect(raw).toContain('two distinct Wait Stages');
+          expect(raw).toContain('Do not sum Wait Stages');
+        }
+
+        // Validate content loading
+        const loaded = await loadContentFile<SpecialtyFrontMatter>(filePath, nation);
+        expect(loaded.frontMatter.kind).toBe('specialty');
+        expect(loaded.frontMatter.nation).toBe(nation);
+        expect(loaded.frontMatter.specialtyId).toBe(specialtyId);
+        expect(loaded.frontMatter.status).toBe('placeholder');
+        expect(loaded.isPlaceholder).toBe(true);
+
+        // SpecialtyIntro must render nothing when status is placeholder
+        const { container } = render(<SpecialtyIntro content={loaded} />);
+        expect(container.firstChild).toBeNull();
+      });
+    }
   });
 });
