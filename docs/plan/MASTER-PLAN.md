@@ -594,7 +594,7 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 - [x] T-9.2 — Generate Specialty description stubs for every nation
 - [x] T-9.3 — Trauma & Orthopaedics full-content structure in all three nations
 - [x] T-9.4 — Explainer pages: "About the figures" and "Your rights" per nation
-- [ ] T-9.5 — Content guard tests: freshness, sources, figures and launch gate
+- [x] T-9.5 — Content guard tests: freshness, sources, figures and launch gate
 - [ ] T-9.6 — Product-owner content brief with official source starting points
 
 ### [Phase 10 — Quality, deploy and launch readiness](./phase-10-quality-and-launch.md)
