@@ -17,7 +17,7 @@ afterEach(() => {
 
 describe('Explainer pages (T-9.4)', () => {
   describe('Route pages', () => {
-    test('renders England "About the figures" page', async () => {
+    test('renders England "About the figures" page with all required sections and notices', async () => {
       const page = await EnglandAboutTheFiguresPage();
       render(page);
 
@@ -34,16 +34,34 @@ describe('Explainer pages (T-9.4)', () => {
           'This is not medical advice. Speak to your GP or care team about your own care.',
         ),
       ).not.toBeNull();
+      expect(screen.queryByText(/Last reviewed:/)).toBeNull();
+
       expect(
         screen.getByRole('heading', { level: 2, name: "What 'people already waiting' means" }),
       ).not.toBeNull();
-      // Border notice exists
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'What the median means (half of people)' }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'The Waiting Standard in England' }),
+      ).not.toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Long Waits' })).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: "Why some figures say 'Not published'" }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Carried-forward figures' }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Where the figures come from' }),
+      ).not.toBeNull();
+
       expect(
         screen.getByRole('heading', { level: 2, name: 'Live near the border?' }),
       ).not.toBeNull();
     });
 
-    test('renders England "Your rights" page', async () => {
+    test('renders England "Your rights" page with all required sections and notices', async () => {
       const page = await EnglandYourRightsPage();
       render(page);
 
@@ -52,16 +70,31 @@ describe('Explainer pages (T-9.4)', () => {
       ).not.toBeNull();
       expect(
         screen.getByText(
+          'This page is being written. The sections below outline what will be covered.',
+        ),
+      ).not.toBeNull();
+      expect(
+        screen.getByText(
           'This is not medical advice. Speak to your GP or care team about your own care.',
         ),
       ).not.toBeNull();
+      expect(screen.queryByText(/Last reviewed:/)).toBeNull();
+
       expect(screen.getByRole('heading', { level: 2, name: 'How referral works' })).not.toBeNull();
       expect(
         screen.getByRole('heading', { level: 2, name: 'Patient Rights in England' }),
       ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'If you live near the border' }),
+      ).not.toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Where to get help' })).not.toBeNull();
+
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Live near the border?' }),
+      ).not.toBeNull();
     });
 
-    test('renders Wales "About the figures" page', async () => {
+    test('renders Wales "About the figures" page with all required sections and notices', async () => {
       const page = await WalesAboutTheFiguresPage();
       render(page);
 
@@ -70,30 +103,73 @@ describe('Explainer pages (T-9.4)', () => {
       ).not.toBeNull();
       expect(
         screen.getByText(
+          'This page is being written. The sections below outline what will be covered.',
+        ),
+      ).not.toBeNull();
+      expect(
+        screen.getByText(
           'This is not medical advice. Speak to your GP or care team about your own care.',
         ),
+      ).not.toBeNull();
+      expect(screen.queryByText(/Last reviewed:/)).toBeNull();
+
+      expect(
+        screen.getByRole('heading', { level: 2, name: "What 'people already waiting' means" }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'What the median means (half of people)' }),
       ).not.toBeNull();
       expect(
         screen.getByRole('heading', { level: 2, name: 'The Waiting Standard in Wales' }),
       ).not.toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Long Waits' })).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: "Why some figures say 'Not published'" }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Carried-forward figures' }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Where the figures come from' }),
+      ).not.toBeNull();
+
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Live near the border?' }),
+      ).not.toBeNull();
     });
 
-    test('renders Wales "Your rights" page', async () => {
+    test('renders Wales "Your rights" page with all required sections and notices', async () => {
       const page = await WalesYourRightsPage();
       render(page);
 
       expect(screen.getByRole('heading', { level: 1, name: 'Your rights: Wales' })).not.toBeNull();
       expect(
         screen.getByText(
-          'This is not medical advice. Speak to your GP or care team about your own care.',
+          'This page is being written. The sections below outline what will be covered.',
         ),
       ).not.toBeNull();
       expect(
+        screen.getByText(
+          'This is not medical advice. Speak to your GP or care team about your own care.',
+        ),
+      ).not.toBeNull();
+      expect(screen.queryByText(/Last reviewed:/)).toBeNull();
+
+      expect(screen.getByRole('heading', { level: 2, name: 'How referral works' })).not.toBeNull();
+      expect(
         screen.getByRole('heading', { level: 2, name: 'Patient Rights in Wales' }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'If you live near the border' }),
+      ).not.toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Where to get help' })).not.toBeNull();
+
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Live near the border?' }),
       ).not.toBeNull();
     });
 
-    test('renders Scotland "About the figures" page', async () => {
+    test('renders Scotland "About the figures" page with all required sections and notices', async () => {
       const page = await ScotlandAboutTheFiguresPage();
       render(page);
 
@@ -102,18 +178,45 @@ describe('Explainer pages (T-9.4)', () => {
       ).not.toBeNull();
       expect(
         screen.getByText(
+          'This page is being written. The sections below outline what will be covered.',
+        ),
+      ).not.toBeNull();
+      expect(
+        screen.getByText(
           'This is not medical advice. Speak to your GP or care team about your own care.',
         ),
       ).not.toBeNull();
+      expect(screen.queryByText(/Last reviewed:/)).toBeNull();
+
       expect(
         screen.getByRole('heading', { level: 2, name: 'Two separate wait stages in Scotland' }),
       ).not.toBeNull();
       expect(
+        screen.getByRole('heading', { level: 2, name: "What 'people already waiting' means" }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'What the median means (half of people)' }),
+      ).not.toBeNull();
+      expect(
         screen.getByRole('heading', { level: 2, name: 'The Waiting Standards in Scotland' }),
+      ).not.toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Long Waits' })).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: "Why some figures say 'Not published'" }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Carried-forward figures' }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Where the figures come from' }),
+      ).not.toBeNull();
+
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Live near the border?' }),
       ).not.toBeNull();
     });
 
-    test('renders Scotland "Your rights" page', async () => {
+    test('renders Scotland "Your rights" page with all required sections and notices', async () => {
       const page = await ScotlandYourRightsPage();
       render(page);
 
@@ -122,11 +225,27 @@ describe('Explainer pages (T-9.4)', () => {
       ).not.toBeNull();
       expect(
         screen.getByText(
-          'This is not medical advice. Speak to your GP or care team about your own care.',
+          'This page is being written. The sections below outline what will be covered.',
         ),
       ).not.toBeNull();
       expect(
+        screen.getByText(
+          'This is not medical advice. Speak to your GP or care team about your own care.',
+        ),
+      ).not.toBeNull();
+      expect(screen.queryByText(/Last reviewed:/)).toBeNull();
+
+      expect(screen.getByRole('heading', { level: 2, name: 'How referral works' })).not.toBeNull();
+      expect(
         screen.getByRole('heading', { level: 2, name: 'Patient Rights in Scotland' }),
+      ).not.toBeNull();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'If you live near the border' }),
+      ).not.toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Where to get help' })).not.toBeNull();
+
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Live near the border?' }),
       ).not.toBeNull();
     });
   });
