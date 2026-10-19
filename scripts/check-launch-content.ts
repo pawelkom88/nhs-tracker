@@ -295,7 +295,8 @@ export function checkSourceReferenceLinks(
 
     let match: RegExpExecArray | null;
     while ((match = refLinkRegex.exec(line)) !== null) {
-      const refId = (match[2]?.trim() || match[1]?.trim()) ?? '';
+      const explicitId = match[2]?.trim() ?? '';
+      const refId = explicitId.length > 0 ? explicitId : (match[1]?.trim() ?? '');
       if (refId && !validSourceIds.has(refId)) {
         issues.push({
           filePath,
