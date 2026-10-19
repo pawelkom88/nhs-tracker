@@ -2,7 +2,7 @@
 
 **For:** Product Owner / Editorial Authors  
 **Status:** Canonical Brief  
-**Verified Source Check Date:** 2026-10-07
+**Verified Source Check Date:** 2026-10-19
 
 Know Your Wait presents official NHS waiting-time statistics for England, Wales, and Scotland. Technical scaffolding, schemas, loaders, and guardrails are maintained in code, while editorial copy is authored and reviewed by the Product Owner.
 
@@ -143,35 +143,35 @@ All copy in `content/` must follow these core constraints:
 
 ## 4. Official Source Starting Points
 
-All URLs checked and verified active on 2026-10-07.
+All URLs checked and verified active on 2026-10-19.
 
 ### 4.1 England Sources
 
-| ID                              | Resource Title                                     | Primary URL                                                                                                                               | Topic / Scope                                       |
-| ------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| `england-nhs-constitution`      | The NHS Constitution for England                   | `https://www.gov.uk/government/publications/the-nhs-constitution-for-england`                                                             | Principles, patient rights, legal entitlements      |
-| `england-constitution-handbook` | Handbook to the NHS Constitution                   | `https://www.gov.uk/government/publications/supplements-to-the-nhs-constitution-for-england/handbook-to-the-nhs-constitution-for-england` | Explanations of rights, 18-week standard details    |
-| `england-choice-framework`      | NHS Choice Framework / Your choices in the NHS     | `https://www.nhs.uk/using-the-nhs/about-the-nhs/your-choices-in-the-nhs/`                                                                 | Legal right to choose hospital or clinic            |
-| `england-rtt-data`              | NHS England Referral to Treatment (RTT) Statistics | `https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/`                                                         | Statistical methodology, definitions, open pathways |
+| ID                              | Resource Title                                     | Primary URL                                                                                  | Topic / Scope                                       |
+| ------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| `england-nhs-constitution`      | The NHS Constitution for England                   | `https://www.gov.uk/government/publications/the-nhs-constitution-for-england`                | Principles, patient rights, legal entitlements      |
+| `england-constitution-handbook` | Handbook to the NHS Constitution                   | `https://www.gov.uk/government/publications/supplements-to-the-nhs-constitution-for-england` | Explanations of rights, 18-week standard details    |
+| `england-choice-framework`      | NHS Choice Framework / Your choices in the NHS     | `https://www.nhs.uk/using-the-nhs/about-the-nhs/your-choices-in-the-nhs/`                    | Legal right to choose hospital or clinic            |
+| `england-rtt-data`              | NHS England Referral to Treatment (RTT) Statistics | `https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/`            | Statistical methodology, definitions, open pathways |
 
 ### 4.2 Wales Sources
 
 | ID                      | Resource Title                               | Primary URL                                                                                                      | Topic / Scope                                            |
 | ----------------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `wales-rtt-standards`   | NHS Referral to Treatment Times Standards    | `https://www.gov.wales/nhs-referral-treatment-times-standards`                                                   | Welsh Government 26-week / 36-week RTT policies          |
+| `wales-rtt-standards`   | NHS Activity and Performance Summary         | `https://www.gov.wales/nhs-activity-and-performance-summary`                                                     | Welsh Government 26-week / 36-week RTT policies          |
 | `wales-statswales-data` | StatsWales NHS Waiting Times                 | `https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment` | Official publication, health board pathways              |
 | `wales-nhs111-services` | NHS 111 Wales Health Services                | `https://111.wales.nhs.uk/`                                                                                      | Welsh health board services, patient rights              |
 | `wales-llais`           | Llais — Your Voice in Health and Social Care | `https://www.llaiswales.org/`                                                                                    | Independent patient advocacy and representation in Wales |
 
 ### 4.3 Scotland Sources
 
-| ID                            | Resource Title                                 | Primary URL                                                                                      | Topic / Scope                                                 |
-| ----------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
-| `scotland-patient-rights-act` | Patient Rights (Scotland) Act 2011             | `https://www.legislation.gov.uk/asp/2011/5/contents`                                             | Primary legislation establishing the Treatment Time Guarantee |
-| `scotland-nhsinform-ttg`      | NHS inform — Treatment Time Guarantee (TTG)    | `https://www.nhsinform.scot/care-support-and-rights/health-rights/treatment-time-guarantee-ttg/` | Explanations of the 12-week TTG and exceptions                |
-| `scotland-gov-guidance`       | Scottish Government NHS Waiting Times Guidance | `https://www.gov.scot/publications/nhs-waiting-times-guidance/`                                  | Outpatient standard and inpatient rules                       |
-| `scotland-phs-data`           | Public Health Scotland Waiting Times           | `https://publichealthscotland.scot/publications/nhs-waiting-times-stage-of-treatment/`           | Stage of treatment reports, outpatient and inpatient data     |
-| `scotland-pass`               | Patient Advice and Support Service (PASS)      | `https://www.pass-scotland.org.uk/`                                                              | Free, independent patient advice in Scotland                  |
+| ID                            | Resource Title                                | Primary URL                                                                                           | Topic / Scope                                                 |
+| ----------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| `scotland-patient-rights-act` | Patient Rights (Scotland) Act 2011            | `https://www.legislation.gov.uk/asp/2011/5/contents`                                                  | Primary legislation establishing the Treatment Time Guarantee |
+| `scotland-nhsinform-ttg`      | NHS inform — NHS Scotland waiting times (TTG) | `https://www.nhsinform.scot/care-support-and-rights/health-rights/access/nhs-scotland-waiting-times/` | Explanations of the 12-week TTG and exceptions                |
+| `scotland-gov-guidance`       | Scottish Government waiting times policy      | `https://www.gov.scot/policies/healthcare-standards/waiting-times/`                                   | Outpatient standard and inpatient rules                       |
+| `scotland-phs-data`           | Public Health Scotland Waiting Times          | `https://publichealthscotland.scot/publications/nhs-waiting-times-stage-of-treatment/`                | Stage of treatment reports, outpatient and inpatient data     |
+| `scotland-pass`               | Patient Advice and Support Service (PASS)     | `https://www.pass-scotland.org.uk/`                                                                   | Free, independent patient advice in Scotland                  |
 
 ---
 
@@ -185,7 +185,7 @@ nation: england # 'england' | 'wales' | 'scotland' (must match directory)
 # summary: "Plain English summary under 20 words." # required only when kind: specialty
 # keywords: ["keyword1", "keyword2"] # required only when kind: specialty
 status: reviewed # 'placeholder' | 'draft' | 'reviewed'
-lastReviewed: 2026-10-07 # YYYY-MM-DD (required when status: reviewed)
+lastReviewed: 2026-10-19 # YYYY-MM-DD (required when status: reviewed)
 reviewedBy: product-owner # identifier (required when status: reviewed)
 sources:
   - id: england-choice-framework
