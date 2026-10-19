@@ -172,6 +172,45 @@ describe('scan-output guard (T-10.3)', () => {
       const violations = scanHtmlContent('out/england/test.html', html, defaultTestOptions);
       expect(violations.filter((v) => v.kind === 'avoid-term')).toEqual([]);
     });
+
+    test('permits official provider names in allowedEntityNames while catching avoid terms in prose', () => {
+      const cleanHtml = `
+        <html><body>
+          <h1>Claremont Private Hospital</h1>
+          <p>Treats NHS patients free at the point of use.</p>
+        </body></html>
+      `;
+      const optionsWithEntity: ScanOptions = {
+        ...defaultTestOptions,
+        referenceData: {
+          ...mockReferenceData,
+          allowedEntityNames: ['Claremont Private Hospital'],
+        },
+      };
+      const cleanViolations = scanHtmlContent(
+        'out/england/ophthalmology/b3m1x.html',
+        cleanHtml,
+        optionsWithEntity,
+      );
+      expect(cleanViolations.filter((v) => v.kind === 'avoid-term')).toEqual([]);
+
+      const dirtyHtml = `
+        <html><body>
+          <h1>Claremont Private Hospital</h1>
+          <p>This is a private hospital for elective procedures.</p>
+        </body></html>
+      `;
+      const dirtyViolations = scanHtmlContent(
+        'out/england/ophthalmology/b3m1x.html',
+        dirtyHtml,
+        optionsWithEntity,
+      );
+      expect(
+        dirtyViolations.some(
+          (v) => v.kind === 'avoid-term' && v.message.includes('private hospital'),
+        ),
+      ).toBe(true);
+    });
   });
 
   describe('Rule 4: Cross-nation leak check', () => {

@@ -34,6 +34,7 @@ export interface ReferenceDataMap {
   england: NationReferenceUnits;
   wales: NationReferenceUnits;
   scotland: NationReferenceUnits;
+  allowedEntityNames?: string[];
 }
 
 export interface ScanOptions {
@@ -75,15 +76,21 @@ export function loadReferenceUnits(customDataDir?: string): ReferenceDataMap {
     england: { unitNames: [], unitIds: [] },
     wales: { unitNames: [], unitIds: [] },
     scotland: { unitNames: [], unitIds: [] },
+    allowedEntityNames: [],
   };
 
+  const envDir = process.env.KYW_DATA_DIR;
   const possibleDirs = [
     customDataDir,
+    envDir ? path.resolve(process.cwd(), envDir) : undefined,
+    envDir ? path.resolve(process.cwd(), '../../', envDir) : undefined,
     path.resolve(process.cwd(), 'data'),
+    path.resolve(process.cwd(), '../../data'),
     path.resolve(process.cwd(), 'apps/site/test/fixtures/data'),
     path.resolve(process.cwd(), 'test/fixtures/data'),
-    path.resolve(process.cwd(), '../../data'),
-  ].filter(Boolean) as string[];
+  ].filter((d): d is string => Boolean(d && fs.existsSync(d)));
+
+  const allowedEntityNames = new Set<string>();
 
   for (const nation of nations) {
     for (const dir of possibleDirs) {
@@ -97,6 +104,9 @@ export function loadReferenceUnits(customDataDir?: string): ReferenceDataMap {
               displayName?: string;
               officialName?: string;
             }[];
+            hospitalSites?: {
+              name?: string;
+            }[];
           };
           if (Array.isArray(content.reportingUnits)) {
             const names = new Set<string>();
@@ -105,9 +115,15 @@ export function loadReferenceUnits(customDataDir?: string): ReferenceDataMap {
             for (const unit of content.reportingUnits) {
               if (unit.displayName && unit.displayName.trim().length > 3) {
                 names.add(unit.displayName.trim());
+                if (/private\s+(?:hospital|provider)/i.test(unit.displayName)) {
+                  allowedEntityNames.add(unit.displayName.trim());
+                }
               }
               if (unit.officialName && unit.officialName.trim().length > 3) {
                 names.add(unit.officialName.trim());
+                if (/private\s+(?:hospital|provider)/i.test(unit.officialName)) {
+                  allowedEntityNames.add(unit.officialName.trim());
+                }
               }
               if (unit.id) {
                 ids.add(unit.id);
@@ -122,6 +138,14 @@ export function loadReferenceUnits(customDataDir?: string): ReferenceDataMap {
               }
             }
 
+            if (Array.isArray(content.hospitalSites)) {
+              for (const site of content.hospitalSites) {
+                if (site.name && /private\s+(?:hospital|provider)/i.test(site.name)) {
+                  allowedEntityNames.add(site.name.trim());
+                }
+              }
+            }
+
             result[nation].unitNames = Array.from(names);
             result[nation].unitIds = Array.from(ids);
             break;
@@ -133,6 +157,7 @@ export function loadReferenceUnits(customDataDir?: string): ReferenceDataMap {
     }
   }
 
+  result.allowedEntityNames = Array.from(allowedEntityNames);
   return result;
 }
 
@@ -242,7 +267,16 @@ export function scanHtmlContent(
   const cleanRoot = parse(html);
   cleanRoot.querySelectorAll('script, style, noscript, svg').forEach((el) => el.remove());
   const bodyElement = cleanRoot.querySelector('body') ?? cleanRoot;
-  const visibleText = bodyElement.text;
+  let visibleText = bodyElement.text;
+
+  // Official names of Independent Sector Providers or Hospital Sites from reference data
+  // (e.g. "Claremont Private Hospital") are official proper nouns and not editorial avoid terms.
+  const allowedEntityNames = referenceData.allowedEntityNames ?? [];
+  for (const entityName of allowedEntityNames) {
+    if (entityName.length >= 4) {
+      visibleText = visibleText.replaceAll(entityName, '');
+    }
+  }
 
   const lines = visibleText.split('\n');
   lines.forEach((lineText) => {
@@ -265,10 +299,19 @@ export function scanHtmlContent(
   const isScotlandPage =
     normalizedPath.includes('/scotland/') || normalizedPath.endsWith('/scotland.html');
 
+  // Local hospital sites (e.g. Scottish "Royal Alexandra Hospital") are legitimate physical
+  // sites under a nation's own unit, but could contain another nation's unit name (e.g. "Alexandra Hospital")
+  // as a substring. Cross-nation reporting unit leaks check the rest of the visible page.
+  const leakRoot = parse(html);
+  leakRoot
+    .querySelectorAll('script, style, noscript, svg, .hospital-sites-list')
+    .forEach((el) => el.remove());
+  const leakText = (leakRoot.querySelector('body') ?? leakRoot).text;
+
   const checkLeaks = (otherNation: 'england' | 'wales' | 'scotland') => {
     const otherUnits = referenceData[otherNation];
     for (const name of otherUnits.unitNames) {
-      if (visibleText.includes(name)) {
+      if (leakText.includes(name)) {
         violations.push({
           file: filePath,
           kind: 'cross-nation-leak',
@@ -279,13 +322,10 @@ export function scanHtmlContent(
     }
     for (const id of otherUnits.unitIds) {
       // Check full IDs like "wales:7A1" or path references
-      if (
-        visibleText.includes(id) ||
-        (html.includes(`/${otherNation}/`) && !html.includes(`/link`))
-      ) {
+      if (leakText.includes(id) || (html.includes(`/${otherNation}/`) && !html.includes(`/link`))) {
         // Only trigger on distinct id match in content
         const idRegex = new RegExp(`\\b${id}\\b`);
-        if (idRegex.test(visibleText) && id.length > 4) {
+        if (idRegex.test(leakText) && id.length > 4) {
           violations.push({
             file: filePath,
             kind: 'cross-nation-leak',
