@@ -599,7 +599,7 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 
 ### [Phase 10 — Quality, deploy and launch readiness](./phase-10-quality-and-launch.md)
 
-- [ ] T-10.1 — Set up Playwright and axe against the static export
+- [x] T-10.1 — Set up Playwright and axe against the static export
 - [ ] T-10.2 — End-to-end journeys for the "Done means" flow in each nation
 - [ ] T-10.3 — Built-output guard scan (every figure sourced and dated; no banned terms)
 - [ ] T-10.4 — Accessibility and keyboard checks on every route type
