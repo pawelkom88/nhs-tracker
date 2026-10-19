@@ -601,7 +601,7 @@ Defaults chosen where the docs were silent. Each can be changed by the product o
 
 - [x] T-10.1 — Set up Playwright and axe against the static export
 - [x] T-10.2 — End-to-end journeys for the "Done means" flow in each nation
-- [ ] T-10.3 — Built-output guard scan (every figure sourced and dated; no banned terms)
+- [x] T-10.3 — Built-output guard scan (every figure sourced and dated; no banned terms)
 - [ ] T-10.4 — Accessibility and keyboard checks on every route type
 - [ ] T-10.5 — Cloudflare Pages deploy, security headers and Web Analytics
 - [ ] T-10.6 — "Spotted a mistake?" issue form, pipeline-failure template and labels
