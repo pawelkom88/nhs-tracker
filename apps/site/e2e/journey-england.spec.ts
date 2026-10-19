@@ -110,4 +110,20 @@ test.describe('England user journey ("Done means")', () => {
       /This is an independent provider treating NHS-funded patients, free to the patient/i,
     );
   });
+
+  test('shows status labels on provisional, suppressed and carried-forward units', async ({
+    page,
+  }) => {
+    // Provisional and Suppressed Figures (Barts Health)
+    await page.goto('/england/trauma-and-orthopaedics/r1h');
+    const figuresSection = page.locator('.figures-section');
+    await expect(figuresSection.getByRole('status').first()).toHaveText('Provisional');
+    await expect(figuresSection.getByText('Not published (small numbers)').first()).toBeVisible();
+
+    // Carried-forward figures (Practice Plus Group Hospitals)
+    await page.goto('/england/trauma-and-orthopaedics/nt3');
+    const warning = page.locator('.carried-forward-warning');
+    await expect(warning).toContainText(/most recent figures for Practice Plus Group Hospitals/i);
+    await expect(warning).toContainText('30 April 2026');
+  });
 });

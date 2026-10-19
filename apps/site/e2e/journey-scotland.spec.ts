@@ -58,6 +58,10 @@ test.describe('Scotland user journey ("Done means")', () => {
 
     // Stage 1: New Outpatient heading
     await expect(figuresSection.getByRole('heading', { name: /New Outpatient/i })).toBeVisible();
+    // Wait Stages are never summed: the other stage is its own, separate section
+    await expect(figuresSection.getByRole('heading', { name: /Inpatient\/Day case/i })).toHaveCount(
+      0,
+    );
 
     // Assert headline statement contains Reporting Period (31 August 2026), median weeks (18 weeks / 126 days)
     await expect(figuresSection).toContainText(/31 August 2026/);
@@ -107,6 +111,8 @@ test.describe('Scotland user journey ("Done means")', () => {
     await expect(
       figuresSection.getByRole('heading', { name: /Inpatient\/Day case/i }),
     ).toBeVisible();
+
+    await expect(figuresSection.getByRole('heading', { name: /New Outpatient/i })).toHaveCount(0);
 
     // Assert median statement (14 weeks / 98 days)
     await expect(figuresSection).toContainText(/14 weeks \(98 days\) or less/);
