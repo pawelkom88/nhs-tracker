@@ -10,15 +10,21 @@ export const metadata: Metadata = {
 
 export default function AccessibilityPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-      <h1 className="mb-4 text-3xl font-bold">{t('pages', 'accessibility.title')}</h1>
-      <p className="mb-8 text-lg text-gray-700">{t('pages', 'accessibility.intro')}</p>
+    <article className="editorial-container max-w-3xl">
+      <header className="page-header mb-8">
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#1c1917] mb-3">
+          {t('pages', 'accessibility.title')}
+        </h1>
+        <p className="page-intro text-base text-[#57534e] leading-relaxed">
+          {t('pages', 'accessibility.intro')}
+        </p>
+      </header>
 
       <section className="mb-8">
-        <h2 className="mb-3 text-2xl font-semibold">
+        <h2 className="text-xl font-serif font-bold text-[#1c1917] mb-3">
           {t('pages', 'accessibility.standardsHeading')}
         </h2>
-        <ul className="list-disc space-y-2 pl-6 text-gray-700">
+        <ul className="list-disc space-y-2 pl-6 text-[#57534e]">
           <li>{t('pages', 'accessibility.standardsListSemantic')}</li>
           <li>{t('pages', 'accessibility.standardsListNoJs')}</li>
           <li>{t('pages', 'accessibility.standardsListKeyboard')}</li>
@@ -27,16 +33,16 @@ export default function AccessibilityPage() {
       </section>
 
       <section>
-        <h2 className="mb-3 text-2xl font-semibold">
+        <h2 className="text-xl font-serif font-bold text-[#1c1917] mb-3">
           {t('pages', 'accessibility.feedbackHeading')}
         </h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-base text-[#57534e] leading-relaxed">
           {t('pages', 'accessibility.feedbackBody', { email: siteConfig.contactEmail })}
         </p>
         <p>
           <a
             href={`${siteConfig.repoUrl}/issues`}
-            className="text-blue-700 underline hover:text-blue-900"
+            className="text-[#044e54] underline hover:text-[#086972]"
             target="_blank"
             rel="noreferrer"
           >

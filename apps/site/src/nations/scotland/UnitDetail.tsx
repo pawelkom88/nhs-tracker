@@ -48,15 +48,23 @@ export function UnitDetail({ detail, className }: UnitDetailProps) {
           </p>
         </div>
 
-        <nav aria-label={t('common', 'navigation')} className="explainer-links">
-          <ul>
+        <nav aria-label={t('common', 'navigation')} className="explainer-links mt-4">
+          <ul className="flex flex-wrap gap-2 list-none p-0 m-0">
             <li>
-              <Link href="/scotland/about-the-figures">
+              <Link
+                href="/scotland/about-the-figures"
+                className="inline-block text-xs font-medium text-[#044e54] bg-[#f5f2eb] hover:bg-[#eae6dd] px-3 py-1.5 rounded transition"
+              >
                 {t('scotland-pages', 'aboutTheFigures')}
               </Link>
             </li>
             <li>
-              <Link href="/scotland/your-rights">{t('scotland-pages', 'yourRights')}</Link>
+              <Link
+                href="/scotland/your-rights"
+                className="inline-block text-xs font-medium text-[#044e54] bg-[#f5f2eb] hover:bg-[#eae6dd] px-3 py-1.5 rounded transition"
+              >
+                {t('scotland-pages', 'yourRights')}
+              </Link>
             </li>
           </ul>
         </nav>

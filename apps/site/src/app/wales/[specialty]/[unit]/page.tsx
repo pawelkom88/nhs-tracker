@@ -72,14 +72,17 @@ export default async function WalesUnitPage({ params }: WalesUnitPageProps) {
     : specialty.officialName;
 
   return (
-    <div className="wales-unit-page">
-      <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav">
-        <Link href={`/wales/${specialty.slug}`} className="back-link">
+    <div className="editorial-container wales-unit-page">
+      <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav mb-4">
+        <Link
+          href={`/wales/${specialty.slug}`}
+          className="back-link inline-flex items-center text-xs font-mono text-[#044e54] hover:underline"
+        >
           {t('wales-pages', 'backToSpecialty', { specialtyName: specialtyDisplayName })}
         </Link>
       </nav>
 
-      <div>
+      <div className="mb-8">
         <UnitDetail detail={detail} />
       </div>
 

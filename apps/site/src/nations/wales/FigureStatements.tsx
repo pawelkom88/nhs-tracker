@@ -136,10 +136,17 @@ export function FigureStatements({ entry, className }: FigureStatementsProps) {
 
   return (
     <section className={className} aria-labelledby="wales-wait-stage-heading">
-      <h2 id="wales-wait-stage-heading">{t('wales', 'stageHeading')}</h2>
-      {medianFig ? renderMedianBlock(medianFig) : null}
-      {withinStandardFig ? renderWithinStandardBlock(withinStandardFig) : null}
-      {longWaitFig ? renderLongWaitBlock(longWaitFig) : null}
+      <h2
+        id="wales-wait-stage-heading"
+        className="text-xl font-serif font-bold text-[#1c1917] mb-4"
+      >
+        {t('wales', 'stageHeading')}
+      </h2>
+      <div className="figures-container">
+        {medianFig ? renderMedianBlock(medianFig) : null}
+        {withinStandardFig ? renderWithinStandardBlock(withinStandardFig) : null}
+        {longWaitFig ? renderLongWaitBlock(longWaitFig) : null}
+      </div>
     </section>
   );
 }

@@ -14,9 +14,14 @@ export function ExplainerPage({ title, content }: ExplainerPageProps) {
   const { frontMatter, html, isPlaceholder } = content;
 
   return (
-    <article className="explainer-page">
-      <header className="page-header">
-        <h1>{title}</h1>
+    <article className="editorial-container explainer-page">
+      <header className="page-header mb-8 max-w-3xl">
+        <span className="text-xs uppercase tracking-widest text-[#57534e] font-mono">
+          {t('common', frontMatter.nation)}
+        </span>
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#1c1917] mt-1 mb-3">
+          {title}
+        </h1>
       </header>
 
       {isPlaceholder && (

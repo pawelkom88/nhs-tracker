@@ -161,11 +161,15 @@ export function FigureStatements({ entry, className }: FigureStatementsProps) {
       const headingId = `scotland-wait-stage-${stage.id.replace('scotland:', '')}-heading`;
 
       return (
-        <section key={stage.id} aria-labelledby={headingId}>
-          <h2 id={headingId}>{stageHeading}</h2>
-          {medianFig ? renderMedianBlock(medianFig) : null}
-          {withinStandardFig ? renderWithinStandardBlock(withinStandardFig, totalFig) : null}
-          {longWaitFig ? renderLongWaitBlock(longWaitFig) : null}
+        <section key={stage.id} aria-labelledby={headingId} className="mb-8">
+          <h2 id={headingId} className="text-xl font-serif font-bold text-[#1c1917] mb-4">
+            {stageHeading}
+          </h2>
+          <div className="figures-container">
+            {medianFig ? renderMedianBlock(medianFig) : null}
+            {withinStandardFig ? renderWithinStandardBlock(withinStandardFig, totalFig) : null}
+            {longWaitFig ? renderLongWaitBlock(longWaitFig) : null}
+          </div>
         </section>
       );
     })

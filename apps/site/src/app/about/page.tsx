@@ -10,18 +10,30 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-      <h1 className="mb-4 text-3xl font-bold">{t('pages', 'about.title')}</h1>
-      <p className="mb-8 text-lg text-gray-700">{t('pages', 'about.intro')}</p>
+    <article className="editorial-container max-w-3xl">
+      <header className="page-header mb-8">
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#1c1917] mb-3">
+          {t('pages', 'about.title')}
+        </h1>
+        <p className="page-intro text-base text-[#57534e] leading-relaxed">
+          {t('pages', 'about.intro')}
+        </p>
+      </header>
 
       <section className="mb-8">
-        <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'about.purposeHeading')}</h2>
-        <p className="text-gray-700">{t('pages', 'about.purposeBody')}</p>
+        <h2 className="text-xl font-serif font-bold text-[#1c1917] mb-3">
+          {t('pages', 'about.purposeHeading')}
+        </h2>
+        <p className="text-base text-[#57534e] leading-relaxed">
+          {t('pages', 'about.purposeBody')}
+        </p>
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'about.principlesHeading')}</h2>
-        <ul className="list-disc space-y-2 pl-6 text-gray-700">
+        <h2 className="text-xl font-serif font-bold text-[#1c1917] mb-3">
+          {t('pages', 'about.principlesHeading')}
+        </h2>
+        <ul className="list-disc space-y-2 pl-6 text-[#57534e]">
           <li>{t('pages', 'about.principleNeverCompare')}</li>
           <li>{t('pages', 'about.principleSnapshots')}</li>
           <li>{t('pages', 'about.principleExactOnly')}</li>
@@ -31,13 +43,17 @@ export default function AboutPage() {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'about.openSourceHeading')}</h2>
-        <p className="mb-4 text-gray-700">{t('pages', 'about.openSourceBody')}</p>
+        <h2 className="text-xl font-serif font-bold text-[#1c1917] mb-3">
+          {t('pages', 'about.openSourceHeading')}
+        </h2>
+        <p className="mb-4 text-base text-[#57534e] leading-relaxed">
+          {t('pages', 'about.openSourceBody')}
+        </p>
         <ul className="space-y-2">
           <li>
             <a
               href={siteConfig.repoUrl}
-              className="text-blue-700 underline hover:text-blue-900"
+              className="text-[#044e54] underline hover:text-[#086972]"
               target="_blank"
               rel="noreferrer"
             >
@@ -47,7 +63,7 @@ export default function AboutPage() {
           <li>
             <a
               href={`${siteConfig.repoUrl}/tree/main/data`}
-              className="text-blue-700 underline hover:text-blue-900"
+              className="text-[#044e54] underline hover:text-[#086972]"
               target="_blank"
               rel="noreferrer"
             >
@@ -58,8 +74,10 @@ export default function AboutPage() {
       </section>
 
       <section>
-        <h2 className="mb-3 text-2xl font-semibold">{t('pages', 'about.contactHeading')}</h2>
-        <p className="text-gray-700">
+        <h2 className="text-xl font-serif font-bold text-[#1c1917] mb-3">
+          {t('pages', 'about.contactHeading')}
+        </h2>
+        <p className="text-base text-[#57534e] leading-relaxed">
           {t('pages', 'about.contactBody', { email: siteConfig.contactEmail })}
         </p>
       </section>
