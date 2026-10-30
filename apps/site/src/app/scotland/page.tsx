@@ -9,7 +9,7 @@ export default async function ScotlandPage() {
   const specialties = await getSpecialties();
 
   return (
-    <div className="editorial-container scotland-page animate-step-enter">
+    <div className="editorial-container scotland-page">
       <header className="page-header mb-8 max-w-3xl">
         <span className="text-xs uppercase tracking-widest text-[#57534e] font-mono">
           Publishing Nation

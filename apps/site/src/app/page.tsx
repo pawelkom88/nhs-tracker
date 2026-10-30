@@ -5,7 +5,7 @@ import { BorderNotice } from '../components/BorderNotice';
 
 export default function HomePage() {
   return (
-    <div className="editorial-container animate-step-enter">
+    <div className="editorial-container">
       <header className="mb-8 max-w-2xl">
         <span className="text-xs uppercase tracking-widest text-[#57534e] font-mono">
           Official NHS Statistics Guide

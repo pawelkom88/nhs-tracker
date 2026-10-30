@@ -44,7 +44,7 @@ export default async function EnglandSpecialtyPage({ params }: EnglandSpecialtyP
     : specialty.officialName;
 
   return (
-    <div className="editorial-container england-specialty-page animate-step-enter">
+    <div className="editorial-container england-specialty-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav mb-4">
         <Link
           href="/england"

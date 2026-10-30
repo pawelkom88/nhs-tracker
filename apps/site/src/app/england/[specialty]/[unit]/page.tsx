@@ -72,7 +72,7 @@ export default async function EnglandUnitPage({ params }: EnglandUnitPageProps) 
     : specialty.officialName;
 
   return (
-    <div className="editorial-container england-unit-page animate-step-enter">
+    <div className="editorial-container england-unit-page">
       <nav aria-label={t('common', 'navigation')} className="breadcrumb-nav mb-4">
         <Link
           href={`/england/${specialty.slug}`}
