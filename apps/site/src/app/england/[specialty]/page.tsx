@@ -55,7 +55,7 @@ export default async function EnglandSpecialtyPage({ params }: EnglandSpecialtyP
       </nav>
 
       <header className="page-header mb-8 max-w-3xl">
-        <span className="text-xs uppercase tracking-widest text-[#78716c] font-mono">
+        <span className="text-xs uppercase tracking-widest text-[#57534e] font-mono">
           Specialty (England)
         </span>
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#1c1917] mt-1 mb-3">

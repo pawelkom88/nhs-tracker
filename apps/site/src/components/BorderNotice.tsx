@@ -30,7 +30,7 @@ export function BorderNotice({ current }: BorderNoticeProps) {
         {t('border', 'title')}
       </h2>
       <p className="text-sm text-[#57534e] mb-3 leading-relaxed">{t('border', 'body')}</p>
-      <p className="text-xs font-medium uppercase tracking-wider text-[#78716c] mb-2">
+      <p className="text-xs font-medium uppercase tracking-wider text-[#57534e] mb-2">
         {t('border', 'linksIntro')}
       </p>
       <ul className="flex flex-wrap gap-3 list-none p-0 m-0">

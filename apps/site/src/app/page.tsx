@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div className="editorial-container animate-step-enter">
       <header className="mb-8 max-w-2xl">
-        <span className="text-xs uppercase tracking-widest text-[#78716c] font-mono">
+        <span className="text-xs uppercase tracking-widest text-[#57534e] font-mono">
           Official NHS Statistics Guide
         </span>
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#1c1917] mt-2 mb-4 leading-tight">
@@ -17,11 +17,11 @@ export default function HomePage() {
       </header>
 
       <nav aria-label={t('common', 'navigation')} className="mb-8">
-        <p className="text-sm font-medium text-[#78716c] mb-4">{t('home', 'selectNation')}</p>
+        <p className="text-sm font-medium text-[#57534e] mb-4">{t('home', 'selectNation')}</p>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0 m-0">
           <li className="nation-card pressable">
             <div>
-              <span className="text-xs font-mono text-[#78716c]">Publishing Nation</span>
+              <span className="text-xs font-mono text-[#57534e]">Publishing Nation</span>
               <h2 className="font-serif text-2xl text-[#1c1917] mt-1 mb-2 font-medium">
                 <Link
                   href="/england"
@@ -37,14 +37,14 @@ export default function HomePage() {
                 Consultant-led Referral to Treatment pathways and trust-level figures.
               </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-[#f5f2eb] flex items-center justify-between text-xs text-[#78716c]">
+            <div className="mt-4 pt-3 border-t border-[#f5f2eb] flex items-center justify-between text-xs text-[#57534e]">
               <span>Monthly release</span>
               <span aria-hidden="true">→</span>
             </div>
           </li>
           <li className="nation-card pressable">
             <div>
-              <span className="text-xs font-mono text-[#78716c]">Publishing Nation</span>
+              <span className="text-xs font-mono text-[#57534e]">Publishing Nation</span>
               <h2 className="font-serif text-2xl text-[#1c1917] mt-1 mb-2 font-medium">
                 <Link
                   href="/wales"
@@ -60,14 +60,14 @@ export default function HomePage() {
                 Open Referral to Treatment pathways and Local Health Board figures.
               </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-[#f5f2eb] flex items-center justify-between text-xs text-[#78716c]">
+            <div className="mt-4 pt-3 border-t border-[#f5f2eb] flex items-center justify-between text-xs text-[#57534e]">
               <span>Monthly release</span>
               <span aria-hidden="true">→</span>
             </div>
           </li>
           <li className="nation-card pressable">
             <div>
-              <span className="text-xs font-mono text-[#78716c]">Publishing Nation</span>
+              <span className="text-xs font-mono text-[#57534e]">Publishing Nation</span>
               <h2 className="font-serif text-2xl text-[#1c1917] mt-1 mb-2 font-medium">
                 <Link
                   href="/scotland"
@@ -83,7 +83,7 @@ export default function HomePage() {
                 Stage of Treatment figures: Outpatient Stage and Inpatient / Day-case Stage.
               </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-[#f5f2eb] flex items-center justify-between text-xs text-[#78716c]">
+            <div className="mt-4 pt-3 border-t border-[#f5f2eb] flex items-center justify-between text-xs text-[#57534e]">
               <span>Quarterly release</span>
               <span aria-hidden="true">→</span>
             </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
         </ul>
       </nav>
 
-      <p className="text-xs text-[#78716c] mb-6">{t('home', 'notCovered')}</p>
+      <p className="text-xs text-[#57534e] mb-6">{t('home', 'notCovered')}</p>
 
       <BorderNotice />
     </div>
