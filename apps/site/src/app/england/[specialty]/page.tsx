@@ -50,7 +50,7 @@ export default async function EnglandSpecialtyPage({ params }: EnglandSpecialtyP
           href="/england"
           className="back-link inline-flex items-center text-xs font-mono text-[#044e54] hover:underline"
         >
-          ← {t('england-lists', 'backToEngland')}
+          {t('england-lists', 'backToEngland')}
         </Link>
       </nav>
 

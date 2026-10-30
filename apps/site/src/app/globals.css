@@ -115,6 +115,207 @@ body {
   margin-top: 2.5rem;
 }
 
+/* Specialty and Unit lists */
+.specialty-list,
+.unit-list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  .specialty-list,
+  .unit-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.specialty-item,
+.unit-item {
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border-subtle);
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  transition: all 120ms var(--ease-out);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.specialty-item:hover,
+.unit-item:hover {
+  border-color: var(--color-brand-primary);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+.specialty-item a,
+.unit-item a {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+.specialty-item a:hover,
+.unit-item a:hover {
+  color: var(--color-brand-primary);
+  text-decoration: underline;
+}
+.specialty-description {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.375rem;
+  line-height: 1.5;
+}
+
+/* Regional sections in England unit list */
+.region-section {
+  margin-bottom: 2rem;
+}
+.region-section h2 {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+/* ISP (Independent Sector Provider) badge & notices */
+.isp-badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background-color: #f5f2eb;
+  border: 1px solid var(--color-border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: #57534e;
+}
+
+.isp-notice {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #f5f2eb;
+  border: 1px solid var(--color-border-subtle);
+  font-size: 0.8125rem;
+  color: #57534e;
+  line-height: 1.5;
+}
+
+/* Unit detail article and figures */
+.unit-detail {
+  margin-bottom: 2rem;
+}
+.unit-header {
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.unit-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+.specialty-subheading {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-brand-primary);
+  margin-bottom: 0.5rem;
+}
+.unit-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+/* Figure statement cards (Civic Editorial Staggered Cards) */
+.figures-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .figures-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+figure[data-figure] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border-subtle);
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  margin: 0;
+}
+.figure-statement {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.figure-caption {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  border-top: 1px solid var(--color-surface-muted);
+  padding-top: 0.75rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+.figure-caption a {
+  color: var(--color-brand-primary);
+  text-decoration: underline;
+}
+
+/* Status tags & provenance notices */
+.provisional-tag {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-status-longwait-bg);
+  border: 1px solid #fcd34d;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--color-status-longwait-text);
+  margin-bottom: 0.5rem;
+}
+.derived-label {
+  font-size: 0.6875rem;
+  font-style: italic;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.5rem;
+}
+.suppressed-notice {
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
 /* Tabular figures for all statistical metrics */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
