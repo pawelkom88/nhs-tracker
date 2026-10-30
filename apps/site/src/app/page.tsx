@@ -25,7 +25,7 @@ export default function HomePage() {
               <h2 className="font-serif text-2xl text-[#1c1917] mt-1 mb-2 font-medium">
                 <Link
                   href="/england"
-                  className="text-[#1c1917] hover:text-[#044e54] no-underline hover:underline"
+                  className="nation-card-link text-[#1c1917] hover:text-[#044e54] no-underline hover:underline"
                 >
                   {t('common', 'england')}
                 </Link>
@@ -48,7 +48,7 @@ export default function HomePage() {
               <h2 className="font-serif text-2xl text-[#1c1917] mt-1 mb-2 font-medium">
                 <Link
                   href="/wales"
-                  className="text-[#1c1917] hover:text-[#044e54] no-underline hover:underline"
+                  className="nation-card-link text-[#1c1917] hover:text-[#044e54] no-underline hover:underline"
                 >
                   {t('common', 'wales')}
                 </Link>
@@ -71,7 +71,7 @@ export default function HomePage() {
               <h2 className="font-serif text-2xl text-[#1c1917] mt-1 mb-2 font-medium">
                 <Link
                   href="/scotland"
-                  className="text-[#1c1917] hover:text-[#044e54] no-underline hover:underline"
+                  className="nation-card-link text-[#1c1917] hover:text-[#044e54] no-underline hover:underline"
                 >
                   {t('common', 'scotland')}
                 </Link>
