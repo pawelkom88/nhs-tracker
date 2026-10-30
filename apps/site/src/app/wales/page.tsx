@@ -9,25 +9,44 @@ export default async function WalesPage() {
   const specialties = await getSpecialties();
 
   return (
-    <div className="wales-page">
-      <header className="page-header">
-        <h1>{t('wales-pages', 'walesTitle')}</h1>
-        <p className="page-intro">{t('wales-pages', 'walesIntro')}</p>
+    <div className="editorial-container wales-page animate-step-enter">
+      <header className="page-header mb-8 max-w-3xl">
+        <span className="text-xs uppercase tracking-widest text-[#78716c] font-mono">
+          Publishing Nation
+        </span>
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold text-[#1c1917] mt-1 mb-3">
+          {t('wales-pages', 'walesTitle')}
+        </h1>
+        <p className="page-intro text-base text-[#57534e] leading-relaxed mb-4">
+          {t('wales-pages', 'walesIntro')}
+        </p>
         <nav aria-label={t('common', 'navigation')} className="explainer-links">
-          <ul>
+          <ul className="flex flex-wrap gap-3 list-none p-0 m-0">
             <li>
-              <Link href="/wales/about-the-figures">{t('wales-pages', 'aboutTheFigures')}</Link>
+              <Link
+                href="/wales/about-the-figures"
+                className="inline-block text-xs font-medium text-[#044e54] bg-[#f5f2eb] hover:bg-[#eae6dd] px-3 py-1.5 rounded transition"
+              >
+                {t('wales-pages', 'aboutTheFigures')}
+              </Link>
             </li>
             <li>
-              <Link href="/wales/your-rights">{t('wales-pages', 'yourRights')}</Link>
+              <Link
+                href="/wales/your-rights"
+                className="inline-block text-xs font-medium text-[#044e54] bg-[#f5f2eb] hover:bg-[#eae6dd] px-3 py-1.5 rounded transition"
+              >
+                {t('wales-pages', 'yourRights')}
+              </Link>
             </li>
           </ul>
         </nav>
       </header>
 
-      <div>
+      <div className="mb-10">
         <section aria-labelledby="specialties-heading">
-          <h2 id="specialties-heading">{t('wales-pages', 'specialtiesHeading')}</h2>
+          <h2 id="specialties-heading" className="text-xl font-serif font-bold text-[#1c1917] mb-4">
+            {t('wales-pages', 'specialtiesHeading')}
+          </h2>
           <SpecialtyList specialties={specialties} />
         </section>
       </div>
